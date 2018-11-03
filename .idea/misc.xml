@@ -7,6 +7,8 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/meetallregistry/pom.xml" />
+        <option value="$PROJECT_DIR$/commoditydetailsconsumber/pom.xml" />
+        <option value="$PROJECT_DIR$/commoditydetailprovider/pom.xml" />
       </list>
     </option>
   </component>

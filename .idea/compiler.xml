@@ -6,10 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="commoditydetailprovider" />
+        <module name="commoditydetailsconsumber" />
         <module name="meetallregistry" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="commoditydetailprovider" target="1.8" />
+      <module name="commoditydetails" target="1.8" />
+      <module name="commoditydetailsconsumber" target="1.8" />
       <module name="meetallregistry" target="1.8" />
     </bytecodeTargetLevel>
   </component>

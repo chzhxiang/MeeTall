@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/MeetAllShoppingSystem.iml" filepath="$PROJECT_DIR$/.idea/MeetAllShoppingSystem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commoditydetailprovider/commoditydetailprovider.iml" filepath="$PROJECT_DIR$/commoditydetailprovider/commoditydetailprovider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commoditydetailsconsumber/commoditydetailsconsumber.iml" filepath="$PROJECT_DIR$/commoditydetailsconsumber/commoditydetailsconsumber.iml" />
       <module fileurl="file://$PROJECT_DIR$/meetallregistry/meetallregistry.iml" filepath="$PROJECT_DIR$/meetallregistry/meetallregistry.iml" />
     </modules>
   </component>
