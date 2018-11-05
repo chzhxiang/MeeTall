@@ -4,6 +4,7 @@ package com.meetall.commodity.detail.commoditydetailprovider.pojo;
  * 商品sku类
  */
 public class CommoditySku {
+
     /**
      * 商品sku编号
      */

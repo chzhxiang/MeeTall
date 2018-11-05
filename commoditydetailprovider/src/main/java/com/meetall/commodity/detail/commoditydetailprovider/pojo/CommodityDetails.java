@@ -4,6 +4,7 @@ package com.meetall.commodity.detail.commoditydetailprovider.pojo;
  * 商品详情
  */
 public class CommodityDetails {
+
     private Integer commodityId;
     /**
      * 商品编号
