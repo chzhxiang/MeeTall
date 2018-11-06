@@ -9,6 +9,10 @@
         <option value="$PROJECT_DIR$/meetallregistry/pom.xml" />
         <option value="$PROJECT_DIR$/commoditydetailsconsumber/pom.xml" />
         <option value="$PROJECT_DIR$/commoditydetailprovider/pom.xml" />
+        <option value="$PROJECT_DIR$/commoditycrowdorderingprovider/pom.xml" />
+        <option value="$PROJECT_DIR$/commoditycrowdorderingcomsumer/pom.xml" />
+        <option value="$PROJECT_DIR$/commoditysearchprovider/pom.xml" />
+        <option value="$PROJECT_DIR$/commoditysearchconsumber/pom.xml" />
       </list>
     </option>
   </component>

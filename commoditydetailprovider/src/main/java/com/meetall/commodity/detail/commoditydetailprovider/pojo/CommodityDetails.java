@@ -22,4 +22,9 @@ public class CommodityDetails {
      * 商品分类
      */
 
+    private String commodityDescribe;
+    /**
+     * commodity_describe
+     * 商品描述
+     */
 }

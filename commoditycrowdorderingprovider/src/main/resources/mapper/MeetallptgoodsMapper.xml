@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.meetall.commodity.crowdordering.commoditycrowdorderingprovider.dao.MeetallptgoodsMapper" >
+  <resultMap id="BaseResultMap" type="com.meetall.commodity.crowdordering.commoditycrowdorderingprovider.pojo.Meetallptgoods" >
+    <id column="pt_goods_id" property="ptGoodsId" jdbcType="INTEGER" />
+    <result column="pt_good_name" property="ptGoodName" jdbcType="VARCHAR" />
+    <result column="pt_goods_deatails" property="ptGoodsDeatails" jdbcType="VARCHAR" />
+    <result column="pt_goods_prices" property="ptGoodsPrices" jdbcType="DOUBLE" />
+    <result column="pt_prices" property="ptPrices" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    pt_goods_id, pt_good_name, pt_goods_deatails, pt_goods_prices, pt_prices
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.meetall.commodity.crowdordering.commoditycrowdorderingprovider.pojo.MeetallptgoodsExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from MeetAllptGoods
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from MeetAllptGoods
+    where pt_goods_id = #{ptGoodsId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from MeetAllptGoods
+    where pt_goods_id = #{ptGoodsId,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.meetall.commodity.crowdordering.commoditycrowdorderingprovider.pojo.MeetallptgoodsExample" >
+    delete from MeetAllptGoods
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.meetall.commodity.crowdordering.commoditycrowdorderingprovider.pojo.Meetallptgoods" >
+    insert into MeetAllptGoods (pt_goods_id, pt_good_name, pt_goods_deatails, 
+      pt_goods_prices, pt_prices)
+    values (#{ptGoodsId,jdbcType=INTEGER}, #{ptGoodName,jdbcType=VARCHAR}, #{ptGoodsDeatails,jdbcType=VARCHAR}, 
+      #{ptGoodsPrices,jdbcType=DOUBLE}, #{ptPrices,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.meetall.commodity.crowdordering.commoditycrowdorderingprovider.pojo.Meetallptgoods" >
+    insert into MeetAllptGoods
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="ptGoodsId != null" >
+        pt_goods_id,
+      </if>
+      <if test="ptGoodName != null" >
+        pt_good_name,
+      </if>
+      <if test="ptGoodsDeatails != null" >
+        pt_goods_deatails,
+      </if>
+      <if test="ptGoodsPrices != null" >
+        pt_goods_prices,
+      </if>
+      <if test="ptPrices != null" >
+        pt_prices,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="ptGoodsId != null" >
+        #{ptGoodsId,jdbcType=INTEGER},
+      </if>
+      <if test="ptGoodName != null" >
+        #{ptGoodName,jdbcType=VARCHAR},
+      </if>
+      <if test="ptGoodsDeatails != null" >
+        #{ptGoodsDeatails,jdbcType=VARCHAR},
+      </if>
+      <if test="ptGoodsPrices != null" >
+        #{ptGoodsPrices,jdbcType=DOUBLE},
+      </if>
+      <if test="ptPrices != null" >
+        #{ptPrices,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.meetall.commodity.crowdordering.commoditycrowdorderingprovider.pojo.MeetallptgoodsExample" resultType="java.lang.Integer" >
+    select count(*) from MeetAllptGoods
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update MeetAllptGoods
+    <set >
+      <if test="record.ptGoodsId != null" >
+        pt_goods_id = #{record.ptGoodsId,jdbcType=INTEGER},
+      </if>
+      <if test="record.ptGoodName != null" >
+        pt_good_name = #{record.ptGoodName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.ptGoodsDeatails != null" >
+        pt_goods_deatails = #{record.ptGoodsDeatails,jdbcType=VARCHAR},
+      </if>
+      <if test="record.ptGoodsPrices != null" >
+        pt_goods_prices = #{record.ptGoodsPrices,jdbcType=DOUBLE},
+      </if>
+      <if test="record.ptPrices != null" >
+        pt_prices = #{record.ptPrices,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update MeetAllptGoods
+    set pt_goods_id = #{record.ptGoodsId,jdbcType=INTEGER},
+      pt_good_name = #{record.ptGoodName,jdbcType=VARCHAR},
+      pt_goods_deatails = #{record.ptGoodsDeatails,jdbcType=VARCHAR},
+      pt_goods_prices = #{record.ptGoodsPrices,jdbcType=DOUBLE},
+      pt_prices = #{record.ptPrices,jdbcType=VARCHAR}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.meetall.commodity.crowdordering.commoditycrowdorderingprovider.pojo.Meetallptgoods" >
+    update MeetAllptGoods
+    <set >
+      <if test="ptGoodName != null" >
+        pt_good_name = #{ptGoodName,jdbcType=VARCHAR},
+      </if>
+      <if test="ptGoodsDeatails != null" >
+        pt_goods_deatails = #{ptGoodsDeatails,jdbcType=VARCHAR},
+      </if>
+      <if test="ptGoodsPrices != null" >
+        pt_goods_prices = #{ptGoodsPrices,jdbcType=DOUBLE},
+      </if>
+      <if test="ptPrices != null" >
+        pt_prices = #{ptPrices,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where pt_goods_id = #{ptGoodsId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.meetall.commodity.crowdordering.commoditycrowdorderingprovider.pojo.Meetallptgoods" >
+    update MeetAllptGoods
+    set pt_good_name = #{ptGoodName,jdbcType=VARCHAR},
+      pt_goods_deatails = #{ptGoodsDeatails,jdbcType=VARCHAR},
+      pt_goods_prices = #{ptGoodsPrices,jdbcType=DOUBLE},
+      pt_prices = #{ptPrices,jdbcType=VARCHAR}
+    where pt_goods_id = #{ptGoodsId,jdbcType=INTEGER}
+  </update>
+</mapper>
