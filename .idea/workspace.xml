@@ -2,110 +2,63 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d039f504-4566-4066-bca5-56a30733544e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_spring_boot_starter_1_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_49.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_afterburner_2_8_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_google_collections_google_collect_snapshot_20080530.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_hystrix_hystrix_javanica_1_5_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_hystrix_hystrix_metrics_event_stream_1_5_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_hystrix_hystrix_serialization_1_5_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_rabbitmq_amqp_client_4_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_rabbitmq_http_client_1_1_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_api_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_43.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__nz_net_ultraq_thymeleaf_thymeleaf_layout_dialect_1_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ognl_ognl_3_0_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_4_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpmime_4_5_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_artifact_3_0_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_compat_3_0_alpha_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_model_3_0_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_plugin_api_3_0_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_project_3_0_alpha_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_project_builder_3_0_alpha_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_wagon_wagon_provider_api_1_0_beta_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_solr_solr_solrj_5_5_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_jdbc_8_5_16.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_juli_8_5_16.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xbean_xbean_reflect_3_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_4_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_2_4_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_classworlds_2_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_component_annotations_1_5_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_container_default_1_0_beta_3_0_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_interpolation_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_utils_1_5_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_woodstox_wstx_asl_3_2_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_21_0_GA.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_generator_mybatis_generator_core_1_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_generator_mybatis_generator_maven_plugin_1_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_1_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_1_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_noggit_noggit_0_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_sonatype_sisu_sisu_guava_0_9_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_sonatype_sisu_sisu_guice_no_aop_3_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_sonatype_sisu_sisu_inject_bean_2_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_sonatype_sisu_sisu_inject_plexus_2_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_sonatype_spice_model_builder_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_amqp_spring_amqp_1_7_3_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_amqp_spring_rabbit_1_7_3_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_amqp_1_5_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_redis_1_5_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_solr_1_5_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_1_5_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_1_5_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_hystrix_1_3_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_1_13_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_keyvalue_1_2_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_redis_1_8_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_solr_2_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_retry_spring_retry_1_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_3_10_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_messaging_4_3_10_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_4_3_10_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_3_10_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_2_1_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring4_2_1_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_unbescape_unbescape_1_1_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_9_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commoditycrowdorderingprovider/src/main/resources/generatorConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commoditycrowdorderingprovider/src/main/resources/mapper/MeetallptMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commoditycrowdorderingprovider/src/main/resources/mapper/MeetallptgoodsMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commoditycrowdorderingprovider/src/main/resources/mapper/MeetalluserptMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/controller/test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/dao/CommodityAttrbuteValueDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/dao/CommodityAttributeNameDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/dao/CommodityClassifyDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/dao/CommodityDetailsDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/dao/CommoditySkuDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/servicepojo/Commodity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commoditydetailprovider/src/main/resources/mapper/CommodityAttrbuteNameMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commoditydetailprovider/src/main/resources/mapper/CommodityAttrbuteValueMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commoditydetailprovider/src/main/resources/mapper/CommodityClassifyMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commoditydetailprovider/src/main/resources/mapper/CommodityDetailsMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commoditydetailprovider/src/main/resources/mapper/CommoditySkuMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_28.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_springcloud_common_meetallcommon_1_0_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_ezmorph_ezmorph_1_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_json_lib_json_lib_jdk13_2_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_math3_3_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_solr_solr_solrj_7_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_4_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_noggit_noggit_0_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_1_5_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commoditycrowdorderingprovider/src/main/java/com/meetall/commodity/crowdordering/commoditycrowdorderingprovider/controller/test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commoditycrowdorderingprovider/src/main/java/com/meetall/commodity/crowdordering/commoditycrowdorderingprovider/util/RedisUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/controller/CommodityController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/dao/CommodityattributerelationDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/pojo/Commodityattributerelation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/service/CommodityDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/service/CommoditySkuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/service/impl/CommodityDetailsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/service/impl/CommoditySkuServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/service/pojo/CommodityAttributeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commoditysearchconsumber/src/main/java/com/meetall/commodity/search/commoditysearchconsumber/controller/SearchProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commoditysearchconsumber/src/main/java/com/meetall/commodity/search/commoditysearchconsumber/dao/CommoditySolrMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commoditysearchconsumber/src/main/java/com/meetall/commodity/search/commoditysearchconsumber/dao/SearchProductDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commoditysearchconsumber/src/main/java/com/meetall/commodity/search/commoditysearchconsumber/dao/ShowSolr.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commoditysearchconsumber/src/main/java/com/meetall/commodity/search/commoditysearchconsumber/dao/impl/SearchProductDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commoditysearchconsumber/src/main/java/com/meetall/commodity/search/commoditysearchconsumber/dao/impl/search.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commoditysearchconsumber/src/main/java/com/meetall/commodity/search/commoditysearchconsumber/feign/CommodityDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commoditysearchconsumber/src/main/java/com/meetall/commodity/search/commoditysearchconsumber/pojo/CommodityModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commoditysearchconsumber/src/main/java/com/meetall/commodity/search/commoditysearchconsumber/pojo/CommoditySearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commoditysearchconsumber/src/main/java/com/meetall/commodity/search/commoditysearchconsumber/service/ICommoditySolrService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commoditysearchconsumber/src/main/java/com/meetall/commodity/search/commoditysearchconsumber/service/SearchProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commoditysearchconsumber/src/main/java/com/meetall/commodity/search/commoditysearchconsumber/service/impl/CommoditySolrService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commoditysearchconsumber/src/main/java/com/meetall/commodity/search/commoditysearchconsumber/service/impl/SearchProductImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commoditysearchconsumber/src/main/java/com/meetall/commodity/search/commoditysearchconsumber/util/ScheduThreadPool.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commoditydetailprovider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/commoditydetailprovider/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commoditycrowdorderingcomsumer/拼团服务" beforeDir="false" afterPath="$PROJECT_DIR$/commoditycrowdorderingcomsumer/拼团服务.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commoditycrowdorderingprovider/拼团服务.txt" beforeDir="false" afterPath="$PROJECT_DIR$/commoditycrowdorderingprovider/拼团服务.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/CommoditydetailproviderApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/CommoditydetailproviderApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/pojo/CommodityClassify.java" beforeDir="false" afterPath="$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/pojo/CommodityClassify.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/controller/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/controller/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/dao/CommodityAttrbuteValueDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/dao/CommodityAttributeValueDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/dao/CommodityAttributeNameDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/dao/CommodityAttributeNameDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/dao/CommodityDetailsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/dao/CommodityDetailsDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/dao/CommoditySkuDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/dao/CommoditySkuDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/pojo/CommodityDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/pojo/CommodityDetails.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/pojo/CommoditySku.java" beforeDir="false" afterPath="$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/pojo/CommoditySku.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commoditydetailprovider/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/commoditydetailprovider/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commoditydetailsconsumber/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/commoditydetailsconsumber/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commoditydetailsconsumber/src/main/java/com/meetall/commodity/details/commoditydetailsconsumber/CommoditydetailsconsumberApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/commoditydetailsconsumber/src/main/java/com/meetall/commodity/details/commoditydetailsconsumber/CommoditydetailsconsumberApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commoditydetailprovider/src/main/resources/mapper/CommodityAttrbuteNameMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/commoditydetailprovider/src/main/resources/mapper/CommodityAttrbuteNameMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commoditydetailprovider/src/main/resources/mapper/CommodityAttrbuteValueMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/commoditydetailprovider/src/main/resources/mapper/CommodityAttrbuteValueMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commoditydetailprovider/src/main/resources/mapper/CommodityDetailsMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/commoditydetailprovider/src/main/resources/mapper/CommodityDetailsMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commoditydetailprovider/src/main/resources/mapper/CommoditySkuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/commoditydetailprovider/src/main/resources/mapper/CommoditySkuMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commoditydetailsconsumber/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/commoditydetailsconsumber/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commoditysearchprovider/商品全文搜素" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/meetallregistry/target/" />
     <ignored path="$PROJECT_DIR$/commoditydetails/target/" />
@@ -136,195 +89,86 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="MettAllcrowdorderingDB@39.105.7.229" type="feb32156:DbDataSourceImpl" />
+        <item name="MeetAllShopDB@39.105.7.229" type="feb32156:DbDataSourceImpl" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="MettAllcrowdorderingDB@39.105.7.229" type="feb32156:DbDataSourceImpl" />
+        <item name="MeetAllShopDB@39.105.7.229" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="MettAllcrowdorderingDB@39.105.7.229" type="feb32156:DbDataSourceImpl" />
+        <item name="MeetAllShopDB@39.105.7.229" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="MettAllcrowdorderingDB: schema" type="c314c289:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="MettAllcrowdorderingDB@39.105.7.229" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="MettAllcrowdorderingDB: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="MeetAllPt: table" type="98d5ac3d:MysqlImplModel$Table" />
+        <item name="MeetAllShopDB: schema" type="c314c289:MysqlImplModel$Schema" />
       </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MeetallptgoodsMapper.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/commoditycrowdorderingprovider/src/main/resources/mapper/MeetallptgoodsMapper.xml">
+      <file leaf-file-name="CommodityDetails.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/pojo/CommodityDetails.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="21" column="15" lean-forward="true" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
+            <state relative-caret-position="1058">
+              <caret line="53" column="12" selection-start-line="53" selection-start-column="12" selection-end-line="53" selection-end-column="49" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MeetallptgoodsMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/commoditycrowdorderingprovider/src/main/java/com/meetall/commodity/crowdordering/commoditycrowdorderingprovider/dao/MeetallptgoodsMapper.java">
+      <file leaf-file-name="CommodityattributerelationServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/service/impl/CommodityattributerelationServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+            <state relative-caret-position="119">
+              <caret line="175" column="22" lean-forward="true" selection-start-line="175" selection-start-column="22" selection-end-line="175" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MeetallptMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/commoditycrowdorderingprovider/src/main/java/com/meetall/commodity/crowdordering/commoditycrowdorderingprovider/dao/MeetallptMapper.java">
+      <file leaf-file-name="test.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+            <state relative-caret-position="46">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MeetalluserptMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/commoditycrowdorderingprovider/src/main/java/com/meetall/commodity/crowdordering/commoditycrowdorderingprovider/dao/MeetalluserptMapper.java">
+      <file leaf-file-name="CommodityController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/controller/CommodityController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Meetallpt.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/commoditycrowdorderingprovider/src/main/java/com/meetall/commodity/crowdordering/commoditycrowdorderingprovider/pojo/Meetallpt.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+            <state relative-caret-position="158">
+              <caret line="66" column="14" lean-forward="true" selection-start-line="66" selection-start-column="14" selection-end-line="66" selection-end-column="14" />
               <folding>
-                <element signature="e#413#414#0" expanded="true" />
-                <element signature="e#444#445#0" expanded="true" />
-                <element signature="e#493#494#0" expanded="true" />
-                <element signature="e#533#534#0" expanded="true" />
-                <element signature="e#574#575#0" expanded="true" />
-                <element signature="e#610#611#0" expanded="true" />
-                <element signature="e#669#670#0" expanded="true" />
-                <element signature="e#719#720#0" expanded="true" />
-                <element signature="e#754#755#0" expanded="true" />
-                <element signature="e#784#785#0" expanded="true" />
-                <element signature="e#831#832#0" expanded="true" />
-                <element signature="e#869#870#0" expanded="true" />
-                <element signature="e#913#914#0" expanded="true" />
-                <element signature="e#952#953#0" expanded="true" />
-                <element signature="e#1017#1018#0" expanded="true" />
-                <element signature="e#1073#1074#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MeetallptExample.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/commoditycrowdorderingprovider/src/main/java/com/meetall/commodity/crowdordering/commoditycrowdorderingprovider/pojo/MeetallptExample.java">
+      <file leaf-file-name="CommodityAttributeNameDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/dao/CommodityAttributeNameDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            <state relative-caret-position="391">
+              <caret line="17" column="27" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MeetallptgoodsExample.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/commoditycrowdorderingprovider/src/main/java/com/meetall/commodity/crowdordering/commoditycrowdorderingprovider/pojo/MeetallptgoodsExample.java">
+      <file leaf-file-name="test.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/controller/test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            <state relative-caret-position="-1035">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Meetallptgoods.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/commoditycrowdorderingprovider/src/main/java/com/meetall/commodity/crowdordering/commoditycrowdorderingprovider/pojo/Meetallptgoods.java">
+      <file leaf-file-name="CommodityattributerelationDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/dao/CommodityattributerelationDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="610">
-              <caret line="33" column="14" lean-forward="true" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
-              <folding>
-                <element signature="e#450#451#0" expanded="true" />
-                <element signature="e#482#483#0" expanded="true" />
-                <element signature="e#533#534#0" expanded="true" />
-                <element signature="e#575#576#0" expanded="true" />
-                <element signature="e#612#613#0" expanded="true" />
-                <element signature="e#645#646#0" expanded="true" />
-                <element signature="e#697#698#0" expanded="true" />
-                <element signature="e#776#777#0" expanded="true" />
-                <element signature="e#818#819#0" expanded="true" />
-                <element signature="e#856#857#0" expanded="true" />
-                <element signature="e#1052#1053#0" expanded="true" />
-                <element signature="e#1088#1089#0" expanded="true" />
-                <element signature="e#1146#1147#0" expanded="true" />
-                <element signature="e#1196#1197#0" expanded="true" />
-                <element signature="e#1231#1232#0" expanded="true" />
-                <element signature="e#1262#1263#0" expanded="true" />
-                <element signature="e#1310#1311#0" expanded="true" />
-                <element signature="e#1383#1384#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Meetalluserpt.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/commoditycrowdorderingprovider/src/main/java/com/meetall/commodity/crowdordering/commoditycrowdorderingprovider/pojo/Meetalluserpt.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
-              <caret line="56" column="13" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
-              <folding>
-                <element signature="e#837#838#0" expanded="true" />
-                <element signature="e#864#865#0" expanded="true" />
-                <element signature="e#905#906#0" expanded="true" />
-                <element signature="e#937#938#0" expanded="true" />
-                <element signature="e#973#974#0" expanded="true" />
-                <element signature="e#1004#1005#0" expanded="true" />
-                <element signature="e#1053#1054#0" expanded="true" />
-                <element signature="e#1093#1094#0" expanded="true" />
-                <element signature="e#1134#1135#0" expanded="true" />
-                <element signature="e#1170#1171#0" expanded="true" />
-                <element signature="e#1229#1230#0" expanded="true" />
-                <element signature="e#1279#1280#0" expanded="true" />
-                <element signature="e#1315#1316#0" expanded="true" />
-                <element signature="e#1346#1347#0" expanded="true" />
-                <element signature="e#1395#1396#0" expanded="true" />
-                <element signature="e#1435#1436#0" expanded="true" />
-                <element signature="e#1470#1471#0" expanded="true" />
-                <element signature="e#1501#1502#0" expanded="true" />
-                <element signature="e#1549#1550#0" expanded="true" />
-                <element signature="e#1589#1590#0" expanded="true" />
-                <element signature="e#1625#1626#0" expanded="true" />
-                <element signature="e#1657#1658#0" expanded="true" />
-                <element signature="e#1707#1708#0" expanded="true" />
-                <element signature="e#1783#1784#0" expanded="true" />
-                <element signature="e#1823#1824#0" expanded="true" />
-                <element signature="e#1859#1860#0" expanded="true" />
-                <element signature="e#2047#2048#0" expanded="true" />
-                <element signature="e#2085#2086#0" expanded="true" />
-                <element signature="e#2275#2276#0" expanded="true" />
-                <element signature="e#2307#2308#0" expanded="true" />
-                <element signature="e#2355#2356#0" expanded="true" />
-                <element signature="e#2397#2398#0" expanded="true" />
-                <element signature="e#2437#2438#0" expanded="true" />
-                <element signature="e#2473#2474#0" expanded="true" />
-                <element signature="e#2656#2657#0" expanded="true" />
-                <element signature="e#2691#2692#0" expanded="true" />
-                <element signature="e#2745#2746#0" expanded="true" />
-                <element signature="e#2793#2794#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MeetalluserptExample.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/commoditycrowdorderingprovider/src/main/java/com/meetall/commodity/crowdordering/commoditycrowdorderingprovider/pojo/MeetalluserptExample.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            <state relative-caret-position="1610">
+              <caret line="73" column="1" selection-start-line="73" selection-start-column="1" selection-end-line="73" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -336,11 +180,16 @@
       <list>
         <option value="FxmlFile" />
         <option value="mybatisMapper" />
-        <option value="Class" />
-        <option value="Interface" />
         <option value="mybatis-config" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>getAttributeNameValue</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -348,48 +197,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/meetallregistry/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/meetallregistry/src/main/java/com/meetall/registry/meetallregistry/MeetallregistryApplication.java" />
-        <option value="$PROJECT_DIR$/meetallregistry/pom.xml" />
-        <option value="$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/pojo/CommodityAttributeName.java" />
-        <option value="$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/pojo/CommodityAttrbuteValue.java" />
-        <option value="$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/test.java" />
-        <option value="$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/CommoditydetailproviderApplication.java" />
-        <option value="$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/pojo/CommodityDetails.java" />
-        <option value="$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/dao/CommodityAttrbuteValueDao.java" />
-        <option value="$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/dao/CommodityAttributeNameDao.java" />
-        <option value="$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/dao/CommodityClassifyDao.java" />
-        <option value="$PROJECT_DIR$/commoditydetailprovider/src/main/resources/mapper/CommodityAttrbuteNameMapper.xml" />
-        <option value="$PROJECT_DIR$/commoditydetailprovider/src/main/resources/mapper/CommodityAttrbuteValueMapper.xml" />
-        <option value="$PROJECT_DIR$/commoditydetailprovider/src/main/resources/mapper/CommodityDetailsMapper.xml" />
-        <option value="$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/pojo/CommoditySku.java" />
-        <option value="$PROJECT_DIR$/commoditydetailprovider/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/dao/CommoditySkuDao.java" />
-        <option value="$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/pojo/CommodityClassify.java" />
-        <option value="$PROJECT_DIR$/commoditydetailprovider/src/main/resources/mapper/CommodityClassifyMapper.xml" />
-        <option value="$PROJECT_DIR$/commoditydetailprovider/src/main/resources/mapper/CommoditySkuMapper.xml" />
-        <option value="$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/controller/test.java" />
-        <option value="$PROJECT_DIR$/commoditydetailprovider/pom.xml" />
-        <option value="$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/dao/SearchCommodityDao.java" />
-        <option value="$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/dao/CommodityDetailsDao.java" />
-        <option value="$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/servicepojo/Commodity.java" />
-        <option value="$PROJECT_DIR$/commoditysearchprovider/pom.xml" />
-        <option value="$PROJECT_DIR$/commoditycrowdorderingcomsumer/pom.xml" />
-        <option value="$PROJECT_DIR$/commoditycrowdorderingcomsumer/src/main/java/com/meetall/commodity/crowdordering/commoditycrowdorderingcomsumer/CommoditycrowdorderingcomsumerApplication.java" />
-        <option value="$PROJECT_DIR$/commoditycrowdorderingprovider/src/main/java/com/meetall/commodity/crowdordering/commoditycrowdorderingprovider/CommoditycrowdorderingproviderApplication.java" />
-        <option value="$PROJECT_DIR$/commoditysearchprovider/src/main/java/com/meetall/commodity/search/commoditysearchprovider/CommoditysearchproviderApplication.java" />
-        <option value="$PROJECT_DIR$/commoditydetailsconsumber/src/main/java/com/meetall/commodity/details/commoditydetailsconsumber/CommoditydetailsconsumberApplication.java" />
-        <option value="$PROJECT_DIR$/commoditydetailsconsumber/pom.xml" />
-        <option value="$PROJECT_DIR$/commoditysearchconsumber/pom.xml" />
-        <option value="$PROJECT_DIR$/commoditysearchconsumber/src/main/java/com/meetall/commodity/search/commoditysearchconsumber/CommoditysearchconsumberApplication.java" />
-        <option value="$PROJECT_DIR$/commoditycrowdorderingprovider/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/commoditycrowdorderingprovider/src/main/resources/dbcp1.properties" />
         <option value="$PROJECT_DIR$/commoditycrowdorderingprovider/pom.xml" />
-        <option value="$PROJECT_DIR$/commoditycrowdorderingprovider/src/main/resources/generatorConfig.xml" />
+        <option value="$PROJECT_DIR$/commoditycrowdorderingprovider/src/main/java/com/meetall/commodity/crowdordering/commoditycrowdorderingprovider/controller/test.java" />
+        <option value="$PROJECT_DIR$/commoditycrowdorderingprovider/src/main/java/com/meetall/commodity/crowdordering/commoditycrowdorderingprovider/CommoditycrowdorderingproviderApplication.java" />
+        <option value="$PROJECT_DIR$/commoditysearchprovider/src/main/java/com/meetall/commodity/search/commoditysearchprovider/dao/impl/SearchProductDaoImpl.java" />
         <option value="$PROJECT_DIR$/commoditycrowdorderingprovider/src/main/java/com/meetall/commodity/crowdordering/commoditycrowdorderingprovider/pojo/Meetallpt.java" />
         <option value="$PROJECT_DIR$/commoditycrowdorderingprovider/src/main/java/com/meetall/commodity/crowdordering/commoditycrowdorderingprovider/pojo/Meetallptgoods.java" />
         <option value="$PROJECT_DIR$/commoditycrowdorderingprovider/src/main/java/com/meetall/commodity/crowdordering/commoditycrowdorderingprovider/pojo/Meetalluserpt.java" />
-        <option value="$PROJECT_DIR$/commoditycrowdorderingprovider/src/main/resources/mapper/MeetallptgoodsMapper.xml" />
+        <option value="$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/dao/CommoditySkuDao.java" />
+        <option value="$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/dao/CommodityAttrbuteValueDao.java" />
+        <option value="$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/test.java" />
+        <option value="$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/service/impl/CommoditySku.java" />
+        <option value="$PROJECT_DIR$/commoditydetailprovider/src/main/resources/mapper/CommoditySkuMapper.xml" />
+        <option value="$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/service/CommodityAllInfoService.java" />
+        <option value="$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/service/impl/CommodityAllInfo.java" />
+        <option value="$PROJECT_DIR$/commoditycrowdorderingprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/dao/service/impl/CommodityattributerelationServiceImpl.java" />
+        <option value="$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/service/impl/CommodityDetailsServiceImpl.java" />
+        <option value="$PROJECT_DIR$/commoditydetailprovider/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/commoditysearchconsumber/src/main/java/com/meetall/commodity/search/commoditysearchconsumber/feign/CommodityDetail.java" />
+        <option value="$PROJECT_DIR$/commoditysearchconsumber/src/main/java/com/meetall/commodity/search/commoditysearchconsumber/util/ScheduThreadPool.java" />
+        <option value="$PROJECT_DIR$/commoditysearchconsumber/src/main/java/com/meetall/commodity/search/commoditysearchconsumber/pojo/CommoditySearch.java" />
+        <option value="$PROJECT_DIR$/commoditysearchprovider/pom.xml" />
+        <option value="$PROJECT_DIR$/commoditysearchconsumber/src/main/java/com/meetall/commodity/search/commoditysearchconsumber/service/SearchProductService.java" />
+        <option value="$PROJECT_DIR$/commoditysearchconsumber/src/main/java/com/meetall/commodity/search/commoditysearchconsumber/service/ICommoditySolrService.java" />
+        <option value="$PROJECT_DIR$/commoditysearchconsumber/src/main/java/com/meetall/commodity/search/commoditysearchconsumber/dao/CommoditySolrMapper.java" />
+        <option value="$PROJECT_DIR$/commoditysearchconsumber/src/main/java/com/meetall/commodity/search/commoditysearchconsumber/controller/SolrController.java" />
+        <option value="$PROJECT_DIR$/commoditysearchconsumber/src/main/java/com/meetall/commodity/search/commoditysearchconsumber/service/impl/SearchProductImpl.java" />
+        <option value="$PROJECT_DIR$/commoditysearchconsumber/src/main/java/com/meetall/commodity/search/commoditysearchconsumber/CommoditysearchconsumberApplication.java" />
+        <option value="$PROJECT_DIR$/commoditysearchconsumber/pom.xml" />
+        <option value="$PROJECT_DIR$/commoditysearchconsumber/src/main/java/com/meetall/commodity/search/commoditysearchconsumber/controller/SearchProductController.java" />
+        <option value="$PROJECT_DIR$/commoditysearchconsumber/src/main/java/com/meetall/commodity/search/commoditysearchconsumber/dao/SearchProductDao.java" />
+        <option value="$PROJECT_DIR$/commoditysearchconsumber/src/main/java/com/meetall/commodity/search/commoditysearchconsumber/dao/ShowSolr.java" />
+        <option value="$PROJECT_DIR$/commoditysearchconsumber/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/commoditysearchconsumber/src/main/java/com/meetall/commodity/search/commoditysearchconsumber/controller/test.java" />
+        <option value="$PROJECT_DIR$/commoditysearchconsumber/src/main/java/com/meetall/commodity/search/commoditysearchconsumber/service/impl/CommoditySolrService.java" />
+        <option value="$PROJECT_DIR$/commoditysearchconsumber/src/main/java/com/meetall/commodity/search/commoditysearchconsumber/pojo/CommodityModel.java" />
+        <option value="$PROJECT_DIR$/commoditysearchconsumber/src/main/java/com/meetall/commodity/search/commoditysearchconsumber/dao/impl/SearchProductDaoImpl.java" />
+        <option value="$PROJECT_DIR$/commoditysearchconsumber/src/main/java/com/meetall/commodity/search/commoditysearchconsumber/dao/impl/search.java" />
+        <option value="$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/service/CommodityattributerelationService.java" />
+        <option value="$PROJECT_DIR$/commoditydetailprovider/src/main/resources/mapper/CommodityAttrbuteNameMapper.xml" />
+        <option value="$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/dao/CommodityAttributeNameDao.java" />
+        <option value="$PROJECT_DIR$/commoditydetailprovider/src/main/resources/mapper/CommodityAttrbuteValueMapper.xml" />
+        <option value="$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/dao/CommodityAttributeValueDao.java" />
+        <option value="$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/pojo/Commodityattributerelation.java" />
+        <option value="$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/service/pojo/CommodityAttributeService.java" />
+        <option value="$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/controller/CommodityController.java" />
+        <option value="$PROJECT_DIR$/commoditydetailprovider/src/main/resources/mapper/CommodityattributerelationDao.xml" />
+        <option value="$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/dao/CommodityattributerelationDao.java" />
+        <option value="$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/service/impl/CommoditySkuServiceImpl.java" />
+        <option value="$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/pojo/CommodityDetails.java" />
+        <option value="$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/controller/test.java" />
+        <option value="$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/service/impl/CommodityattributerelationServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -419,24 +277,7 @@
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="commoditycrowdorderingprovider" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="commoditycrowdorderingprovider" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="commoditycrowdorderingprovider" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-          <item name="mybatis-generator" type="36feed69:MavenProjectsStructure$PluginNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="commoditycrowdorderingprovider" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-          <item name="resources" type="36feed69:MavenProjectsStructure$PluginNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
@@ -472,11 +313,11 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="490" />
-    <option name="y" value="95" />
-    <option name="width" value="535" />
-    <option name="height" value="730" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="70" />
+    <option name="y" value="56" />
+    <option name="width" value="1210" />
+    <option name="height" value="670" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -493,62 +334,114 @@
             <path>
               <item name="MeetAll" type="b2602c69:ProjectViewProjectNode" />
               <item name="MeetAll" type="462c0819:PsiDirectoryNode" />
-              <item name="commoditycrowdorderingprovider" type="462c0819:PsiDirectoryNode" />
+              <item name="commoditydetailprovider" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MeetAll" type="b2602c69:ProjectViewProjectNode" />
               <item name="MeetAll" type="462c0819:PsiDirectoryNode" />
-              <item name="commoditycrowdorderingprovider" type="462c0819:PsiDirectoryNode" />
+              <item name="commoditydetailprovider" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MeetAll" type="b2602c69:ProjectViewProjectNode" />
               <item name="MeetAll" type="462c0819:PsiDirectoryNode" />
-              <item name="commoditycrowdorderingprovider" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MeetAll" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MeetAll" type="462c0819:PsiDirectoryNode" />
-              <item name="commoditycrowdorderingprovider" type="462c0819:PsiDirectoryNode" />
+              <item name="commoditydetailprovider" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MeetAll" type="b2602c69:ProjectViewProjectNode" />
               <item name="MeetAll" type="462c0819:PsiDirectoryNode" />
-              <item name="commoditycrowdorderingprovider" type="462c0819:PsiDirectoryNode" />
+              <item name="commoditydetailprovider" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="commoditycrowdorderingprovider" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MeetAll" type="b2602c69:ProjectViewProjectNode" />
               <item name="MeetAll" type="462c0819:PsiDirectoryNode" />
-              <item name="commoditycrowdorderingprovider" type="462c0819:PsiDirectoryNode" />
+              <item name="commoditydetailprovider" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="commoditycrowdorderingprovider" type="462c0819:PsiDirectoryNode" />
+              <item name="commoditydetailprovider" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MeetAll" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MeetAll" type="462c0819:PsiDirectoryNode" />
+              <item name="commoditydetailprovider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="commoditydetailprovider" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MeetAll" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MeetAll" type="462c0819:PsiDirectoryNode" />
+              <item name="commoditydetailprovider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="commoditydetailprovider" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MeetAll" type="b2602c69:ProjectViewProjectNode" />
               <item name="MeetAll" type="462c0819:PsiDirectoryNode" />
-              <item name="commoditycrowdorderingprovider" type="462c0819:PsiDirectoryNode" />
+              <item name="commoditydetailprovider" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="commoditycrowdorderingprovider" type="462c0819:PsiDirectoryNode" />
+              <item name="commoditydetailprovider" type="462c0819:PsiDirectoryNode" />
               <item name="pojo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MeetAll" type="b2602c69:ProjectViewProjectNode" />
               <item name="MeetAll" type="462c0819:PsiDirectoryNode" />
-              <item name="commoditycrowdorderingprovider" type="462c0819:PsiDirectoryNode" />
+              <item name="commoditydetailprovider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="commoditydetailprovider" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MeetAll" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MeetAll" type="462c0819:PsiDirectoryNode" />
+              <item name="commoditydetailprovider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="commoditydetailprovider" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MeetAll" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MeetAll" type="462c0819:PsiDirectoryNode" />
+              <item name="commoditydetailprovider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="commoditydetailprovider" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MeetAll" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MeetAll" type="462c0819:PsiDirectoryNode" />
+              <item name="commoditydetailprovider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="commoditydetailprovider" type="462c0819:PsiDirectoryNode" />
+              <item name="servicepojo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MeetAll" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MeetAll" type="462c0819:PsiDirectoryNode" />
+              <item name="commoditydetailprovider" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
@@ -556,7 +449,7 @@
             <path>
               <item name="MeetAll" type="b2602c69:ProjectViewProjectNode" />
               <item name="MeetAll" type="462c0819:PsiDirectoryNode" />
-              <item name="commoditycrowdorderingprovider" type="462c0819:PsiDirectoryNode" />
+              <item name="commoditydetailprovider" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
@@ -565,9 +458,117 @@
             <path>
               <item name="MeetAll" type="b2602c69:ProjectViewProjectNode" />
               <item name="MeetAll" type="462c0819:PsiDirectoryNode" />
-              <item name="commoditycrowdorderingprovider" type="462c0819:PsiDirectoryNode" />
+              <item name="commoditysearchconsumber" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MeetAll" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MeetAll" type="462c0819:PsiDirectoryNode" />
+              <item name="commoditysearchconsumber" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MeetAll" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MeetAll" type="462c0819:PsiDirectoryNode" />
+              <item name="commoditysearchconsumber" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MeetAll" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MeetAll" type="462c0819:PsiDirectoryNode" />
+              <item name="commoditysearchconsumber" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MeetAll" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MeetAll" type="462c0819:PsiDirectoryNode" />
+              <item name="commoditysearchconsumber" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="commoditysearchconsumber" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MeetAll" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MeetAll" type="462c0819:PsiDirectoryNode" />
+              <item name="commoditysearchconsumber" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="commoditysearchconsumber" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MeetAll" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MeetAll" type="462c0819:PsiDirectoryNode" />
+              <item name="commoditysearchconsumber" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="commoditysearchconsumber" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MeetAll" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MeetAll" type="462c0819:PsiDirectoryNode" />
+              <item name="commoditysearchconsumber" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="commoditysearchconsumber" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MeetAll" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MeetAll" type="462c0819:PsiDirectoryNode" />
+              <item name="commoditysearchconsumber" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="commoditysearchconsumber" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MeetAll" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MeetAll" type="462c0819:PsiDirectoryNode" />
+              <item name="commoditysearchconsumber" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="commoditysearchconsumber" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MeetAll" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MeetAll" type="462c0819:PsiDirectoryNode" />
+              <item name="commoditysearchconsumber" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="commoditysearchconsumber" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MeetAll" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MeetAll" type="462c0819:PsiDirectoryNode" />
+              <item name="commoditysearchconsumber" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="commoditysearchconsumber" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MeetAll" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MeetAll" type="462c0819:PsiDirectoryNode" />
+              <item name="commoditysearchconsumber" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -591,10 +592,10 @@
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../solr/xc-item-show-provider" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -602,8 +603,22 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\10.30项目\MeetAll\commoditysearchconsumber\src\main\java\com\meetall\commodity\search\commoditysearchconsumber" />
+      <recent name="D:\10.30项目\MeetAll\commoditysearchprovider\src\main\java\com\meetall\commodity\search\commoditysearchprovider\controller" />
+      <recent name="D:\10.30项目\MeetAll\commoditysearchprovider\src\main\java\com\meetall\commodity\search\commoditysearchprovider\service" />
+      <recent name="D:\10.30项目\MeetAll\commoditysearchprovider\src\main\java\com\meetall\commodity\search\commoditysearchprovider\dao" />
       <recent name="D:\10.30项目\MeetAll\commoditycrowdorderingprovider\src\main\resources\mapper" />
-      <recent name="D:\10.30项目\MeetAll\commoditycrowdorderingprovider\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.meetall.commodity.search.commoditysearchconsumber.dao" />
+      <recent name="com.meetall.commodity.search.commoditysearchconsumber.util" />
+      <recent name="com.meetall.commodity.detail.commoditydetailprovider.dao" />
+      <recent name="com.meetall.commodity.detail.commoditydetailprovider.dao.dao" />
+      <recent name="com.meetall.commodity.detail.commoditydetailprovider.pojo" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\10.30项目\MeetAll\commoditydetailprovider\src\main\java\com\meetall\commodity\detail\commoditydetailprovider\service\impl" />
+      <recent name="D:\10.30项目\MeetAll\commoditydetailprovider\src\main\resources\mapper" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -640,6 +655,29 @@
       <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="com.meetall.commodity.search.commoditysearchconsumber in commoditysearchconsumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="commoditysearchconsumber" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.meetall.commodity.search.commoditysearchconsumber.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.meetall.commodity.search.commoditysearchconsumber" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -769,9 +807,11 @@
       <item itemvalue="Spring Boot.CommoditycrowdorderingproviderApplication" />
       <item itemvalue="Spring Boot.CommoditycrowdorderingcomsumerApplication" />
       <item itemvalue="Application.test" />
+      <item itemvalue="JUnit.com.meetall.commodity.search.commoditysearchconsumber in commoditysearchconsumber" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.com.meetall.commodity.search.commoditysearchconsumber in commoditysearchconsumber" />
         <item itemvalue="Application.test" />
       </list>
     </recent_temporary>
@@ -792,7 +832,12 @@
       <workItem from="1541422035759" duration="948000" />
       <workItem from="1541423021178" duration="1908000" />
       <workItem from="1541424942365" duration="6116000" />
-      <workItem from="1541466794538" duration="1446000" />
+      <workItem from="1541466794538" duration="27250000" />
+      <workItem from="1541550534322" duration="23942000" />
+      <workItem from="1541637378106" duration="14496000" />
+      <workItem from="1541662019226" duration="16678000" />
+      <workItem from="1541724021931" duration="25514000" />
+      <workItem from="1541762925321" duration="985000" />
     </task>
     <task id="LOCAL-00001" summary="商品详情生产者">
       <created>1541232221799</created>
@@ -804,17 +849,22 @@
     <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="com_meetall_commodity_search_commoditysearchconsumber_in_commoditysearchconsumber - 2018.11.08 at 16h 29m 43s.xml">
+      <configuration name="com.meetall.commodity.search.commoditysearchconsumber in commoditysearchconsumber" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37677000" />
+    <option name="totallyTimeSpent" value="145096000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="10" />
       <window_info anchor="bottom" id="Event Log" order="15" side_tool="true" />
       <window_info anchor="bottom" id="Application Servers" order="8" weight="0.2446959" />
-      <window_info anchor="right" id="Maven Projects" order="4" weight="0.15817694" />
+      <window_info anchor="right" id="Maven Projects" order="4" weight="0.09316354" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
       <window_info anchor="right" id="CDI" order="0" />
       <window_info id="Capture Tool" order="7" />
@@ -823,17 +873,18 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info id="UI Designer" order="3" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.3026874" />
       <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32956153" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="5" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.36633664" />
       <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.32673267" />
       <window_info anchor="bottom" id="Spring" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25871313" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28284183" />
       <window_info anchor="right" id="Bean Validation" order="9" weight="0.3297587" />
       <window_info id="Web" order="6" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="8" />
@@ -842,11 +893,47 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Database Console" order="0" weight="0.32956153" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="2" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="bottom" id="Application Servers" order="8" weight="0.2446959" />
+      <window_info id="Designer" order="2" />
+      <window_info anchor="right" id="Palette" order="10" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.43422914" />
+      <window_info anchor="bottom" id="Spring" order="9" />
+      <window_info anchor="bottom" id="Database Console" order="0" weight="0.32956153" />
+      <window_info anchor="bottom" id="Find" order="2" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Event Log" order="15" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32956153" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info id="Image Layers" order="5" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="right" id="Maven Projects" order="4" visible="true" weight="0.09316354" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27882037" />
+      <window_info anchor="right" id="Database" order="6" weight="0.21514745" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info id="Web" order="6" side_tool="true" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="CDI" order="0" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.145686" />
+      <window_info anchor="right" id="Bean Validation" order="9" weight="0.3297587" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -858,419 +945,449 @@
     <MESSAGE value="商品详情生产者" />
     <option name="LAST_COMMIT_MESSAGE" value="商品详情生产者" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="3" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/commoditydetailprovider/src/main/resources/mapper/CommodityAttrbuteValueMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="101" selection-start-line="3" selection-start-column="101" selection-end-line="3" selection-end-column="101" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commoditydetailprovider/src/main/resources/mapper/CommoditySkuMapper.xml">
+    <entry file="file://$PROJECT_DIR$/commoditysearchconsumber/src/main/java/com/meetall/commodity/search/commoditysearchconsumber/service/SearchProductService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
-          <caret line="9" column="65" selection-start-line="9" selection-start-column="65" selection-end-line="9" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commoditydetailprovider/src/main/resources/mapper/CommodityDetailsMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="96" selection-start-line="3" selection-start-column="96" selection-end-line="3" selection-end-column="96" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commoditydetailprovider/src/main/resources/mapper/CommodityClassifyMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/dao/CommodityAttrbuteValueDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/dao/CommodityAttributeNameDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/dao/CommodityClassifyDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/dao/SearchCommodityDao.java" />
-    <entry file="file://$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/dao/CommoditySkuDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
           <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/dao/CommodityDetailsDao.java">
+    <entry file="jar://E:/mavenjar/org/springframework/spring-context/4.3.10.RELEASE/spring-context-4.3.10.RELEASE.jar!/org/springframework/scheduling/config/ScheduledTaskRegistrar.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/pojo/CommodityAttributeName.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" selection-start-line="2" selection-end-line="4" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/pojo/CommodityClassify.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/pojo/CommodityDetails.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="31" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/pojo/CommoditySku.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="30" column="34" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/servicepojo/Commodity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/controller/test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commoditydetailprovider/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2323">
-          <caret line="101" column="6" selection-start-line="101" selection-start-column="6" selection-end-line="101" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commoditycrowdorderingprovider/src/main/java/com/meetall/commodity/crowdordering/commoditycrowdorderingprovider/CommoditycrowdorderingproviderApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/CommoditydetailproviderApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commoditycrowdorderingcomsumer/src/main/java/com/meetall/commodity/crowdordering/commoditycrowdorderingcomsumer/CommoditycrowdorderingcomsumerApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="8" selection-start-line="8" selection-end-line="9" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commoditycrowdorderingcomsumer/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="40" column="20" lean-forward="true" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commoditydetailsconsumber/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="874">
-          <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commoditydetailsconsumber/src/main/java/com/meetall/commodity/details/commoditydetailsconsumber/CommoditydetailsconsumberApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commoditysearchconsumber/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="851">
-          <caret line="37" column="32" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
+        <state relative-caret-position="190">
+          <caret line="45" column="16" selection-start-line="45" selection-start-column="16" selection-end-line="45" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/commoditysearchconsumber/src/main/java/com/meetall/commodity/search/commoditysearchconsumber/CommoditysearchconsumberApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="167">
+          <caret line="9" column="54" selection-start-line="9" selection-start-column="54" selection-end-line="9" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/commoditysearchprovider/pom.xml">
+    <entry file="file://$PROJECT_DIR$/commoditysearchconsumber/src/main/java/com/meetall/commodity/search/commoditysearchconsumber/controller/SolrController.java" />
+    <entry file="file://$PROJECT_DIR$/commoditydetailsconsumber/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1012">
-          <caret line="44" column="21" selection-start-line="44" selection-start-column="21" selection-end-line="44" selection-end-column="21" />
+        <state relative-caret-position="253">
+          <caret line="38" selection-start-line="38" selection-end-line="41" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/commoditysearchprovider/src/main/java/com/meetall/commodity/search/commoditysearchprovider/CommoditysearchproviderApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/maven/lib/maven.jar!/schemas/maven-4.0.0.xsd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5743">
-          <caret line="1523" column="6" selection-start-line="1523" selection-start-column="6" selection-end-line="1523" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commoditycrowdorderingprovider/src/main/resources/dbcp1.properties" />
-    <entry file="file://$PROJECT_DIR$/commoditydetailprovider/src/main/resources/application.yml">
+    <entry file="file://$PROJECT_DIR$/commoditysearchconsumber/src/main/java/com/meetall/commodity/search/commoditysearchconsumber/test/aaaaa.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
-          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="das://6b21acf7-4a54-4d12-af98-08c41fd6088b/schema/MettAllcrowdorderingDB/table/MeetAllUserPt">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/163f1b71-e2dc-41a5-b063-d255484dfb23/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commoditycrowdorderingprovider/src/main/resources/com/meetall/commodity/crowdordering/commoditycrowdorderingprovider/pojo/MeetallptMapper.xml">
+    <entry file="jar://E:/mavenjar/com/springcloud/common/meetallcommon/1.0-SNAPSHOT/meetallcommon-1.0-SNAPSHOT.jar!/commoditypojo/CommodityDetails.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-483" />
+        <state relative-caret-position="230">
+          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="25" />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/commoditycrowdorderingprovider/src/main/resources/generatorConfig.xml">
+    <entry file="file://$PROJECT_DIR$/commoditydetailprovider/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="50" column="39" selection-start-line="50" selection-start-column="39" selection-end-line="50" selection-end-column="39" />
+        <state relative-caret-position="1127">
+          <caret line="49" column="21" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/commoditycrowdorderingprovider/pom.xml">
+    <entry file="file://$PROJECT_DIR$/commoditysearchconsumber/src/main/java/com/meetall/commodity/search/commoditysearchconsumber/feign/CommodityDetail.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="84" column="57" selection-start-line="84" selection-start-column="57" selection-end-line="84" selection-end-column="57" />
+        <state relative-caret-position="299">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="das://6b21acf7-4a54-4d12-af98-08c41fd6088b/schema/MettAllcrowdorderingDB/table/MeetAllptGoods">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/6b21acf7-4a54-4d12-af98-08c41fd6088b/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commoditycrowdorderingprovider/src/main/resources/application.yml">
+    <entry file="file://$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/pojo/CommodityClassify.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="7" selection-start-column="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://6b21acf7-4a54-4d12-af98-08c41fd6088b/schema/MettAllcrowdorderingDB/table/MeetAllPt">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commoditysearchprovider/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commoditycrowdorderingprovider/src/main/java/com/meetall/commodity/crowdordering/commoditycrowdorderingprovider/dao/MeetallptgoodsMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commoditycrowdorderingprovider/src/main/java/com/meetall/commodity/crowdordering/commoditycrowdorderingprovider/dao/MeetallptMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commoditycrowdorderingprovider/src/main/java/com/meetall/commodity/crowdordering/commoditycrowdorderingprovider/dao/MeetalluserptMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commoditycrowdorderingprovider/src/main/java/com/meetall/commodity/crowdordering/commoditycrowdorderingprovider/pojo/MeetallptExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commoditycrowdorderingprovider/src/main/java/com/meetall/commodity/crowdordering/commoditycrowdorderingprovider/pojo/MeetalluserptExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
+        <state relative-caret-position="138">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/commoditycrowdorderingprovider/src/main/java/com/meetall/commodity/crowdordering/commoditycrowdorderingprovider/pojo/Meetallpt.java">
+    <entry file="file://$PROJECT_DIR$/commoditysearchconsumber/src/main/java/com/meetall/commodity/search/commoditysearchconsumber/service/ICommoditySolrService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+        <state relative-caret-position="207">
+          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
           <folding>
-            <element signature="e#413#414#0" expanded="true" />
-            <element signature="e#444#445#0" expanded="true" />
-            <element signature="e#493#494#0" expanded="true" />
-            <element signature="e#533#534#0" expanded="true" />
-            <element signature="e#574#575#0" expanded="true" />
-            <element signature="e#610#611#0" expanded="true" />
-            <element signature="e#669#670#0" expanded="true" />
-            <element signature="e#719#720#0" expanded="true" />
-            <element signature="e#754#755#0" expanded="true" />
-            <element signature="e#784#785#0" expanded="true" />
-            <element signature="e#831#832#0" expanded="true" />
-            <element signature="e#869#870#0" expanded="true" />
-            <element signature="e#913#914#0" expanded="true" />
-            <element signature="e#952#953#0" expanded="true" />
-            <element signature="e#1017#1018#0" expanded="true" />
-            <element signature="e#1073#1074#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/commoditycrowdorderingprovider/src/main/java/com/meetall/commodity/crowdordering/commoditycrowdorderingprovider/pojo/MeetallptgoodsExample.java">
+    <entry file="jar://E:/mavenjar/org/apache/solr/solr-solrj/7.4.0/solr-solrj-7.4.0.jar!/org/apache/solr/common/SolrDocument.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-897">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commoditysearchconsumber/src/main/java/com/meetall/commodity/search/commoditysearchconsumber/dao/SearchProductDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" lean-forward="true" selection-end-line="12" />
+          <folding>
+            <element signature="e#0#419#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commoditysearchconsumber/src/main/java/com/meetall/commodity/search/commoditysearchconsumber/dao/CommoditySolrMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/mavenjar/org/apache/solr/solr-solrj/7.4.0/solr-solrj-7.4.0.jar!/org/apache/solr/client/solrj/response/QueryResponse.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/concurrent/Executors.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="283" column="43" selection-start-line="283" selection-start-column="43" selection-end-line="283" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commoditysearchconsumber/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1150">
+          <caret line="34" column="48" selection-start-line="34" selection-start-column="48" selection-end-line="34" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commoditysearchconsumber/src/main/java/com/meetall/commodity/search/commoditysearchconsumber/dao/ShowSolr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commoditysearchconsumber/src/main/java/com/meetall/commodity/search/commoditysearchconsumber/service/impl/SearchProductImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="518">
+          <caret line="28" column="44" lean-forward="true" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commoditysearchconsumber/src/main/java/com/meetall/commodity/search/commoditysearchconsumber/util/ScheduThreadPool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="59" selection-start-line="12" selection-start-column="59" selection-end-line="12" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commoditysearchconsumber/src/main/java/com/meetall/commodity/search/commoditysearchconsumber/controller/SearchProductController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="41" column="69" selection-start-line="41" selection-start-column="69" selection-end-line="41" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commoditysearchconsumber/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commoditysearchconsumber/src/main/java/com/meetall/commodity/search/commoditysearchconsumber/controller/test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="52" column="25" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commoditysearchconsumber/src/main/java/com/meetall/commodity/search/commoditysearchconsumber/pojo/CommoditySearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+          <folding>
+            <element signature="e#1009#1010#0" expanded="true" />
+            <element signature="e#1043#1044#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/Integer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="51" column="35" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commoditysearchconsumber/src/main/java/com/meetall/commodity/search/commoditysearchconsumber/pojo/CommodityModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="966">
+          <caret line="76" column="36" selection-start-line="76" selection-start-column="36" selection-end-line="76" selection-end-column="36" />
+          <folding>
+            <element signature="e#1376#1377#0" expanded="true" />
+            <element signature="e#1430#1431#0" expanded="true" />
+            <element signature="e#1476#1477#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commoditysearchconsumber/src/main/java/com/meetall/commodity/search/commoditysearchconsumber/service/impl/CommoditySolrService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="52" column="12" selection-start-line="52" selection-start-column="12" selection-end-line="52" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commoditysearchconsumber/src/main/java/com/meetall/commodity/search/commoditysearchconsumber/dao/impl/SearchProductDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
+          <caret line="80" column="47" selection-start-line="80" selection-start-column="47" selection-end-line="80" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commoditysearchconsumber/src/main/java/com/meetall/commodity/search/commoditysearchconsumber/dao/impl/search.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-355">
+          <caret line="42" column="15" lean-forward="true" selection-start-line="42" selection-start-column="15" selection-end-line="42" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/CommoditydetailproviderApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="10" column="49" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commoditydetailprovider/src/main/resources/mapper/CommodityClassifyMapper.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/pojo/CommodityAttributeName.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/commoditycrowdorderingprovider/src/main/java/com/meetall/commodity/crowdordering/commoditycrowdorderingprovider/pojo/Meetallptgoods.java">
+    <entry file="file://$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/servicepojo/Commodity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="610">
-          <caret line="33" column="14" lean-forward="true" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
+        <state relative-caret-position="46">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/pojo/Commodityattributerelation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="21" column="50" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
           <folding>
-            <element signature="e#450#451#0" expanded="true" />
-            <element signature="e#482#483#0" expanded="true" />
-            <element signature="e#533#534#0" expanded="true" />
-            <element signature="e#575#576#0" expanded="true" />
-            <element signature="e#612#613#0" expanded="true" />
-            <element signature="e#645#646#0" expanded="true" />
-            <element signature="e#697#698#0" expanded="true" />
-            <element signature="e#776#777#0" expanded="true" />
-            <element signature="e#818#819#0" expanded="true" />
-            <element signature="e#856#857#0" expanded="true" />
-            <element signature="e#1052#1053#0" expanded="true" />
-            <element signature="e#1088#1089#0" expanded="true" />
-            <element signature="e#1146#1147#0" expanded="true" />
-            <element signature="e#1196#1197#0" expanded="true" />
-            <element signature="e#1231#1232#0" expanded="true" />
-            <element signature="e#1262#1263#0" expanded="true" />
-            <element signature="e#1310#1311#0" expanded="true" />
-            <element signature="e#1383#1384#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1042#1043#0" expanded="true" />
+            <element signature="e#1067#1068#0" expanded="true" />
+            <element signature="e#1104#1105#0" expanded="true" />
+            <element signature="e#1132#1133#0" expanded="true" />
+            <element signature="e#1175#1176#0" expanded="true" />
+            <element signature="e#1213#1214#0" expanded="true" />
+            <element signature="e#1276#1277#0" expanded="true" />
+            <element signature="e#1330#1331#0" expanded="true" />
+            <element signature="e#1386#1387#0" expanded="true" />
+            <element signature="e#1437#1438#0" expanded="true" />
+            <element signature="e#1663#1664#0" expanded="true" />
+            <element signature="e#1715#1716#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/commoditycrowdorderingprovider/src/main/java/com/meetall/commodity/crowdordering/commoditycrowdorderingprovider/pojo/Meetalluserpt.java">
+    <entry file="file://$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/service/impl/CommodityDetailsServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="56" column="13" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
+        <state relative-caret-position="255">
+          <caret line="23" column="59" lean-forward="true" selection-start-line="23" selection-start-column="59" selection-end-line="23" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commoditydetailprovider/src/main/resources/mapper/CommodityAttrbuteValueMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commoditydetailprovider/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/dao/CommodityDetailsDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/service/CommodityattributerelationService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="58" column="7" lean-forward="true" selection-start-line="58" selection-start-column="7" selection-end-line="58" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commoditydetailprovider/src/main/resources/mapper/CommodityattributerelationDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="16" column="18" lean-forward="true" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/dao/CommodityAttributeValueDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="13" column="31" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/service/pojo/CommodityAttributeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-639">
+          <caret line="16" column="10" lean-forward="true" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
           <folding>
-            <element signature="e#837#838#0" expanded="true" />
-            <element signature="e#864#865#0" expanded="true" />
-            <element signature="e#905#906#0" expanded="true" />
-            <element signature="e#937#938#0" expanded="true" />
-            <element signature="e#973#974#0" expanded="true" />
-            <element signature="e#1004#1005#0" expanded="true" />
-            <element signature="e#1053#1054#0" expanded="true" />
-            <element signature="e#1093#1094#0" expanded="true" />
-            <element signature="e#1134#1135#0" expanded="true" />
+            <element signature="e#487#488#0" expanded="true" />
+            <element signature="e#521#522#0" expanded="true" />
+            <element signature="e#576#577#0" expanded="true" />
+            <element signature="e#617#618#0" expanded="true" />
+            <element signature="e#666#667#0" expanded="true" />
+            <element signature="e#711#712#0" expanded="true" />
+            <element signature="e#900#901#0" expanded="true" />
+            <element signature="e#946#947#0" expanded="true" />
             <element signature="e#1170#1171#0" expanded="true" />
-            <element signature="e#1229#1230#0" expanded="true" />
-            <element signature="e#1279#1280#0" expanded="true" />
-            <element signature="e#1315#1316#0" expanded="true" />
-            <element signature="e#1346#1347#0" expanded="true" />
-            <element signature="e#1395#1396#0" expanded="true" />
-            <element signature="e#1435#1436#0" expanded="true" />
-            <element signature="e#1470#1471#0" expanded="true" />
-            <element signature="e#1501#1502#0" expanded="true" />
-            <element signature="e#1549#1550#0" expanded="true" />
-            <element signature="e#1589#1590#0" expanded="true" />
-            <element signature="e#1625#1626#0" expanded="true" />
-            <element signature="e#1657#1658#0" expanded="true" />
-            <element signature="e#1707#1708#0" expanded="true" />
-            <element signature="e#1783#1784#0" expanded="true" />
-            <element signature="e#1823#1824#0" expanded="true" />
-            <element signature="e#1859#1860#0" expanded="true" />
-            <element signature="e#2047#2048#0" expanded="true" />
-            <element signature="e#2085#2086#0" expanded="true" />
-            <element signature="e#2275#2276#0" expanded="true" />
-            <element signature="e#2307#2308#0" expanded="true" />
-            <element signature="e#2355#2356#0" expanded="true" />
-            <element signature="e#2397#2398#0" expanded="true" />
-            <element signature="e#2437#2438#0" expanded="true" />
-            <element signature="e#2473#2474#0" expanded="true" />
-            <element signature="e#2656#2657#0" expanded="true" />
-            <element signature="e#2691#2692#0" expanded="true" />
-            <element signature="e#2745#2746#0" expanded="true" />
-            <element signature="e#2793#2794#0" expanded="true" />
+            <element signature="e#1222#1223#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/commoditycrowdorderingprovider/src/main/resources/mapper/MeetallptgoodsMapper.xml">
+    <entry file="file://$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/service/impl/CommoditySkuServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="21" column="15" lean-forward="true" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
+        <state relative-caret-position="1127">
+          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/dao/CommodityattributerelationDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1610">
+          <caret line="73" column="1" selection-start-line="73" selection-start-column="1" selection-end-line="73" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commoditydetailprovider/src/main/resources/mapper/CommodityAttrbuteNameMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/dao/CommodityAttributeNameDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" column="27" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/pojo/CommodityDetails.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1058">
+          <caret line="53" column="12" selection-start-line="53" selection-start-column="12" selection-end-line="53" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/service/impl/CommodityattributerelationServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="175" column="22" lean-forward="true" selection-start-line="175" selection-start-column="22" selection-end-line="175" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/controller/CommodityController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="66" column="14" lean-forward="true" selection-start-line="66" selection-start-column="14" selection-end-line="66" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commoditydetailprovider/src/main/java/com/meetall/commodity/detail/commoditydetailprovider/controller/test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1035">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
           <splitter-proportions>
@@ -1284,11 +1401,24 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.7</last-edited>
+          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>MeetAllShoppingSystem</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

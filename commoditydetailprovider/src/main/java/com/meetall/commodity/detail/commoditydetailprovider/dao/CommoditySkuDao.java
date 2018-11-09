@@ -16,7 +16,8 @@ public interface CommoditySkuDao {
     CommoditySku getPriceStock(@Param("commodityNumber") Integer commodityNumber,@Param("commoditySkuAttribute") String commoditySkuAttribute);
 
     /**
-     *
+     *查询商品库存
      */
+    int getStock(@Param("commodityNumber") Integer commodityNumber,@Param("commoditySkuAttribute") String commoditySkuAttribute);
 
 }

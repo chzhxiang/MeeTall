@@ -11,7 +11,6 @@
         <module name="commoditydetailprovider" />
         <module name="commoditydetailsconsumber" />
         <module name="commoditysearchconsumber" />
-        <module name="commoditysearchprovider" />
         <module name="meetallregistry" />
       </profile>
     </annotationProcessing>

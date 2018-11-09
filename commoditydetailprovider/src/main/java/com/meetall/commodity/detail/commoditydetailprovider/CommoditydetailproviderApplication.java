@@ -9,7 +9,6 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 @EnableEurekaClient
 @MapperScan("com.meetall.commodity.detail.commoditydetailprovider.*")
 public class CommoditydetailproviderApplication {
-
     public static void main(String[] args) {
         SpringApplication.run(CommoditydetailproviderApplication.class, args);
     }

@@ -9,4 +9,8 @@
         <result column="commodity_price" property="commodityPrice"/>
         <result column="commodity_stock" property="commodityStock"/>
     </resultMap>
+    <select id="getStock" resultType="int">
+        select commodity_stock from commoditySku where commodity_number=#{commodityNumber} and commodity_sku_attribute=#{commoditySkuAttribute}
+    </select>
+
 </mapper>

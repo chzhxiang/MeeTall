@@ -8,7 +8,6 @@
       <module fileurl="file://$PROJECT_DIR$/commoditydetailprovider/commoditydetailprovider.iml" filepath="$PROJECT_DIR$/commoditydetailprovider/commoditydetailprovider.iml" />
       <module fileurl="file://$PROJECT_DIR$/commoditydetailsconsumber/commoditydetailsconsumber.iml" filepath="$PROJECT_DIR$/commoditydetailsconsumber/commoditydetailsconsumber.iml" />
       <module fileurl="file://$PROJECT_DIR$/commoditysearchconsumber/commoditysearchconsumber.iml" filepath="$PROJECT_DIR$/commoditysearchconsumber/commoditysearchconsumber.iml" />
-      <module fileurl="file://$PROJECT_DIR$/commoditysearchprovider/commoditysearchprovider.iml" filepath="$PROJECT_DIR$/commoditysearchprovider/commoditysearchprovider.iml" />
       <module fileurl="file://$PROJECT_DIR$/meetallregistry/meetallregistry.iml" filepath="$PROJECT_DIR$/meetallregistry/meetallregistry.iml" />
     </modules>
   </component>

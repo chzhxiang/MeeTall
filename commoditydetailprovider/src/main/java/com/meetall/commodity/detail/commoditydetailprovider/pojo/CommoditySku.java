@@ -22,6 +22,7 @@ public class CommoditySku {
 
     /**
      * 商品价格
+     * select MIN(commodity_price) from commoditySku where commodity_number=10001
      */
     private Double commodityPrice;
 
