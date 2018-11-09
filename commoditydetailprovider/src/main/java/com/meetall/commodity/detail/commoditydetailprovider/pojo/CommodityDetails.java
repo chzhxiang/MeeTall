@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import java.util.List;
+import java.util.Map;
 
 
 /**
@@ -52,6 +53,20 @@ public class CommodityDetails {
      *商品属性值
      */
     private List<String> CommodityAttributeValue;
+
+    /**
+     * 放入商品属性名和商品属性值
+     */
+    private Map<String,List<String>> CommoditySkuNameValue;
+
+
+    public Map<String, List<String>> getCommoditySkuNameValue() {
+        return CommoditySkuNameValue;
+    }
+
+    public void setCommoditySkuNameVAlue(Map<String, List<String>> commoditySkuNameValue) {
+        CommoditySkuNameValue = commoditySkuNameValue;
+    }
 
     public List<String> getCommdityAttributeName() {
         return CommdityAttributeName;

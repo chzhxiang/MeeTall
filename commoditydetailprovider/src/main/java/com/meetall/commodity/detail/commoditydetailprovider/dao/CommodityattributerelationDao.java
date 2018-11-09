@@ -77,4 +77,9 @@ public interface CommodityattributerelationDao {
      * 查询商品的属性值
      */
     List<Integer> getValue(Integer commodityNumber);
+
+    /**
+     * 查询商品的属性编号和属性名的 属性值集合
+     */
+    List<Integer> getValues(@Param("commodityNumber") Integer commodityNumber,@Param("attributeName") Integer attributeName);
 }
