@@ -43,16 +43,6 @@ public class CommodityDetails {
      */
     private Double commodityPrice;
 
-    /**
-     * 商品属性名
-     *
-     */
-    private List<String> CommdityAttributeName;
-
-    /**
-     *商品属性值
-     */
-    private List<String> CommodityAttributeValue;
 
     /**
      * 放入商品属性名和商品属性值
@@ -66,22 +56,6 @@ public class CommodityDetails {
 
     public void setCommoditySkuNameVAlue(Map<String, List<String>> commoditySkuNameValue) {
         CommoditySkuNameValue = commoditySkuNameValue;
-    }
-
-    public List<String> getCommdityAttributeName() {
-        return CommdityAttributeName;
-    }
-
-    public void setCommdityAttributeName(List<String> commdityAttributeName) {
-        CommdityAttributeName = commdityAttributeName;
-    }
-
-    public List<String> getCommodityAttributeValue() {
-        return CommodityAttributeValue;
-    }
-
-    public void setCommodityAttributeValue(List<String> commodityAttributeValue) {
-        CommodityAttributeValue = commodityAttributeValue;
     }
 
 

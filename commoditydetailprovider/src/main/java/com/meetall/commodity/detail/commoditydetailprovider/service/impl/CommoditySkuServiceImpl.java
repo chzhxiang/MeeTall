@@ -4,6 +4,7 @@ import com.alibaba.fastjson.JSON;
 import com.meetall.commodity.detail.commoditydetailprovider.dao.CommodityAttributeNameDao;
 import com.meetall.commodity.detail.commoditydetailprovider.dao.CommodityAttributeValueDao;
 import com.meetall.commodity.detail.commoditydetailprovider.dao.CommoditySkuDao;
+import com.meetall.commodity.detail.commoditydetailprovider.pojo.CommoditySku;
 import com.meetall.commodity.detail.commoditydetailprovider.service.CommoditySkuService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -49,9 +50,9 @@ public class CommoditySkuServiceImpl implements CommoditySkuService {
         String last = Start + all + "]";
         System.out.println(last);
 
-        int stock = commoditySkuDao.getStock(commodityNumber, last);
+        CommoditySku stock = commoditySkuDao.getPriceStock(commodityNumber, last);
 
-        return String.valueOf(stock);
+        return JSON.toJSONString(stock);
     }
 
 }

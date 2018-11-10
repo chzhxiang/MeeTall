@@ -18,6 +18,12 @@ public interface CommodityDetailsDao {
      * 查询所有商品
      */
     List<CommodityDetails> getAll();
+
+    /**
+     * 查询指定商品的sku
+     */
+    CommodityDetails getCommodityIdSku(Integer commodityId);
+
     /**
      * 查询商品价格
      */

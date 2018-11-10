@@ -18,4 +18,15 @@
     <select id="GetCommodityprice" parameterType="int" resultType="Double">
         select MIN(commodity_price) as commodity_price from commoditySku where commodity_number=#{commodityId}
     </select>
+    <select id="getCommodityIdSku" resultMap="select" parameterType="int">
+        select commodity_id,image,product_name,commodity_classify,commodity_describe from commodityDetails where commodity_id = #{commodityId}
+    </select>
+    <resultMap id="select" type="com.meetall.commodity.detail.commoditydetailprovider.pojo.CommodityDetails">
+        <result column="commodity_id" property="commodityId"/>
+        <result column="image" property="image"/>
+        <result column="product_name" property="productName"/>
+        <result column="commodity_classify" property="commodityClassify"/>
+        <result column="commodity_describe" property="commodityDescribe"/>
+    </resultMap>
+
 </mapper>

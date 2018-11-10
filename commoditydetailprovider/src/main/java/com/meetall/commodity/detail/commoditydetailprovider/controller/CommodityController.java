@@ -5,14 +5,13 @@ import com.meetall.commodity.detail.commoditydetailprovider.dao.CommodityDetails
 import com.meetall.commodity.detail.commoditydetailprovider.pojo.CommodityDetails;
 import com.meetall.commodity.detail.commoditydetailprovider.service.impl.CommodityDetailsServiceImpl;
 import com.meetall.commodity.detail.commoditydetailprovider.service.impl.CommoditySkuServiceImpl;
+import com.meetall.commodity.detail.commoditydetailprovider.service.impl.CommodityattributerelationServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
-import java.util.List;
 
 @SuppressWarnings("ALL")
 @RestController
@@ -38,11 +37,11 @@ public class CommodityController {
     }
 
     /**
-     * 查询商品库存
+     * 查询商品库存和价格
      */
     @RequestMapping("/selectcommoditystock")
-    public String CommodityStock(@RequestParam("attributename") String attributename[],@RequestParam("attributevalue") String attributevalue[]){
-        return commoditySkuService.CommodityStock(10001,attributename,attributevalue);
+    public String CommodityStock(@RequestParam("commodityId")Integer commodityId, @RequestParam("attributename") String attributename[],@RequestParam("attributevalue") String attributevalue[]){
+        return commoditySkuService.CommodityStock(commodityId,attributename,attributevalue);
     }
     /**
      * 根据商品编号查询商品信息
@@ -55,7 +54,7 @@ public class CommodityController {
     /**
      * 根据商品编号查询该商品所有的sku字段信息
      */
-    @RequestMapping("selectcommoditysku")
+    @RequestMapping("/selectcommoditysku")
     public String GetCommoditySkuAttribute(@RequestParam("commodityId") Integer commodityId){
         return null;
     }
@@ -65,7 +64,7 @@ public class CommodityController {
     /**
      * 查询商品全部信息  包括商品介绍名称，价格(最低价格)
      * @return
-     */
+
     @RequestMapping(value = "/getcommodityall",method = RequestMethod.GET)
     public String CommodityAll(){
         List<CommodityDetails> a = commodityDetailsDao.getAll();
@@ -74,4 +73,26 @@ public class CommodityController {
         }
         return JSON.toJSONString(a);
     }
+    */
+    /**
+     * 查询到商品所有的信息，商品名称，分类编号，商品id，商品价格，商品sku属性数组集合，商品图片
+     */
+    @Autowired
+    private CommodityattributerelationServiceImpl commodityattributerelationService;
+    @RequestMapping("/getcommodityall")
+    public String getcommodityall(){
+        return commodityattributerelationService.CommodityAll();
+    }
+
+    /**
+     * 通过商品id查询商品的信息
+     * @param comid
+     * @return
+     */
+    @RequestMapping("/getcommodityalls")
+    public String getcommodityID(@RequestParam("CommodityId") Integer CommodityId){
+        return commodityattributerelationService.CommodityIdSku(CommodityId);
+    }
+
+
 }

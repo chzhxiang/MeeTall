@@ -73,11 +73,5 @@ public class test {
         return JSON.toJSONString(commodityattributerelationDao.getAttributeNameValue(10001));
     }
 
-    @Autowired
-    private CommodityattributerelationServiceImpl commodityattributerelationService;
-    @RequestMapping("/poi")
-    public String asda(){
-        return commodityattributerelationService.CommodityAll();
-       //  JSON.toJSONString(commodityattributerelationDao.getName(10001));
-    }
+
 }
