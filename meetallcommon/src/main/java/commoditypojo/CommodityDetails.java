@@ -1,45 +1,68 @@
 package commoditypojo;
 
+import java.util.List;
+import java.util.Map;
+
+
 /**
  * 商品详情
  */
 public class CommodityDetails {
-
-    private Integer commodityId;
     /**
      * 商品编号
      */
-    private String image;
+    private Integer commodityId;
     /**
      * 图片
      */
-    private String productName;
+    private String image;
     /**
      * 商品名称
      */
-    private Integer commodityClassify;
+    private String productName;
     /**
      * 商品分类
      */
-    private String commodityDescribe;
+    private Integer commodityClassify;
     /**
      * commodity_describe
      * 商品描述
      */
-    private Double commosityPrice;
+    private String commodityDescribe;
+
 
     /**
      * 商品价格
-     * @return
      */
-    public Double getCommosityPrice() {
-        return commosityPrice;
+    private Double commodityPrice;
+
+
+    /**
+     * 放入商品属性名和商品属性值
+     */
+    private Map<String,List<String>> CommoditySkuNameValue;
+
+
+    public Map<String, List<String>> getCommoditySkuNameValue() {
+        return CommoditySkuNameValue;
     }
 
-    public void setCommosityPrice(Double commosityPrice) {
-        this.commosityPrice = commosityPrice;
+    public void setCommoditySkuNameVAlue(Map<String, List<String>> commoditySkuNameValue) {
+        CommoditySkuNameValue = commoditySkuNameValue;
     }
 
+
+
+
+
+
+    public Double getCommodityPrice() {
+        return commodityPrice;
+    }
+
+    public void setCommodityPrice(Double commodityPrice) {
+        this.commodityPrice = commodityPrice;
+    }
     public Integer getCommodityId() {
         return commodityId;
     }
