@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.meetalluserinfoproducer.dao.UserDao">
+
+    <resultMap type="com.example.meetalluserinfoproducer.entity.User" id="UserMap">
+        <result property="id" column="id" jdbcType="INTEGER"/>
+        <result property="screenName" column="screen_name" jdbcType="VARCHAR"/>
+        <result property="userName" column="user_name" jdbcType="VARCHAR"/>
+        <result property="userAge" column="user_age" jdbcType="INTEGER"/>
+        <result property="userSex" column="user_sex" jdbcType="INTEGER"/>
+        <result property="phone" column="phone" jdbcType="INTEGER"/>
+        <result property="headurl" column="headurl" jdbcType="VARCHAR"/>
+        <result property="profileId" column="profile_id" jdbcType="INTEGER"/>
+        <result property="user1" column="user1" jdbcType="VARCHAR"/>
+        <result property="user2" column="user2" jdbcType="VARCHAR"/>
+        <result property="user3" column="user3" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="UserMap">
+        select
+          id, screen_name, user_name, user_age, user_sex, phone, headurl, profile_id
+        from MeetAllUserInfoDB.user
+        where id = #{id}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="UserMap">
+        select
+          id, screen_name, user_name, user_age, user_sex, phone, headurl, profile_id
+        from MeetAllUserInfoDB.user
+        limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="UserMap">
+        select
+          id, screen_name, user_name, user_age, user_sex, phone, headurl, profile_id
+        from MeetAllUserInfoDB.user
+        <where>
+            <if test="id != null">
+                and id = #{id}
+            </if>
+            <if test="screenName != null and screenName != ''">
+                and screen_name = #{screenName}
+            </if>
+            <if test="userName != null and userName != ''">
+                and user_name = #{userName}
+            </if>
+            <if test="userAge != null">
+                and user_age = #{userAge}
+            </if>
+            <if test="userSex != null">
+                and user_sex = #{userSex}
+            </if>
+            <if test="phone != null">
+                and phone = #{phone}
+            </if>
+            <if test="headurl != null and headurl != ''">
+                and headurl = #{headurl}
+            </if>
+            <if test="profileId != null">
+                and profile_id = #{profileId}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="id" useGeneratedKeys="true">
+        insert into MeetAllUserInfoDB.user(screen_name, user_name, user_age, user_sex, phone, headurl, profile_id)
+        values (#{screenName}, #{userName}, #{userAge}, #{userSex}, #{phone}, #{headurl}, #{profileId})
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update MeetAllUserInfoDB.user
+        <set>
+            <if test="screenName != null and screenName != ''">
+                screen_name = #{screenName},
+            </if>
+            <if test="userName != null and userName != ''">
+                user_name = #{userName},
+            </if>
+            <if test="userAge != null">
+                user_age = #{userAge},
+            </if>
+            <if test="userSex != null">
+                user_sex = #{userSex},
+            </if>
+            <if test="phone != null">
+                phone = #{phone},
+            </if>
+            <if test="headurl != null and headurl != ''">
+                headurl = #{headurl},
+            </if>
+            <if test="profileId != null">
+                profile_id = #{profileId},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from MeetAllUserInfoDB.user where id = #{id}
+    </delete>
+    <update id="updateScreenName" >
+         update MeetAllUserInfoDB.user set screen_name=#{screenName} where id = #{id}
+    </update>
+</mapper>

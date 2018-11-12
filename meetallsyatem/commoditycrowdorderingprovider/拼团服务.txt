@@ -1,0 +1,1 @@
+cp /usr/local/solr/solr-7.3.0/server/solr/configsets/_default/conf -r /usr/local/solr/solrhome/new_core/

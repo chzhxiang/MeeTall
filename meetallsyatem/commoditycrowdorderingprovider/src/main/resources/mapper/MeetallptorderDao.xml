@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.meetall.commodity.crowdordering.commoditycrowdorderingprovider.dao.MeetallptorderDao">
+
+    <resultMap type="com.meetall.commodity.crowdordering.commoditycrowdorderingprovider.pojo.Meetallptorder" id="MeetallptorderMap">
+        <result property="ptOrderNumber" column="pt_order_number" jdbcType="INTEGER"/>
+        <result property="ptGroupNumber" column="pt_group_number" jdbcType="INTEGER"/>
+        <result property="ptCommodityId" column="pt_commodity_id" jdbcType="INTEGER"/>
+        <result property="ptPrice" column="pt_price" jdbcType="OTHER"/>
+        <result property="ptOriginalPrice" column="pt_original_price" jdbcType="OTHER"/>
+        <result property="ptOrderMoney" column="pt_order_money" jdbcType="OTHER"/>
+        <result property="ptOrderState" column="pt_order_state" jdbcType="INTEGER"/>
+        <result property="ptPayState" column="pt_pay_state" jdbcType="INTEGER"/>
+        <result property="ptCreateTime" column="pt_create_time" jdbcType="TIMESTAMP"/>
+        <result property="ptUpdateTime" column="pt_update_time" jdbcType="TIMESTAMP"/>
+        <result property="ptPayMoney" column="pt_pay_money" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="MeetallptorderMap">
+        select
+          pt_order_number, pt_group_number, pt_commodity_id, pt_price, pt_original_price, pt_order_money, pt_order_state, pt_pay_state, pt_create_time, pt_update_time, pt_pay_money, u1, u2, u3
+        from MettAllcrowdorderingDB.MeetAllPtOrder
+        where pt_order_number = #{ptOrderNumber}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="MeetallptorderMap">
+        select
+          pt_order_number, pt_group_number, pt_commodity_id, pt_price, pt_original_price, pt_order_money, pt_order_state, pt_pay_state, pt_create_time, pt_update_time, pt_pay_money, u1, u2, u3
+        from MettAllcrowdorderingDB.MeetAllPtOrder
+        limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="MeetallptorderMap">
+        select
+          pt_order_number, pt_group_number, pt_commodity_id, pt_price, pt_original_price, pt_order_money, pt_order_state, pt_pay_state, pt_create_time, pt_update_time, pt_pay_money, u1, u2, u3
+        from MettAllcrowdorderingDB.MeetAllPtOrder
+        <where>
+            <if test="ptOrderNumber != null">
+                and pt_order_number = #{ptOrderNumber}
+            </if>
+            <if test="ptGroupNumber != null">
+                and pt_group_number = #{ptGroupNumber}
+            </if>
+            <if test="ptCommodityId != null">
+                and pt_commodity_id = #{ptCommodityId}
+            </if>
+            <if test="ptPrice != null">
+                and pt_price = #{ptPrice}
+            </if>
+            <if test="ptOriginalPrice != null">
+                and pt_original_price = #{ptOriginalPrice}
+            </if>
+            <if test="ptOrderMoney != null">
+                and pt_order_money = #{ptOrderMoney}
+            </if>
+            <if test="ptOrderState != null">
+                and pt_order_state = #{ptOrderState}
+            </if>
+            <if test="ptPayState != null">
+                and pt_pay_state = #{ptPayState}
+            </if>
+            <if test="ptCreateTime != null">
+                and pt_create_time = #{ptCreateTime}
+            </if>
+            <if test="ptUpdateTime != null">
+                and pt_update_time = #{ptUpdateTime}
+            </if>
+            <if test="ptPayMoney != null and ptPayMoney != ''">
+                and pt_pay_money = #{ptPayMoney}
+            </if>
+
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="ptOrderNumber" useGeneratedKeys="true">
+        insert into MettAllcrowdorderingDB.MeetAllPtOrder(pt_group_number, pt_commodity_id, pt_price, pt_original_price, pt_order_money, pt_order_state, pt_pay_state, pt_create_time, pt_update_time, pt_pay_money, u1, u2, u3)
+        values (#{ptGroupNumber}, #{ptCommodityId}, #{ptPrice}, #{ptOriginalPrice}, #{ptOrderMoney}, #{ptOrderState}, #{ptPayState}, #{ptCreateTime}, #{ptUpdateTime}, #{ptPayMoney})
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update MettAllcrowdorderingDB.MeetAllPtOrder
+        <set>
+            <if test="ptGroupNumber != null">
+                pt_group_number = #{ptGroupNumber},
+            </if>
+            <if test="ptCommodityId != null">
+                pt_commodity_id = #{ptCommodityId},
+            </if>
+            <if test="ptPrice != null">
+                pt_price = #{ptPrice},
+            </if>
+            <if test="ptOriginalPrice != null">
+                pt_original_price = #{ptOriginalPrice},
+            </if>
+            <if test="ptOrderMoney != null">
+                pt_order_money = #{ptOrderMoney},
+            </if>
+            <if test="ptOrderState != null">
+                pt_order_state = #{ptOrderState},
+            </if>
+            <if test="ptPayState != null">
+                pt_pay_state = #{ptPayState},
+            </if>
+            <if test="ptCreateTime != null">
+                pt_create_time = #{ptCreateTime},
+            </if>
+            <if test="ptUpdateTime != null">
+                pt_update_time = #{ptUpdateTime},
+            </if>
+            <if test="ptPayMoney != null and ptPayMoney != ''">
+                pt_pay_money = #{ptPayMoney},
+            </if>
+        </set>
+        where pt_order_number = #{ptOrderNumber}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from MettAllcrowdorderingDB.MeetAllPtOrder where pt_order_number = #{ptOrderNumber}
+    </delete>
+
+</mapper>

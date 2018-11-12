@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="commoditycrowdorderingcomsumer" />
+        <module name="commoditycrowdorderingprovider" />
+        <module name="commoditydetailprovider" />
+        <module name="commoditydetailsconsumber" />
+        <module name="commoditysearchconsumber" />
+        <module name="meetall-feign" />
+        <module name="meetall-seckill-producer" />
+        <module name="meetall-user-producer" />
+        <module name="meetallregistry" />
+        <module name="meetallsyatem" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="meetall-userinfo-producer" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
