@@ -1,0 +1,30 @@
+server:
+  port: 8022
+spring:
+  application:
+    name: cloud-commodity-datail-provlder
+  datasource:
+    url: jdbc:mysql://39.105.7.229:3306/MeetAllShopDB?characterEncoding=UTF-8&useSSL=false
+    username: root
+    password: Sunkefan123..
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    druid:
+      initialSize: 5
+      minIdle: 5
+      maxActive: 20
+      maxWait: 60000
+      timeBetweenEvictionRunsMillis: 60000
+      minEvictableIdleTimeMillis: 300000
+      validationQuery: SELECT 1
+      testWhileIdle: true
+      testOnBorrow: false
+      testOnReturn: false
+eureka:
+  client:
+    service-url:
+      defaultZone: http://39.105.7.229:6001/eureka/
+  instance:
+    prefer-ip-address: true
+mybatis:
+  mapperLocations: classpath:mapper/*.xml
