@@ -3,7 +3,7 @@ package com.meetall.commodity.crowdordering.commoditycrowdorderingprovider.pojo;
 /**
  * 拼团状态表
  */
-public class Meetallpt {
+public class MeetallptState {
     /**
      * 拼团编号
      */

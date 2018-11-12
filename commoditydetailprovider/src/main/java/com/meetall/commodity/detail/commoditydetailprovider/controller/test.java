@@ -72,6 +72,4 @@ public class test {
         a[a.length] = "a";
         return JSON.toJSONString(commodityattributerelationDao.getAttributeNameValue(10001));
     }
-
-
 }

@@ -57,7 +57,7 @@ public class CommoditySolrService implements ICommoditySolrService {
             System.out.println(cd.getCommodityPrice());
             document.addField("product_describe",cd.getCommodityDescribe());
             document.addField("product_image",cd.getImage());
-            document.addField("product_sku",cd.getCommoditySku());
+            document.addField("product_sku",cd.getCommoditySkuNameValue());
             client.add(document);
         }
         client.commit();

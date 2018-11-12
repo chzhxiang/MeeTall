@@ -94,5 +94,26 @@ public class CommodityController {
         return commodityattributerelationService.CommodityIdSku(CommodityId);
     }
 
+    /**
+     * 通过商品分类查询该类的所有商品
+     */
+
+
+    /**
+     * 查询参与拼团的商品
+     */
+    @RequestMapping("/getallptgood")
+    public String getAllPtGoods(){
+        return JSON.toJSONString(commodityDetailsDao.getAllPtGoods());
+    }
+
+
+    /**
+     * 查询参与秒杀的商品
+     */
+    @RequestMapping("/getallmiaosha")
+    public String getAllMiaosha(){
+        return JSON.toJSONString(commodityDetailsDao.getAllMiaosha());
+    }
 
 }

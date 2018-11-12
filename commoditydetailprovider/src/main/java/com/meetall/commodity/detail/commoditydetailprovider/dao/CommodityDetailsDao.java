@@ -28,4 +28,15 @@ public interface CommodityDetailsDao {
      * 查询商品价格
      */
     Double GetCommodityprice(Integer commodityId);
+
+    /**
+     * 查询参与拼团的商品
+     */
+    List<Integer> getAllPtGoods();
+
+    /**
+     * 查询参与秒杀的商品编号
+     */
+    List<Integer> getAllMiaosha();
+
 }

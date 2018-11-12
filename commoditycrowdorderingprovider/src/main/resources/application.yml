@@ -3,9 +3,21 @@ spring:
   application:
     name: cloud-commodity-crowdordering-provlder
   datasource:
-      url: jdbc:mysql://39.105.7.229:3306/MeetAllShopDB?characterEncoding=UTF-8&useSSL=false
-      username: root
-      password: Sunkefan123..
+    url: jdbc:mysql://39.105.7.229:3306/MeetAllShopDB?characterEncoding=UTF-8&useSSL=false
+    username: root
+    password: Sunkefan123..
+    driver-class-name: com.mysql.jdbc.Driver
+    druid:
+      initialSize: 5
+      minIdle: 5
+      maxActive: 20
+      maxWait: 60000
+      timeBetweenEvictionRunsMillis: 60000
+      minEvictableIdleTimeMillis: 300000
+      validationQuery: SELECT 1
+      testWhileIdle: true
+      testOnBorrow: false
+      testOnReturn: false
   redis:
     database: 0
     host: localhost
