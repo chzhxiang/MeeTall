@@ -1,9 +1,8 @@
-
 spring:
   application:
     name: cloud-commodity-crowdordering-provlder
   datasource:
-    url: jdbc:mysql://39.105.7.229:3306/MeetAllShopDB?characterEncoding=UTF-8&useSSL=false
+    url: jdbc:mysql://39.105.7.229:3306/MettAllcrowdorderingDB?characterEncoding=UTF-8&useSSL=false
     username: root
     password: Sunkefan123..
     driver-class-name: com.mysql.jdbc.Driver
@@ -37,4 +36,5 @@ eureka:
     prefer-ip-address: true
 server:
   port: 8024
-
+mybatis:
+  mapperLocations: classpath:mapper/*.xml

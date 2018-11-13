@@ -18,7 +18,7 @@ public interface MeetallptorderDao {
      * @param ptOrderNumber 主键
      * @return 实例对象
      */
-    Meetallptorder queryById(Integer ptOrderNumber);
+    Meetallptorder queryById(String ptOrderNumber);
 
     /**
      * 查询指定行数据
@@ -39,7 +39,7 @@ public interface MeetallptorderDao {
     List<Meetallptorder> queryAll(Meetallptorder meetallptorder);
 
     /**
-     * 新增数据
+     * 拼团订单表新增数据
      *
      * @param meetallptorder 实例对象
      * @return 影响行数
@@ -60,6 +60,12 @@ public interface MeetallptorderDao {
      * @param ptOrderNumber 主键
      * @return 影响行数
      */
-    int deleteById(Integer ptOrderNumber);
+    int deleteptOrderNumber(String ptOrderNumber);
 
+    /**
+     * 通过拼团编号，用户id查询订单的所有信息
+     * @param ptGroupNumber 拼团编号
+     * @param userId 用户id
+     */
+    List<Meetallptorder> GetAllOrderInfo(@Param("ptGroupNumber") Integer ptGroupNumber,@Param("userId") Integer userId);
 }

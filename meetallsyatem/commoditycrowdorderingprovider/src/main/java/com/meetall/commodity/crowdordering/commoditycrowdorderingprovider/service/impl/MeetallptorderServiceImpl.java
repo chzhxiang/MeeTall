@@ -14,10 +14,18 @@ import java.util.List;
  * @author makejava
  * @since 2018-11-12 11:50:47
  */
-@Service("meetallptorderService")
+@Service("meetallptorderServiceImpl")
 public class MeetallptorderServiceImpl implements MeetallptorderService {
     @Resource
     private MeetallptorderDao meetallptorderDao;
+
+    public MeetallptorderDao getMeetallptorderDao() {
+        return meetallptorderDao;
+    }
+
+    public void setMeetallptorderDao(MeetallptorderDao meetallptorderDao) {
+        this.meetallptorderDao = meetallptorderDao;
+    }
 
     /**
      * 通过ID查询单条数据
@@ -26,7 +34,7 @@ public class MeetallptorderServiceImpl implements MeetallptorderService {
      * @return 实例对象
      */
     @Override
-    public Meetallptorder queryById(Integer ptOrderNumber) {
+    public Meetallptorder queryById(String ptOrderNumber) {
         return this.meetallptorderDao.queryById(ptOrderNumber);
     }
 
@@ -73,8 +81,8 @@ public class MeetallptorderServiceImpl implements MeetallptorderService {
      * @return 是否成功
      */
     @Override
-    public boolean deleteById(Integer ptOrderNumber) {
-        return this.meetallptorderDao.deleteById(ptOrderNumber) > 0;
+    public boolean deleteById(String ptOrderNumber) {
+        return this.meetallptorderDao.deleteptOrderNumber(ptOrderNumber) > 0;
     }
 
 }

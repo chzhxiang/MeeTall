@@ -20,4 +20,14 @@ public interface MeetallptStateMapper {
     int updateByPrimaryKeySelective(MeetallptState record);
 
     int updateByPrimaryKey(MeetallptState record);
+
+    /**
+     * 通过拼团编号查询拼团的状态
+     */
+    int selectPtState(Integer ptNumber);
+
+    /**
+     * 通过拼团编号修改拼团的状态
+     */
+    int updatePtState(Integer ptNumber);
 }

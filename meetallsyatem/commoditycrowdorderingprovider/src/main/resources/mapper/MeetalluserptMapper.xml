@@ -4,7 +4,7 @@
   <resultMap id="BaseResultMap" type="com.meetall.commodity.crowdordering.commoditycrowdorderingprovider.pojo.Meetalluserpt" >
     <id column="pt_id" property="ptId" jdbcType="INTEGER" />
     <result column="pt_user_id" property="ptUserId" jdbcType="INTEGER" />
-    <result column="pt_order_number" property="ptOrderNumber" jdbcType="INTEGER" />
+    <result column="pt_order_number" property="ptOrderNumber" jdbcType="VARCHAR" />
     <result column="consignee" property="consignee" jdbcType="VARCHAR" />
     <result column="contact_number" property="contactNumber" jdbcType="VARCHAR" />
     <result column="shipping_address" property="shippingAddress" jdbcType="VARCHAR" />
@@ -12,107 +12,19 @@
     <result column="ifgroup_leader" property="ifgroupLeader" jdbcType="VARCHAR" />
     <result column="group_time_end" property="groupTimeEnd" jdbcType="TIMESTAMP" />
   </resultMap>
-  <sql id="Example_Where_Clause" >
-    <where >
-      <foreach collection="oredCriteria" item="criteria" separator="or" >
-        <if test="criteria.valid" >
-          <trim prefix="(" suffix=")" prefixOverrides="and" >
-            <foreach collection="criteria.criteria" item="criterion" >
-              <choose >
-                <when test="criterion.noValue" >
-                  and ${criterion.condition}
-                </when>
-                <when test="criterion.singleValue" >
-                  and ${criterion.condition} #{criterion.value}
-                </when>
-                <when test="criterion.betweenValue" >
-                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
-                </when>
-                <when test="criterion.listValue" >
-                  and ${criterion.condition}
-                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
-                    #{listItem}
-                  </foreach>
-                </when>
-              </choose>
-            </foreach>
-          </trim>
-        </if>
-      </foreach>
-    </where>
-  </sql>
-  <sql id="Update_By_Example_Where_Clause" >
-    <where >
-      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
-        <if test="criteria.valid" >
-          <trim prefix="(" suffix=")" prefixOverrides="and" >
-            <foreach collection="criteria.criteria" item="criterion" >
-              <choose >
-                <when test="criterion.noValue" >
-                  and ${criterion.condition}
-                </when>
-                <when test="criterion.singleValue" >
-                  and ${criterion.condition} #{criterion.value}
-                </when>
-                <when test="criterion.betweenValue" >
-                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
-                </when>
-                <when test="criterion.listValue" >
-                  and ${criterion.condition}
-                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
-                    #{listItem}
-                  </foreach>
-                </when>
-              </choose>
-            </foreach>
-          </trim>
-        </if>
-      </foreach>
-    </where>
-  </sql>
-  <sql id="Base_Column_List" >
-    pt_id, pt_user_id, pt_order_number, consignee, contact_number,
-    shipping_address, group_time, ifgroup_leader, group_time_end
-  </sql>
-  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.meetall.commodity.crowdordering.commoditycrowdorderingprovider.pojo.MeetalluserptExample" >
-    select
-    <if test="distinct" >
-      distinct
-    </if>
-    <include refid="Base_Column_List" />
-    from MeetAllUserPt
-    <if test="_parameter != null" >
-      <include refid="Example_Where_Clause" />
-    </if>
-    <if test="orderByClause != null" >
-      order by ${orderByClause}
-    </if>
-  </select>
-  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
-    select 
-    <include refid="Base_Column_List" />
-    from MeetAllUserPt
-    where pt_id = #{ptId,jdbcType=INTEGER}
-  </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
     delete from MeetAllUserPt
     where pt_id = #{ptId,jdbcType=INTEGER}
-  </delete>
-  <delete id="deleteByExample" parameterType="com.meetall.commodity.crowdordering.commoditycrowdorderingprovider.pojo.MeetalluserptExample" >
-    delete from MeetAllUserPt
-    <if test="_parameter != null" >
-      <include refid="Example_Where_Clause" />
-    </if>
   </delete>
   <insert id="insert" parameterType="com.meetall.commodity.crowdordering.commoditycrowdorderingprovider.pojo.Meetalluserpt" >
     insert into MeetAllUserPt (pt_id, pt_user_id, pt_order_number, 
       consignee,
       contact_number, shipping_address, group_time, 
-      ifgroup_leader, group_time_end)
-    values (#{ptId,jdbcType=INTEGER}, #{ptUserId,jdbcType=INTEGER}, #{ptOrderNumber,jdbcType=INTEGER}, 
-      #{consignee,jdbcType=VARCHAR},
-      #{contactNumber,jdbcType=VARCHAR}, #{shippingAddress,jdbcType=VARCHAR}, #{groupTime,jdbcType=TIMESTAMP}, 
-      #{ifgroupLeader,jdbcType=VARCHAR}, #{groupTimeEnd,jdbcType=TIMESTAMP})
+      ifgroup_leader,pt_number)
+    values (#{ptId}, #{ptUserId}, #{ptOrderNumber},
+      #{consignee},
+      #{contactNumber}, #{shippingAddress}, #{groupTime},
+      #{ifgroupLeader},#{ptNumber})
   </insert>
   <insert id="insertSelective" parameterType="com.meetall.commodity.crowdordering.commoditycrowdorderingprovider.pojo.Meetalluserpt" >
     insert into MeetAllUserPt
@@ -153,7 +65,7 @@
         #{ptUserId,jdbcType=INTEGER},
       </if>
       <if test="ptOrderNumber != null" >
-        #{ptOrderNumber,jdbcType=INTEGER},
+        #{ptOrderNumber,jdbcType=VARCHAR},
       </if>
       <if test="consignee != null" >
         #{consignee,jdbcType=VARCHAR},
@@ -175,104 +87,7 @@
       </if>
     </trim>
   </insert>
-  <select id="countByExample" parameterType="com.meetall.commodity.crowdordering.commoditycrowdorderingprovider.pojo.MeetalluserptExample" resultType="java.lang.Integer" >
-    select count(*) from MeetAllUserPt
-    <if test="_parameter != null" >
-      <include refid="Example_Where_Clause" />
-    </if>
-  </select>
-  <update id="updateByExampleSelective" parameterType="map" >
-    update MeetAllUserPt
-    <set >
-      <if test="record.ptId != null" >
-        pt_id = #{record.ptId,jdbcType=INTEGER},
-      </if>
-      <if test="record.ptUserId != null" >
-        pt_user_id = #{record.ptUserId,jdbcType=INTEGER},
-      </if>
-      <if test="record.ptOrderNumber != null" >
-        pt_order_number = #{record.ptOrderNumber,jdbcType=INTEGER},
-      </if>
-      <if test="record.consignee != null" >
-        consignee = #{record.consignee,jdbcType=VARCHAR},
-      </if>
-      <if test="record.contactNumber != null" >
-        contact_number = #{record.contactNumber,jdbcType=VARCHAR},
-      </if>
-      <if test="record.shippingAddress != null" >
-        shipping_address = #{record.shippingAddress,jdbcType=VARCHAR},
-      </if>
-      <if test="record.groupTime != null" >
-        group_time = #{record.groupTime,jdbcType=TIMESTAMP},
-      </if>
-      <if test="record.ifgroupLeader != null" >
-        ifgroup_leader = #{record.ifgroupLeader,jdbcType=VARCHAR},
-      </if>
-      <if test="record.groupTimeEnd != null" >
-        group_time_end = #{record.groupTimeEnd,jdbcType=TIMESTAMP},
-      </if>
-    </set>
-    <if test="_parameter != null" >
-      <include refid="Update_By_Example_Where_Clause" />
-    </if>
-  </update>
-  <update id="updateByExample" parameterType="map" >
-    update MeetAllUserPt
-    set pt_id = #{record.ptId,jdbcType=INTEGER},
-      pt_user_id = #{record.ptUserId,jdbcType=INTEGER},
-      pt_order_number = #{record.ptOrderNumber,jdbcType=INTEGER},
-      consignee = #{record.consignee,jdbcType=VARCHAR},
-      contact_number = #{record.contactNumber,jdbcType=VARCHAR},
-      shipping_address = #{record.shippingAddress,jdbcType=VARCHAR},
-      group_time = #{record.groupTime,jdbcType=TIMESTAMP},
-      ifgroup_leader = #{record.ifgroupLeader,jdbcType=VARCHAR},
-      group_time_end = #{record.groupTimeEnd,jdbcType=TIMESTAMP}
-    <if test="_parameter != null" >
-      <include refid="Update_By_Example_Where_Clause" />
-    </if>
-  </update>
-  <update id="updateByPrimaryKeySelective" parameterType="com.meetall.commodity.crowdordering.commoditycrowdorderingprovider.pojo.Meetalluserpt" >
-    update MeetAllUserPt
-    <set >
-      <if test="ptUserId != null" >
-        pt_user_id = #{ptUserId,jdbcType=INTEGER},
-      </if>
-      <if test="ptOrderNumber != null" >
-        pt_order_number = #{ptOrderNumber,jdbcType=INTEGER},
-      </if>
-      <if test="consignee != null" >
-        consignee = #{consignee,jdbcType=VARCHAR},
-      </if>
-      <if test="contactNumber != null" >
-        contact_number = #{contactNumber,jdbcType=VARCHAR},
-      </if>
-      <if test="shippingAddress != null" >
-        shipping_address = #{shippingAddress,jdbcType=VARCHAR},
-      </if>
-      <if test="groupTime != null" >
-        group_time = #{groupTime,jdbcType=TIMESTAMP},
-      </if>
-      <if test="ifgroupLeader != null" >
-        ifgroup_leader = #{ifgroupLeader,jdbcType=VARCHAR},
-      </if>
-      <if test="groupTimeEnd != null" >
-        group_time_end = #{groupTimeEnd,jdbcType=TIMESTAMP},
-      </if>
-    </set>
-    where pt_id = #{ptId,jdbcType=INTEGER}
-  </update>
-  <update id="updateByPrimaryKey" parameterType="com.meetall.commodity.crowdordering.commoditycrowdorderingprovider.pojo.Meetalluserpt" >
-    update MeetAllUserPt
-    set pt_user_id = #{ptUserId,jdbcType=INTEGER},
-      pt_order_number = #{ptOrderNumber,jdbcType=INTEGER},
-      consignee = #{consignee,jdbcType=VARCHAR},
-      contact_number = #{contactNumber,jdbcType=VARCHAR},
-      shipping_address = #{shippingAddress,jdbcType=VARCHAR},
-      group_time = #{groupTime,jdbcType=TIMESTAMP},
-      ifgroup_leader = #{ifgroupLeader,jdbcType=VARCHAR},
-      group_time_end = #{groupTimeEnd,jdbcType=TIMESTAMP}
-    where pt_id = #{ptId,jdbcType=INTEGER}
-  </update>
+
 
   <insert id="insertUserpt" parameterType="com.meetall.commodity.crowdordering.commoditycrowdorderingprovider.pojo.Meetalluserpt">
       insert into MeetAllUserPt
@@ -313,7 +128,7 @@
         #{ptUserId,jdbcType=INTEGER},
       </if>
       <if test="ptOrderNumber != null" >
-        #{ptOrderNumber,jdbcType=INTEGER},
+        #{ptOrderNumber,jdbcType=VARCHAR},
       </if>
       <if test="consignee != null" >
         #{consignee,jdbcType=VARCHAR},
@@ -335,4 +150,8 @@
       </if>
     </trim>
   </insert>
+
+  <select id="getAllPtNumber" parameterType="int" resultType="int">
+    select pt_number from MeetAllUserPt WHERE pt_user_id = #{userId}
+  </select>
 </mapper>

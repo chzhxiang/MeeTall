@@ -1,19 +1,29 @@
 package com.meetall.commodity.crowdordering.commoditycrowdorderingprovider.controller;
 
 
+import com.meetall.commodity.crowdordering.commoditycrowdorderingprovider.pojo.Meetallptorder;
+import com.meetall.commodity.crowdordering.commoditycrowdorderingprovider.pojo.Meetalluserpt;
+import com.meetall.commodity.crowdordering.commoditycrowdorderingprovider.service.impl.LaunchCrowdorderingImpl;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * 发起拼团
+ */
 @RestController
 public class CrowdorderingController {
 
+
+    @Autowired
+    private LaunchCrowdorderingImpl launchCrowdordering;
 
     /**
      * 单个用户发起拼团
      */
     @RequestMapping("/LaunchCrowdordering")
-    public String Launch(Integer UserId,Integer CommodityId){
-
+    public String Launch(Meetalluserpt meetalluserpt, Meetallptorder meetallptorder){
+        launchCrowdordering.UserLaunchCrowdordering(meetalluserpt,meetallptorder);
         return null;
     }
 

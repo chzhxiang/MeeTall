@@ -28,7 +28,7 @@ public class MeetallptorderController {
      * @return 单条数据
      */
     @GetMapping("selectOne")
-    public Meetallptorder selectOne(Integer id) {
+    public Meetallptorder selectOne(String id) {
         return this.meetallptorderService.queryById(id);
     }
 

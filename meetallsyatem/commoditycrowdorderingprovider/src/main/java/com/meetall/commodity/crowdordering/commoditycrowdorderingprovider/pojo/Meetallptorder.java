@@ -14,7 +14,10 @@ public class Meetallptorder implements Serializable {
 
 
     //订单编号
-    private Integer ptOrderNumber;
+    private String ptOrderNumber;
+
+    //用户id
+    private Integer userId;
 
     //组团编号
     private Integer ptGroupNumber;
@@ -46,6 +49,34 @@ public class Meetallptorder implements Serializable {
     //支付金额
     private String ptPayMoney;
 
+    //交货方式(1.物流  2 自取)
+    private Integer ptDeliverymanner;
+
+
+    public Integer getUserId() {
+        return userId;
+    }
+
+    public void setUserId(Integer userId) {
+        this.userId = userId;
+    }
+
+    public String getPtOrderNumber() {
+        return ptOrderNumber;
+    }
+
+    public void setPtOrderNumber(String ptOrderNumber) {
+        this.ptOrderNumber = ptOrderNumber;
+    }
+
+    public Integer getPtDeliverymanner() {
+        return ptDeliverymanner;
+    }
+
+    public void setPtDeliverymanner(Integer ptDeliverymanner) {
+        this.ptDeliverymanner = ptDeliverymanner;
+    }
+
     public void setPtPrice(Double ptPrice) {
         this.ptPrice = ptPrice;
     }
@@ -64,14 +95,6 @@ public class Meetallptorder implements Serializable {
 
     public void setPtOrderMoney(Double ptOrderMoney) {
         this.ptOrderMoney = ptOrderMoney;
-    }
-
-    public Integer getPtOrderNumber() {
-        return ptOrderNumber;
-    }
-
-    public void setPtOrderNumber(Integer ptOrderNumber) {
-        this.ptOrderNumber = ptOrderNumber;
     }
 
     public Integer getPtGroupNumber() {

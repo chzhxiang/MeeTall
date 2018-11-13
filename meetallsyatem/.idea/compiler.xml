@@ -14,6 +14,7 @@
         <module name="meetall-feign" />
         <module name="meetall-seckill-producer" />
         <module name="meetall-user-producer" />
+        <module name="meetallcommon" />
         <module name="meetallregistry" />
         <module name="meetallsyatem" />
       </profile>

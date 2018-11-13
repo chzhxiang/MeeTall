@@ -15,6 +15,7 @@
         <option value="$PROJECT_DIR$/meetall-user-producer/pom.xml" />
         <option value="$PROJECT_DIR$/meetallregistry/pom.xml" />
         <option value="$PROJECT_DIR$/meetall-userinfo-producer/pom.xml" />
+        <option value="$PROJECT_DIR$/meetallcommon/pom.xml" />
       </list>
     </option>
   </component>

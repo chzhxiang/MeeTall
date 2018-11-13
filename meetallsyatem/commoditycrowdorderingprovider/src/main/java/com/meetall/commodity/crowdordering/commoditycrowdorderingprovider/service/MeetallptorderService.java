@@ -17,7 +17,7 @@ public interface MeetallptorderService {
      * @param ptOrderNumber 主键
      * @return 实例对象
      */
-    Meetallptorder queryById(Integer ptOrderNumber);
+    Meetallptorder queryById(String ptOrderNumber);
 
     /**
      * 查询多条数据
@@ -50,6 +50,6 @@ public interface MeetallptorderService {
      * @param ptOrderNumber 主键
      * @return 是否成功
      */
-    boolean deleteById(Integer ptOrderNumber);
+    boolean deleteById(String ptOrderNumber);
 
 }

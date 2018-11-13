@@ -19,7 +19,7 @@ public class Meetalluserpt {
     /**
      * 拼单订单编号
      */
-    private Integer ptOrderNumber;
+    private String ptOrderNumber;
 
     /**
      * 收货人
@@ -42,14 +42,30 @@ public class Meetalluserpt {
     private Date groupTime;
 
     /**
+     * 拼团编号
+     */
+    private Integer ptNumber;
+
+    /**
      * 是否是团长（0不是，1是）
      */
     private String ifgroupLeader;
 
-    /**
-     * 拼团到期时间
-     */
-    private Date groupTimeEnd;
+    public Integer getPtNumber() {
+        return ptNumber;
+    }
+
+    public void setPtNumber(Integer ptNumber) {
+        this.ptNumber = ptNumber;
+    }
+
+    public String getPtOrderNumber() {
+        return ptOrderNumber;
+    }
+
+    public void setPtOrderNumber(String ptOrderNumber) {
+        this.ptOrderNumber = ptOrderNumber;
+    }
 
     public Integer getPtId() {
         return ptId;
@@ -65,14 +81,6 @@ public class Meetalluserpt {
 
     public void setPtUserId(Integer ptUserId) {
         this.ptUserId = ptUserId;
-    }
-
-    public Integer getPtOrderNumber() {
-        return ptOrderNumber;
-    }
-
-    public void setPtOrderNumber(Integer ptOrderNumber) {
-        this.ptOrderNumber = ptOrderNumber;
     }
 
     public String getConsignee() {
@@ -113,13 +121,5 @@ public class Meetalluserpt {
 
     public void setIfgroupLeader(String ifgroupLeader) {
         this.ifgroupLeader = ifgroupLeader == null ? null : ifgroupLeader.trim();
-    }
-
-    public Date getGroupTimeEnd() {
-        return groupTimeEnd;
-    }
-
-    public void setGroupTimeEnd(Date groupTimeEnd) {
-        this.groupTimeEnd = groupTimeEnd;
     }
 }
