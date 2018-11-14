@@ -3,6 +3,8 @@ package com.example.meetalluserinfoproducer.controller;
 import com.example.meetalluserinfoproducer.entity.Profile;
 import com.example.meetalluserinfoproducer.result.AjaxResult;
 import com.example.meetalluserinfoproducer.service.ProfileService;
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
@@ -28,8 +30,9 @@ public class ProfileController {
      * @param id 主键
      * @return 单条数据
      */
+    @ApiImplicitParam(name = "id",value = "用户id",paramType = "query")
     @GetMapping("selectOne")
-    public Profile selectOne(Integer id) {
+    public Profile selectOne(@RequestParam Integer id) {
         return this.profileService.queryById(id);
     }
 
@@ -38,8 +41,9 @@ public class ProfileController {
         return profileService.getAllByUserid(userId);
     }
 
-    @GetMapping("insertProfile")
-    public AjaxResult insertProfile(Profile profile){
+    @ApiOperation(value = "新增地址",notes = "根据用户id，地址信息")
+    @PostMapping("insertProfile")
+    public AjaxResult insertProfile(@RequestBody Profile profile){
         return profileService.insert(profile);
     }
 

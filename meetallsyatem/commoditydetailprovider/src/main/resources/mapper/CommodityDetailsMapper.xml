@@ -34,4 +34,11 @@
     <select id="getAllMiaosha" resultType="int">
         select commodity_id from commodityDetails where if_miaosha = 1
     </select>
+
+    <select id="selectpt" resultMap="select">
+        select commodity_id,image,product_name,commodity_classify,commodity_describe from commodityDetails where if_pt = 1
+    </select>
+    <select id="selectMiaosha" resultMap="select">
+        select commodity_id,image,product_name,commodity_classify,commodity_describe from commodityDetails where if_miaosha = 1
+    </select>
 </mapper>

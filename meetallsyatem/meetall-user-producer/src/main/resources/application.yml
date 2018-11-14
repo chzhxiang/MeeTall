@@ -16,7 +16,7 @@ spring:
     active: dev
   datasource:
   # 使用druid数据源
-    url: jdbc:mysql://39.105.7.229:3306/MeetAllUserInfoDB
+    url: jdbc:mysql://39.105.7.229:3306/MeetAllUserInfoDB?characterEncoding=UTF-8&useSSL=false
     username: root
     type: com.alibaba.druid.pool.DruidDataSource
     #这里放的是生成加密后的password
@@ -101,14 +101,14 @@ spring:
 
 
 
-#---
-#spring:
-#  security:
-#    basic:
-#      enabled: ture
-#    user:
-#      name: admin
-#      password: 123456
+---
+spring:
+  security:
+    basic:
+      enabled: ture
+    user:
+      name: admin
+      password: 123456
 #
 ## actuator监控
 #management:

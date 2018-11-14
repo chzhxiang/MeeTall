@@ -21,7 +21,7 @@ public  interface SeckillGoodsDao {
     //插入秒杀商品
     int insertSeckillGoods(@Param("goods") SeckillGoods goods);
 
-    //通过商品id查询单个商品数量
+    //通过商品id查询单个商品信息
     SeckillGoods selectById(@Param("goods_id")int goodsId);
 
     //跟新库存

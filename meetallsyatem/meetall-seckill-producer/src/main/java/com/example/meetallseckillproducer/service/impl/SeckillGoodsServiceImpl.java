@@ -1,7 +1,9 @@
 package com.example.meetallseckillproducer.service.impl;
 
+import com.alibaba.fastjson.JSON;
 import com.example.meetallseckillproducer.dao.SeckillGoodsDao;
 import com.example.meetallseckillproducer.pojo.SeckillGoods;
+import com.example.meetallseckillproducer.result.AjaxResult;
 import com.example.meetallseckillproducer.service.SeckillGoodsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -52,9 +54,14 @@ public class SeckillGoodsServiceImpl implements SeckillGoodsService {
      * @return
      */
     @Override
-    public SeckillGoods selectById(int goodsId) {
+    public AjaxResult selectById(int goodsId) {
+        SeckillGoods seckillGoods = seckillGoodsDao.selectById(goodsId);
+        if (seckillGoods == null){
+            return AjaxResult.error("该商品不加入秒杀");
+        }
+        String jsonGoods = JSON.toJSONString(seckillGoods);
 
-        return seckillGoodsDao.selectById(goodsId);
+        return AjaxResult.success(jsonGoods);
     }
 
     /**

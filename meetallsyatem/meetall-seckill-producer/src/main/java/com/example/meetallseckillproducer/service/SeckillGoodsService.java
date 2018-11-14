@@ -1,6 +1,7 @@
 package com.example.meetallseckillproducer.service;
 
 import com.example.meetallseckillproducer.pojo.SeckillGoods;
+import com.example.meetallseckillproducer.result.AjaxResult;
 import org.apache.ibatis.annotations.Param;
 
 import java.sql.Timestamp;
@@ -17,7 +18,7 @@ public interface SeckillGoodsService {
     int insertSeckillGoods( SeckillGoods goods);
 
     //通过商品id查询单个商品数量
-    SeckillGoods selectById(int goodsId);
+    AjaxResult selectById(int goodsId);
 
     //减库存，放入redis
     int updateGoodsStockCount(Integer stock_count,Integer goods_id);

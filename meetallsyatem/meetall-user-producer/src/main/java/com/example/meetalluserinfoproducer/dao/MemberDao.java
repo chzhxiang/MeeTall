@@ -49,7 +49,7 @@ public interface MemberDao {
      * @param member 实例对象
      * @return 影响行数
      */
-    int insert(Member member);
+    int insert( Member member);
 
     /**
      * 修改数据

@@ -1,6 +1,7 @@
 package com.example.meetallseckillproducer.rabbitmq;
 
 import com.example.meetallseckillproducer.pojo.GoodsAndOrder;
+import com.example.meetallseckillproducer.pojo.SeckillId;
 import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -17,11 +18,11 @@ public class SeckillMQProducer {
 
     /**
      * mq发送消息
-     * @param goodsAndOrder
+     * @param seckillId
      * @throws Exception
      */
-    public void send(GoodsAndOrder goodsAndOrder) throws Exception{
-        byte[] bytes=getBytesFromObject(goodsAndOrder);
+    public void send(SeckillId seckillId) throws Exception{
+        byte[] bytes=getBytesFromObject(seckillId);
         rabbitTemplate.convertAndSend("seckill",bytes);
     }
     //对象转化为字节码

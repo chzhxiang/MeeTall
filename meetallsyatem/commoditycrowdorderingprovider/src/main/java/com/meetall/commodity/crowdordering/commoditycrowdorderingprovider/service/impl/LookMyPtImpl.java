@@ -8,6 +8,7 @@ import com.meetall.commodity.crowdordering.commoditycrowdorderingprovider.pojo.M
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -44,6 +45,7 @@ public class LookMyPtImpl {
     public String GetAllMyPt(Integer userId){
         //先拿到这个用户得到所有拼团单号
         List<Integer> allPtNumber = meetalluserptMapper.getAllPtNumber(userId);
+        List<String> listall = new ArrayList<>();
         for (Integer i :allPtNumber){
             if (allPtNumber!=null){
                 //查询拼团状态是正在开团
@@ -52,15 +54,15 @@ public class LookMyPtImpl {
                     System.out.println(userId);
 
                     List<Meetallptorder> meetallptorder = meetallptorderDao.GetAllOrderInfo(i, userId);
-                    System.out.println(JSON.toJSONString(meetallptorder));
+                    listall.add(JSON.toJSONString(meetallptorder));
+                    //System.out.println(JSON.toJSONString(meetallptorder));
                 }
             }
         }
-
-        return null;
+        String last = JSON.toJSONString(listall);
+        System.out.println(last);
+        return last;
     }
-
-
     /**
      * 查看我所有拼团成功的订单
      * @param userId

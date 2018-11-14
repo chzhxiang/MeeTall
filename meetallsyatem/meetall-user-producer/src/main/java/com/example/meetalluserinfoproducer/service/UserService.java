@@ -2,6 +2,7 @@ package com.example.meetalluserinfoproducer.service;
 
 import com.example.meetalluserinfoproducer.entity.User;
 import com.example.meetalluserinfoproducer.entity.UserAndMember;
+import com.example.meetalluserinfoproducer.result.AjaxResult;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -37,7 +38,7 @@ public interface UserService{
      * @param user 实例对象
      * @return 实例对象
      */
-    User insert(User user);
+    AjaxResult insert(User user);
 
     /**
      * 修改数据

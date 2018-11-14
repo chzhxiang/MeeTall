@@ -6,6 +6,7 @@ import com.example.meetalluserinfoproducer.entity.UserAndMember;
 import com.example.meetalluserinfoproducer.result.AjaxResult;
 import com.example.meetalluserinfoproducer.service.UserService;
 import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiModelProperty;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.*;
 
@@ -48,9 +49,9 @@ public class UserController {
     }
 
     @ApiOperation(value = "跟新用户信息",notes = "上传用户修改后的信息")
-    @GetMapping("update")
+    @RequestMapping(value = "update",method = RequestMethod.POST,produces = "application/json;charset=UTF-8")
     public AjaxResult updateUserInfo(@RequestBody User user){
-        System.out.println(user.getId() + user.getUserAge());
+        System.out.println(user.getId() + user.getUserAge() + user.getScreenName());
         boolean update = userService.update(user);
         if (update){
             return success();
@@ -59,5 +60,9 @@ public class UserController {
         }
     }
 
-
+    @ApiOperation(value = "新增用户")
+    @RequestMapping(value = "insert",method = RequestMethod.POST)
+    public AjaxResult insertNemUser(@RequestBody User user){
+        return userService.insert(user);
+    }
 }

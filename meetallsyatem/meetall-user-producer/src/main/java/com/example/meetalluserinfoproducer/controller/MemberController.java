@@ -57,9 +57,14 @@ public class MemberController {
     public AjaxResult updateIntegral(@RequestParam Integer userId,@RequestParam double money){
         return memberService.updateIntegral(userId,money);
     }
-    @ApiOperation(value = "新增会员",notes = "根据用户id，会员卡，插入会员信息")
 
-    @GetMapping("insertMember")
+    /**
+     * 新增会员
+     * @param member
+     * @return
+     */
+    @ApiOperation(value = "新增会员",notes = "根据用户id，会员卡，插入会员信息")
+    @PostMapping("insertMember")
     public AjaxResult insertMember(@RequestBody Member member){
         return memberService.insert(member);
     }

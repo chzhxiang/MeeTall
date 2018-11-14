@@ -4,6 +4,7 @@ import com.example.meetalluserinfoproducer.entity.Member;
 import com.example.meetalluserinfoproducer.entity.User;
 import com.example.meetalluserinfoproducer.dao.UserDao;
 import com.example.meetalluserinfoproducer.entity.UserAndMember;
+import com.example.meetalluserinfoproducer.result.AjaxResult;
 import com.example.meetalluserinfoproducer.service.MemberService;
 import com.example.meetalluserinfoproducer.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -95,9 +96,12 @@ public class UserServiceImpl implements UserService {
      * @return 实例对象
      */
     @Override
-    public User insert(User user) {
-        this.userDao.insert(user);
-        return user;
+    public AjaxResult insert(User user) {
+        int insert = this.userDao.insert(user);
+        if (insert != 1){
+            return AjaxResult.error("用户信息不合法");
+        }
+        return AjaxResult.success("新增用户成功");
     }
 
     /**

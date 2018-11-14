@@ -20,6 +20,16 @@ public interface CommodityDetailsDao {
     List<CommodityDetails> getAll();
 
     /**
+     * 查询所有拼团商品
+     */
+    List<CommodityDetails> selectpt();
+
+    /**
+     * 查询所有秒杀商品
+     */
+    List<CommodityDetails> selectMiaosha();
+
+    /**
      * 查询指定商品的sku
      */
     CommodityDetails getCommodityIdSku(Integer commodityId);

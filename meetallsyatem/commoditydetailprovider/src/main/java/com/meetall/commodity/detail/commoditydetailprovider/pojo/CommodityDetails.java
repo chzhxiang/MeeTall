@@ -49,6 +49,32 @@ public class CommodityDetails {
      */
     private Map<String,List<String>> CommoditySkuNameValue;
 
+    /**
+     *
+     * 是否是拼团商品0不是  1是
+     */
+    private Integer ifPt;
+
+    /**
+     * 是否是秒杀商品
+     */
+    private Integer ifMiaosha;
+
+    public Integer getIfPt() {
+        return ifPt;
+    }
+
+    public void setIfPt(Integer ifPt) {
+        this.ifPt = ifPt;
+    }
+
+    public Integer getIfMiaosha() {
+        return ifMiaosha;
+    }
+
+    public void setIfMiaosha(Integer ifMiaosha) {
+        this.ifMiaosha = ifMiaosha;
+    }
 
     public Map<String, List<String>> getCommoditySkuNameValue() {
         return CommoditySkuNameValue;

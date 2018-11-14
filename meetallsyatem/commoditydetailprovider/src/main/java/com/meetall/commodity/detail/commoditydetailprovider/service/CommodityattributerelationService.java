@@ -20,6 +20,7 @@ public interface CommodityattributerelationService {
      */
     Commodityattributerelation queryById(Integer id);
 
+
     /**
      * 查询多条数据
      *

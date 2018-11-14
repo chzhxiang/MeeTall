@@ -1,6 +1,7 @@
 package com.example.meetallseckillproducer.rabbitmq;
 
 import com.example.meetallseckillproducer.pojo.GoodsAndOrder;
+import com.example.meetallseckillproducer.pojo.SeckillId;
 import com.example.meetallseckillproducer.pojo.SeckillOrder;
 import com.example.meetallseckillproducer.service.SeckillOrderSerivce;
 import com.example.meetallseckillproducer.util.RedisUtil;
@@ -39,16 +40,16 @@ public class SeckillMQConsumer {
     public void process(byte[] bytes) throws Exception{
         SeckillOrder seckillOrder = new SeckillOrder();
         //1.字节码转化为对象
-        GoodsAndOrder goodsAndOrder = (GoodsAndOrder) getObjectFromBytes(bytes);
+        SeckillId seckillId = (SeckillId) getObjectFromBytes(bytes);
         //2.判断redis库存是否买完了
-        Integer Goods_id = goodsAndOrder.getGoods_id();
-        Integer orderUser_id = goodsAndOrder.getOrderUser_id();
-        Integer counts = (Integer) redisUtil.hget("seckill", goodsAndOrder.getGoods_id() + "");
+        Integer Goods_id = seckillId.getGoods_id();
+        Integer orderUser_id = seckillId.getUser_id();
+        Integer counts = (Integer) redisUtil.hget("seckill", seckillId.getGoods_id() + "");
         if (counts < 1){
             return;
         }
         //3.redis减库存
-        double count = redisUtil.hdecr("seckill", ""+goodsAndOrder.getGoods_id(),1);
+        double count = redisUtil.hdecr("seckill", ""+seckillId.getGoods_id(),1);
         //4.将订单信息插入数据库
         seckillOrder.setGoods_id(Goods_id);
         seckillOrder.setOrder_id(getOrderIdByUUId());

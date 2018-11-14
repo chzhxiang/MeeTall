@@ -1,6 +1,7 @@
 package com.example.meetalluserinfoproducer.entity;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
+import io.swagger.annotations.ApiModel;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 
@@ -12,6 +13,7 @@ import java.io.Serializable;
  * @author makejava
  * @since 2018-11-09 09:26:29
  */
+@ApiModel(value = "Profile")
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class Profile implements Serializable {
     private static final long serialVersionUID = -81416477629415081L;
