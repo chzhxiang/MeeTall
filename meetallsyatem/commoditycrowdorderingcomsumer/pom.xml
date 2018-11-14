@@ -92,7 +92,11 @@
         </dependency>
         <!--json-->
 
-
+        <dependency>
+            <groupId>com.springcloud.common</groupId>
+            <artifactId>meetallcommon</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
 
     </dependencies>
 

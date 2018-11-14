@@ -19,7 +19,7 @@ import javax.annotation.Resource;
 @SuppressWarnings("ALL")
 @RestController
 @RequestMapping
-@Api( value = "商品详情接口", description = "商品详情-测试")
+@Api(value = "商品详情接口", description = "商品详情-测试")
 public class CommodityController {
 
     @Resource(name = "commoditySkuServiceImpl")

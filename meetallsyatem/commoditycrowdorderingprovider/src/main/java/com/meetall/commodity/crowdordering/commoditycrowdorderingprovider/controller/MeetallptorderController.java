@@ -2,6 +2,7 @@ package com.meetall.commodity.crowdordering.commoditycrowdorderingprovider.contr
 
 import com.meetall.commodity.crowdordering.commoditycrowdorderingprovider.pojo.Meetallptorder;
 import com.meetall.commodity.crowdordering.commoditycrowdorderingprovider.service.MeetallptorderService;
+import io.swagger.annotations.Api;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
@@ -14,6 +15,7 @@ import javax.annotation.Resource;
  */
 @RestController
 @RequestMapping("meetallptorder")
+@Api(value = "", description = "测试")
 public class MeetallptorderController {
     /**
      * 服务对象
@@ -27,10 +29,8 @@ public class MeetallptorderController {
      * @param id 主键
      * @return 单条数据
      */
-    @GetMapping("selectOne")
+    @GetMapping("/selectOne")
     public Meetallptorder selectOne(String id) {
         return this.meetallptorderService.queryById(id);
     }
-
-
 }

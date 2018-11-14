@@ -28,6 +28,17 @@ spring:
       max-idle: 8
       min-idle: 0
     timeout: 20000
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: rabbit-sun
+    password: 123456
+    virtual-host: /rabbit-sunkefan
+    publisher-confirms: true
+    publisher-returns: true
+    listener:
+      simple:
+        default-requeue-rejected: false
 eureka:
   client:
     service-url:

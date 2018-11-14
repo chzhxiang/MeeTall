@@ -67,5 +67,10 @@ public interface MeetallptorderDao {
      * @param ptGroupNumber 拼团编号
      * @param userId 用户id
      */
-    List<Meetallptorder> GetAllOrderInfo(@Param("ptGroupNumber") Integer ptGroupNumber,@Param("userId") Integer userId);
+    Meetallptorder GetAllOrderInfo(@Param("ptGroupNumber") Integer ptGroupNumber,@Param("userId") Integer userId);
+
+    /**
+     * 修改订单状态为已过期
+     */
+    int updateOrderExpired(Integer ptGroupNumber);
 }

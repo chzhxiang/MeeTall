@@ -13,4 +13,10 @@
   <select id="selectPtState" parameterType="int" resultType="int">
     select pt_state from MeetAllPtState where pt_number = #{ptNumber}
   </select>
+
+  <update id="updateAbolish" parameterType="int">
+    update MeetAllPtState
+    set pt_state = 2,
+    where pt_number = #{ptNumber}
+  </update>
 </mapper>

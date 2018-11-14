@@ -13,9 +13,7 @@ import com.meetall.commodity.crowdordering.commoditycrowdorderingprovider.util.G
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 /**
  * 发起拼团
@@ -75,11 +73,31 @@ public class LaunchCrowdorderingImpl implements LaunchCrowdordering {
             meetallptState.setPtNumberOfPeople(1);//拼团人数
             meetallptState.setPtState(0);//拼团状态0 已开团
             meetallptStateMapper.insert(meetallptState);
+
+            Timer timer = new Timer();
+            //24小时后再次查询是否成功没有成功修改状态
+            timer.schedule(new TimerTask() {
+                public void run() {
+                    //System.out.println("24小时候查询订单状态");
+                    int i = meetallptStateMapper.selectPtState(10001);
+                    if (i==0){
+                        //更新拼团状态为0，拼团失效
+                        meetallptStateMapper.updateAbolish(10001);
+                        //修改订单状态
+                        meetallptorderDao.updateOrderExpired(10001);
+
+                        //* 调用退款接口给用户退款
+
+                    }
+                }
+            },1000*60*60*24);
+
+
+
             map.put("info","200");
         }else{
             map.put("info","支付失败");
         }
-
         return JSON.toJSONString(map);
     }
 

@@ -4,6 +4,8 @@ package com.meetall.commodity.crowdordering.commoditycrowdorderingprovider.contr
 import com.meetall.commodity.crowdordering.commoditycrowdorderingprovider.pojo.Meetallptorder;
 import com.meetall.commodity.crowdordering.commoditycrowdorderingprovider.pojo.Meetalluserpt;
 import com.meetall.commodity.crowdordering.commoditycrowdorderingprovider.service.impl.LaunchCrowdorderingImpl;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -12,6 +14,8 @@ import org.springframework.web.bind.annotation.RestController;
  * 发起拼团
  */
 @RestController
+@RequestMapping
+@Api(value = "123456", description = "测试")
 public class CrowdorderingController {
 
 
@@ -21,6 +25,7 @@ public class CrowdorderingController {
     /**
      * 单个用户发起拼团
      */
+    @ApiOperation(value="123",notes="123",httpMethod = "POST")
     @RequestMapping("/LaunchCrowdordering")
     public String Launch(Meetalluserpt meetalluserpt, Meetallptorder meetallptorder){
         launchCrowdordering.UserLaunchCrowdordering(meetalluserpt,meetallptorder);

@@ -27,7 +27,12 @@ public interface MeetallptStateMapper {
     int selectPtState(Integer ptNumber);
 
     /**
-     * 通过拼团编号修改拼团的状态
+     * 通过拼团编号修改拼团的状态为成功
      */
     int updatePtState(Integer ptNumber);
+
+    /**
+     * 通过拼团编号废除订单
+     */
+    int updateAbolish(Integer ptNumber);
 }

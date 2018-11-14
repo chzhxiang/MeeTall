@@ -5,11 +5,14 @@ import com.meetall.commodity.crowdordering.commoditycrowdorderingprovider.dao.Me
 import com.meetall.commodity.crowdordering.commoditycrowdorderingprovider.dao.MeetallptorderDao;
 import com.meetall.commodity.crowdordering.commoditycrowdorderingprovider.dao.MeetalluserptMapper;
 import com.meetall.commodity.crowdordering.commoditycrowdorderingprovider.pojo.Meetallptorder;
+import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * 查看我的拼团信息
@@ -45,7 +48,7 @@ public class LookMyPtImpl {
     public String GetAllMyPt(Integer userId){
         //先拿到这个用户得到所有拼团单号
         List<Integer> allPtNumber = meetalluserptMapper.getAllPtNumber(userId);
-        List<String> listall = new ArrayList<>();
+        List<Meetallptorder> meetallptorderList = new ArrayList<>();
         for (Integer i :allPtNumber){
             if (allPtNumber!=null){
                 //查询拼团状态是正在开团
@@ -53,13 +56,13 @@ public class LookMyPtImpl {
                     System.out.println(i);
                     System.out.println(userId);
 
-                    List<Meetallptorder> meetallptorder = meetallptorderDao.GetAllOrderInfo(i, userId);
-                    listall.add(JSON.toJSONString(meetallptorder));
+                    Meetallptorder meetallptorder = meetallptorderDao.GetAllOrderInfo(i, userId);
+                    meetallptorderList.add(meetallptorder);
                     //System.out.println(JSON.toJSONString(meetallptorder));
                 }
             }
         }
-        String last = JSON.toJSONString(listall);
+        String last = JSON.toJSONString(meetallptorderList);
         System.out.println(last);
         return last;
     }
@@ -71,18 +74,31 @@ public class LookMyPtImpl {
     public String GetAllPtSucceed(Integer userId){
         //先拿到这个用户得到所有拼团单号
         List<Integer> allPtNumber = meetalluserptMapper.getAllPtNumber(userId);
+        List<Meetallptorder> meetallptorderList = new ArrayList<>();
         for (Integer i :allPtNumber){
             if (allPtNumber!=null){
                 //查询拼团状态是拼团成功
                 if(meetallptStateMapper.selectPtState(i)==1){
                     System.out.println(i);
                     System.out.println(userId);
-                    List<Meetallptorder> meetallptorder = meetallptorderDao.GetAllOrderInfo(i, userId);
-                    System.out.println(JSON.toJSONString(meetallptorder));
+                    Meetallptorder meetallptorder = meetallptorderDao.GetAllOrderInfo(i, userId);
+                    //System.out.println(JSON.toJSONString(meetallptorder));
+                    meetallptorderList.add(meetallptorder);
                 }
             }
         }
-
-        return null;
+        String last = JSON.toJSONString(meetallptorderList);
+        return last;
     }
+
+    /**
+     * 查看我单个拼团的信息
+     */
+    public String LookMySinglePtInfo(Integer ptNumber,Integer userId){
+        Meetallptorder meetallptorder = meetallptorderDao.GetAllOrderInfo(ptNumber, userId);
+        System.out.println(JSON.toJSONString(meetallptorder));
+        return JSON.toJSONString(meetallptorder);
+    }
+
+
 }

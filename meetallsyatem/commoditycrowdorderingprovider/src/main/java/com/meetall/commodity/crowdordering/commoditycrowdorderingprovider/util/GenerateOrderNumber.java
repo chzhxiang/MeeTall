@@ -1,5 +1,6 @@
 package com.meetall.commodity.crowdordering.commoditycrowdorderingprovider.util;
 
+
 import org.junit.Test;
 
 import java.text.DateFormat;
@@ -17,16 +18,5 @@ public class GenerateOrderNumber {
             hashCodeV = -hashCodeV;
         }
         return time + String.format("%011d", hashCodeV);
-    }
-    @Test
-    public void createOsrder(){
-        Date date=new Date();
-        DateFormat format = new SimpleDateFormat("yyyyMMdd");
-        String time = format.format(date);
-        int hashCodeV = UUID.randomUUID().toString().hashCode();
-        if (hashCodeV < 0) {
-            hashCodeV = -hashCodeV;
-        }
-        System.out.println(time + String.format("%011d", hashCodeV));
     }
 }
