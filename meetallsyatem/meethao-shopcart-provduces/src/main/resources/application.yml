@@ -1,0 +1,22 @@
+server:
+  port: 6700
+spring:
+  application:
+    name: shopcartproducesxc
+
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    timeout: 20000
+    pool:
+      max-active: 8
+      min-idle: 0
+      max-idle: 8
+      max-wait: -1
+    password:
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:6100/eureka/
+
+

@@ -1,5 +1,5 @@
 server:
-  port: 6200
+  port: 8010
 spring:
   application:
     name: orderprovder

@@ -18,6 +18,10 @@
         <option value="$PROJECT_DIR$/meetallcommon/pom.xml" />
         <option value="$PROJECT_DIR$/meitehao-order-consumer/pom.xml" />
         <option value="$PROJECT_DIR$/meitehao-order-provder/pom.xml" />
+        <option value="$PROJECT_DIR$/shopingcartconsumer/pom.xml" />
+        <option value="$PROJECT_DIR$/shoppingcartproducers/pom.xml" />
+        <option value="$PROJECT_DIR$/meethao-shopcart-provduces/pom.xml" />
+        <option value="$PROJECT_DIR$/meethao-shopcart-consumer/pom.xml" />
       </list>
     </option>
   </component>
