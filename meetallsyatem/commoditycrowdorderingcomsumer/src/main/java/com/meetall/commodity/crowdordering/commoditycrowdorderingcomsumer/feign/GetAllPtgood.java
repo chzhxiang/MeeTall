@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * 获取所有参与拼团商品的编号信息
  */
 
-@FeignClient("cloud-commodity-datail-provlder")
+@FeignClient(name = "cloud-commodity-datail-provlder")
 public interface GetAllPtgood {
     /**
      * 拿到所有的参与拼团商品

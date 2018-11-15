@@ -1,3 +1,5 @@
+server:
+  port: 8024
 spring:
   application:
     name: cloud-commodity-crowdordering-provlder
@@ -42,10 +44,9 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://39.105.7.229:6001/eureka/
+      defaultZone: http://localhost:6001/eureka/
   instance:
     prefer-ip-address: true
-server:
-  port: 8024
+
 mybatis:
   mapperLocations: classpath:mapper/*.xml

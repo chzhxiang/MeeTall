@@ -5,9 +5,10 @@ import com.meetall.commodity.crowdordering.commoditycrowdorderingcomsumer.feign.
 import com.meetall.commodity.crowdordering.commoditycrowdorderingcomsumer.service.getAddress;
 import order.Address;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+@Service("getAddressImpl")
 public class getAddressImpl implements getAddress {
     @Autowired
     private UserInfoReceiving userInfoReceiving;

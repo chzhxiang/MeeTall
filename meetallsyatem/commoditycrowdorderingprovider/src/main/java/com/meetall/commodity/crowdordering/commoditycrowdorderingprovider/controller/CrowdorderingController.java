@@ -26,12 +26,12 @@ public class CrowdorderingController {
      * 单个用户发起拼团
      */
     @ApiOperation(value="123",notes="123",httpMethod = "POST")
+    //@ApiImplicitParam(dataType = "User",name = "user",value = "用户信息",required = true)
     @RequestMapping("/LaunchCrowdordering")
     public String Launch(Meetalluserpt meetalluserpt, Meetallptorder meetallptorder){
         launchCrowdordering.UserLaunchCrowdordering(meetalluserpt,meetallptorder);
         return null;
     }
-
     /**
      * 查看该商品的所有拼团信息
      */
