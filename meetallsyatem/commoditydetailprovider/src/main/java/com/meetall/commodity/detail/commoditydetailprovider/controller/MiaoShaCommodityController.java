@@ -17,5 +17,4 @@ public class MiaoShaCommodityController {
     public String MiaoShaCommodity(){
         return miaoshaCommodityAll.CommodityAll();
     }
-
 }

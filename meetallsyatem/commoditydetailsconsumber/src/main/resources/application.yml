@@ -1,0 +1,11 @@
+server:
+  port: 8005
+spring:
+  application:
+    name: cloud-commodity-deatails-consumber
+eureka:
+  client:
+    service-url:
+      defaultZone: http://39.105.7.229:6001/eureka/
+  instance:
+    prefer-ip-address: true

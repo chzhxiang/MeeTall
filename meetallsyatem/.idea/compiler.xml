@@ -12,6 +12,7 @@
         <module name="commoditydetailsconsumber" />
         <module name="commoditysearchconsumber" />
         <module name="demo" />
+        <module name="meetall-seckill-consumer" />
         <module name="meetall-seckill-producer" />
         <module name="meetall-user-producer" />
         <module name="meetallcommon" />

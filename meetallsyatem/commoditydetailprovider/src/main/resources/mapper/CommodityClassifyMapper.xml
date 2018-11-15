@@ -8,4 +8,7 @@
     <resultMap id="commodityclassify" type="com.meetall.commodity.detail.commoditydetailprovider.pojo.CommodityClassify">
         <result column="classify_name" property="classifyName"/>
     </resultMap>
+    <select id="getCommodityClassifyNumber" parameterType="String" resultType="int">
+        select commodity_classify_number from commodityClassify where classify_name = #{classifyName}
+    </select>
 </mapper>

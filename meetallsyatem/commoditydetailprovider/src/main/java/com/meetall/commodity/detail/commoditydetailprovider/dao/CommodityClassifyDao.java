@@ -13,5 +13,5 @@ public interface CommodityClassifyDao {
      *
      */
     List<CommodityClassify> getAll();
-
+    Integer getCommodityClassifyNumber(String classifyName);
 }
