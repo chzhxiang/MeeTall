@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/commoditycrowdorderingcomsumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commoditycrowdorderingprovider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commoditydetailprovider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commoditydetailsconsumber" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commoditysearchconsumber" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/meetall-feign" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/meetall-seckill-producer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/meetall-user-producer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/meetallregistry" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/meetallregistry" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/meitehao-order-consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/meitehao-order-provder" charset="UTF-8" />
+  </component>
+</project>
