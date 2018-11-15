@@ -27,10 +27,12 @@ public class DelectRedisServiceImpl implements DelectRedisOrderService {
         for (Object i : integers) {
             if(hmget.get(i) instanceof Order){
                 Order order1 = (Order) hmget.get(i);
+                System.out.println(order1.getUserid());
                 list.add(order1);
             }
         }
         re = JSON.toJSONString(list);
+        System.out.println(re);
         return re;
     }
 }

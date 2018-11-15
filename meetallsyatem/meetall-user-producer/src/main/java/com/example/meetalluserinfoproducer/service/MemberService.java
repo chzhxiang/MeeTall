@@ -62,4 +62,11 @@ public interface MemberService {
      * @return
      */
     AjaxResult updateIntegral(Integer user_id, double money);
+
+    /**
+     * 查询个人积分
+     * @param user_id
+     * @return
+     */
+    int selectIntegralById(Integer user_id);
 }

@@ -5,6 +5,7 @@ import com.example.meetalluserinfoproducer.entity.User;
 import com.example.meetalluserinfoproducer.entity.UserAndMember;
 import com.example.meetalluserinfoproducer.result.AjaxResult;
 import com.example.meetalluserinfoproducer.service.UserService;
+import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiModelProperty;
 import io.swagger.annotations.ApiOperation;
@@ -23,6 +24,7 @@ import static com.example.meetalluserinfoproducer.result.AjaxResult.success;
  */
 @RestController
 @RequestMapping("user")
+@Api(description = "用户管理")
 public class UserController {
     /**
      * 服务对象

@@ -17,7 +17,6 @@ public interface FanMapper {
     int updateByPrimaryKeySelective(Fan record);
 
     int updateByPrimaryKey(Fan record);
-
     /**
      * 根据用户查看用户的全部信息
      * @param userid

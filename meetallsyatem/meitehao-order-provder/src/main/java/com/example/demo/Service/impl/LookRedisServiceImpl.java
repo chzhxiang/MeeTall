@@ -24,7 +24,9 @@ public class LookRedisServiceImpl implements LookRedisService {
             if(hmget.get(i) instanceof Order){
                 Order order1 = (Order) hmget.get(i);
                 if (order1.getOrdernumber().equals(ordreNumber)){
+                    System.out.println(order1.getUserid());
                     re =  JSON.toJSONString(order1);
+                    System.out.println(re);
                 }
             }
 

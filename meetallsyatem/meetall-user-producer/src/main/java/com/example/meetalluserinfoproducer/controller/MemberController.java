@@ -17,6 +17,7 @@ import javax.annotation.Resource;
  */
 @RestController
 @RequestMapping("member")
+@Api(description = "会员管理")
 public class MemberController {
     /**
      * 服务对象

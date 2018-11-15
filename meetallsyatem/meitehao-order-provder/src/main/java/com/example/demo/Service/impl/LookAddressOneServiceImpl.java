@@ -14,7 +14,6 @@ public class LookAddressOneServiceImpl implements LookAddressOneService {
     @Override
     public Address getoneAddress(String addressNumber) {
         Address address = addressMapper.selectByPrimaryKey(addressNumber);
-        System.out.println(address.getCity());
         return address;
     }
 }

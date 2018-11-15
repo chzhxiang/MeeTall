@@ -106,4 +106,7 @@
     <update id="updateIntegral">
         update MeetAllUserInfoDB.member set integral=integral+#{money} where user_id=#{user_id}
     </update>
+    <select id="selectIntegralById" parameterType="int" resultType="int">
+        select integral from member where user_id = #{user_id}
+    </select>
 </mapper>

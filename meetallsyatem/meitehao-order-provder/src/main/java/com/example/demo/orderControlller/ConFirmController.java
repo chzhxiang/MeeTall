@@ -3,6 +3,7 @@ package com.example.demo.orderControlller;
 import com.alibaba.fastjson.JSON;
 import com.example.demo.Service.*;
 import com.example.demo.pojo.Address;
+import com.example.demo.pojo.Fan;
 import com.example.demo.pojo.Order;
 import com.example.demo.pojo.User;
 import io.swagger.annotations.ApiOperation;
@@ -10,6 +11,7 @@ import org.aspectj.weaver.ast.Or;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import javax.xml.bind.SchemaOutputResolver;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,8 +21,6 @@ public class ConFirmController {
     private ConfirmService confirmService;
     @Resource(name = "addredislist")
     private AddRedisListService addRedisListService;
-    @Resource(name = "look")
-    private LookOrderDaoService lookOrderDaoService;
     @Resource(name = "getone")
     private LookRedisService lookRedisService;
     @Resource(name = "lookRedis")
@@ -62,12 +62,6 @@ public class ConFirmController {
 
         return addRedisListService.addredislist(orderlist,address);
 
-    }
-    //根据订单状态和用户查看订单集合
-    @ApiOperation(value = "查询数据库里面用户的订单信息传入用户id和订单状态")
-    @RequestMapping("shuju")
-    public String get(@RequestParam int userid,@RequestParam int state){
-        return JSON.toJSONString(lookOrderDaoService.getlook(userid,state));
     }
     //查看一个redis订单的具体信息
     @ApiOperation(value = "传入用户id和订单编号获取一条订单信息")
@@ -140,12 +134,8 @@ public class ConFirmController {
     @ApiOperation(value = "传入user对象list集合进行所有订单的查询")
     @RequestMapping("lookallorder")
     public String getallorder(@RequestParam String userlist){
-        User user = new User();
-        user.setUserId(1);
-        List<User> list = new ArrayList<>();
-        list.add(user);
-        String s = JSON.toJSONString(list);
-        return lookAllOrderService.getall(s);
+
+        return lookAllOrderService.getall(userlist);
     }
     @ApiOperation(value = "根据用户id查询用户的退单信息")
     @RequestMapping("getfanall")
@@ -159,7 +149,9 @@ public class ConFirmController {
     }
     @ApiOperation(value = "拿到地址对象和对单对象集合显示进行添加")
     @RequestMapping("addfan")
-    public String addfan(Address address,String tuilist){
+    public String addfan(@RequestBody Address address,@RequestParam String tuilist){
+        System.out.println(address.getUserid());
+        System.out.println(tuilist);
         return fanService.fanhui(address,tuilist);
     }
     @RequestMapping("com")
@@ -179,7 +171,39 @@ public class ConFirmController {
         address.setArea("shang");
         address.setStreet("beijing");
         return addRedisListService.addredislist(s,address);
-
-
+    }
+    @RequestMapping("userlist")
+    public String userid(){
+        User user = new User();
+        user.setUserId(1);
+        List<User> list = new ArrayList<>();
+        list.add(user);
+        String s = JSON.toJSONString(list);
+        System.out.println(s);
+        return lookAllOrderService.getall(s);
+    }
+    @RequestMapping("tui")
+    public String tui(){
+        List<Fan> list = new ArrayList<>();
+        Fan fan = new Fan();
+        fan.setOrdernumber("2018111300259758633");
+        fan.setUserid(1);
+        fan.setRenumber(3);
+        fan.setShopid(1);
+        fan.setRedundant("zheshishenshangpin");
+        fan.setReturnreason("buxihuan");
+        fan.setRenumber(10);
+        fan.setReturntype(0);
+        list.add(fan);
+        String s = JSON.toJSONString(list);
+        System.out.println(s);
+        Address address = new Address();
+        address.setAddressnumber("2018111200231799898");
+        address.setCity("beijing");
+        address.setArea("shang");
+        address.setStreet("beijing");
+        address.setConsumernamer("consume");
+        address.setConsumerphoto("1214578");
+        return JSON.toJSONString(fanService.fanhui(address,s));
     }
 }

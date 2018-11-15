@@ -34,13 +34,13 @@ public class FirstConsumer {
 
     @RabbitListener(queues = {"first-queue","second-queue"}, containerFactory = "rabbitListenerContainerFactory")
     public void handleMessage(String message) throws Exception {
-        System.out.println(1);
         List<Order> list = JSONArray.parseArray(message, Order.class);
 
         for (Order order:list) {
             String userid = String.valueOf(order.getUserid());
             String orderNumber = order.getOrdernumber();
             Object hget = redisUtil.hget(userid, orderNumber);
+            System.out.println(hget);
             if(hget instanceof Order){
                 Order order1 = (Order) hget;
                 order1.setPaytime(order.getPaytime());
@@ -48,15 +48,16 @@ public class FirstConsumer {
                 order1.setTimedoller(order.getTimedoller());
                 order1.setPaytype(order.getPaytype());
                 order1.setOrderstate(1);
-                orderMapper.insertSelective(order1);
-                Look look = new Look();
-                look.setShopid(order1.getShopid());
-                look.setOrderstate(order1.getOrderstate());
-                look.setUserid(order1.getUserid());
-                look.setRedundant1(order.getRedundant());
-                lookMapper.insert(look);
-                String s = String.valueOf(order1.getUserid());
-                redisUtil.hdel(s,order.getOrdernumber());
+                if (orderMapper.selectByPrimaryKey(order1.getOrdernumber()) == null){
+                    orderMapper.insertSelective(order1);
+                    Look look = new Look();
+                    look.setShopid(order1.getShopid());
+                    look.setOrderstate(order1.getOrderstate());
+                    look.setUserid(order1.getUserid());
+                    look.setRedundant1(order.getRedundant());
+                    String s = String.valueOf(order1.getUserid());
+                    redisUtil.hdel(s,order.getOrdernumber());
+                }
             }
         }
     }

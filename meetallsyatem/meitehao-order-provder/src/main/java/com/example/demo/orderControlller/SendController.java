@@ -75,7 +75,7 @@ public class SendController {
     public String pay(){
         String uuid = UUID.randomUUID().toString();
         Order order = new Order();
-        order.setOrdernumber("4511121245");
+        order.setOrdernumber("2018111501163850888");
         order.setUserid(1);
         order.setTimedoller(100.0);
         order.setPaytype("支付宝");

@@ -50,10 +50,14 @@ public class UserServiceImpl implements UserService {
             updateScreenName(id,user.getScreenName());
         }
         Member member = memberService.queryById(id);
+
         uam.setId(id);
         uam.setHeadurl(user.getHeadurl());
-        uam.setMember(member.getMember());
-        uam.setScreenName(user.getScreenName());
+        if (member != null){
+            uam.setMember(member.getMember());
+            uam.setScreenName(user.getScreenName());
+        }
+
         return uam;
     }
 

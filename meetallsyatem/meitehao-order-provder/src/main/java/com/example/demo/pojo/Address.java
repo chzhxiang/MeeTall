@@ -1,22 +1,23 @@
 package com.example.demo.pojo;
 
 public class Address {
+    //地址编号
     private String addressnumber;
-
+    //用户id
     private Integer userid;
-
+    //城市
     private String city;
-
+    //地区
     private String area;
-
+    //街道
     private String street;
-
+    //邮政编码
     private Integer zip;
-
+    //是不是默认地址
     private Integer moren;
-
+    //接受者名字
     private String consumernamer;
-
+    //接受者电话
     private String consumerphoto;
 
     private String redundant;

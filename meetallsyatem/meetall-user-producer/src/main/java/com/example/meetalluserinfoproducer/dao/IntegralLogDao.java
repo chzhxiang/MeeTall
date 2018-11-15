@@ -1,6 +1,6 @@
 package com.example.meetalluserinfoproducer.dao;
 
-import com.example.meetalluserinfoproducer.entity.Member;
+import com.example.meetalluserinfoproducer.entity.IntegralLog;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
@@ -8,22 +8,22 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 /**
- * (Member)表数据库访问层
+ * (IntegralLog)表数据库访问层
  *
  * @author makejava
- * @since 2018-11-09 09:26:27
+ * @since 2018-11-14 09:47:30
  */
 @Mapper
 @Repository
-public interface MemberDao {
+public interface IntegralLogDao {
 
     /**
-     * 通过userID查询单条数据
+     * 通过ID查询单条数据
      *
-     * @param userID 用户id
+     * @param id 主键
      * @return 实例对象
      */
-    Member queryById(Integer userID);
+    IntegralLog queryById(Integer id);
 
     /**
      * 查询指定行数据
@@ -32,32 +32,32 @@ public interface MemberDao {
      * @param limit 查询条数
      * @return 对象列表
      */
-    List<Member> queryAllByLimit(@Param("offset") int offset, @Param("limit") int limit);
+    List<IntegralLog> queryAllByLimit(@Param("offset") int offset, @Param("limit") int limit);
 
 
     /**
      * 通过实体作为筛选条件查询
      *
-     * @param member 实例对象
+     * @param integralLog 实例对象
      * @return 对象列表
      */
-    List<Member> queryAll(Member member);
+    List<IntegralLog> queryAll(IntegralLog integralLog);
 
     /**
      * 新增数据
      *
-     * @param member 实例对象
+     * @param integralLog 实例对象
      * @return 影响行数
      */
-    int insert( Member member);
+    int insert(IntegralLog integralLog);
 
     /**
      * 修改数据
      *
-     * @param member 实例对象
+     * @param integralLog 实例对象
      * @return 影响行数
      */
-    int update(Member member);
+    int update(IntegralLog integralLog);
 
     /**
      * 通过主键删除数据
@@ -68,17 +68,10 @@ public interface MemberDao {
     int deleteById(Integer id);
 
     /**
-     * -跟新会员积分
+     * 查询用户的所有积分记录
      * @param user_id
-     * @param money
      * @return
      */
-    int updateIntegral(@Param("user_id") Integer user_id,@Param("money") double money);
+    List<IntegralLog> selectByUserId(Integer user_id);
 
-    /**
-     * 查询个人积分
-     * @param user_id
-     * @return
-     */
-    int selectIntegralById(Integer user_id);
 }

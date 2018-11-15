@@ -10,6 +10,7 @@ import com.example.meetallseckillproducer.service.SeckillOrderSerivce;
 import com.example.meetallseckillproducer.util.CookieUtil;
 import com.example.meetallseckillproducer.util.DateGenerate;
 import com.example.meetallseckillproducer.util.RedisUtil;
+import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
@@ -21,6 +22,7 @@ import java.sql.Timestamp;
 import java.util.List;
 
 @RestController
+@Api(value = "秒杀系统")
 public class SeckillController {
 
     @Autowired

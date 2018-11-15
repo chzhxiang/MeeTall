@@ -3,57 +3,42 @@ package com.example.demo.pojo;
 import java.util.Date;
 
 public class Fan {
+    //退单编号
     private String returnnumber;
-
+    //关联订单
     private String ordernumber;
-
+    //收货人地址拿到所有的地址信息拼接
     private String consumeraddress;
-
+    //收货人名字
     private String consumername;
-
+    //收货人电话
     private String sonsumerphoto;
-
+    //退货类型
     private Integer returntype;
-
+    //退货金额
     private Double returndoller;
-
+    //退货申请时间
     private Date returnapplytime;
-
+    //退货处理时间
     private Date renturndealtime;
-
+    //退货原因
     private String returnreason;
-
+    //物流单号
     private String liunumber;
-
+    //用户id
     private Integer userid;
-
+    //商品id
     private Integer shopid;
-
+    //地址编号
     private String address;
-
+    //退货商品信息sku拼接
     private String redundant;
 
     private String redundant1;
-
+    //退货数量
     private Integer renumber;
-
+    //退单状态
     private Integer returnzt;
-
-    public Integer getReturnzt() {
-        return returnzt;
-    }
-
-    public void setReturnzt(Integer returnzt) {
-        this.returnzt = returnzt;
-    }
-
-    public Integer getRenumber() {
-        return renumber;
-    }
-
-    public void setRenumber(Integer renumber) {
-        this.renumber = renumber;
-    }
 
     public String getReturnnumber() {
         return returnnumber;
@@ -181,5 +166,21 @@ public class Fan {
 
     public void setRedundant1(String redundant1) {
         this.redundant1 = redundant1;
+    }
+
+    public Integer getRenumber() {
+        return renumber;
+    }
+
+    public void setRenumber(Integer renumber) {
+        this.renumber = renumber;
+    }
+
+    public Integer getReturnzt() {
+        return returnzt;
+    }
+
+    public void setReturnzt(Integer returnzt) {
+        this.returnzt = returnzt;
     }
 }

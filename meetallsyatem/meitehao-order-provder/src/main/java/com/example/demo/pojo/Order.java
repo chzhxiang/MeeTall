@@ -5,37 +5,39 @@ import java.io.Serializable;
 import java.util.Date;
 
 public class Order implements Serializable {
+    //订单编号
     private String ordernumber;
-
+    //实付金额
     private Double timedoller;
-
+    //支付类型
     private String paytype;
-
+    //订单创建时间
     private Date ordcreatetime;
-
+    //订单修改时间
     private Date ordupdatetime;
-
+    //支付时间
     private Date paytime;
-
+    //交易完成时间
     private Date paycompletetime;
-
+    //用户id
     private Integer userid;
-
+    //订单状态
     private Integer orderstate;
-
+    //商品id
     private Integer shopid;
-
+    //商品数量
     private Integer shopnumber;
-
+    //商品总付款
     private Double shoptotaldoller;
-
+    //支付单号
     private String paysuccend;
-
+    //商品金额
     private Double shopdoller;
-
+    //商品sku属性拼接
     private String redundant;
 
     private String redundant1;
+    //订单删除状态
     private Integer delectzt;
     private String duo;
     private String duo1;

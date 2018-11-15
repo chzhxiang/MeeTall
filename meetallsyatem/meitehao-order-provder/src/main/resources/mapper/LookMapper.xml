@@ -30,4 +30,5 @@
   <select id="getlook" resultMap="BaseResultMap">
     select * from `look` where userid=#{userid} and orderstate=#{state}
   </select>
+
 </mapper>
