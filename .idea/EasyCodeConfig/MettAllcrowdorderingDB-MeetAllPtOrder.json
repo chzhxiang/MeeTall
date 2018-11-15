@@ -1,0 +1,108 @@
+{
+  "name" : "Meetallptorder",
+  "comment" : null,
+  "fullColumn" : [ {
+    "name" : "ptOrderNumber",
+    "comment" : null,
+    "type" : null,
+    "shortType" : null,
+    "custom" : false,
+    "ext" : { }
+  }, {
+    "name" : "ptGroupNumber",
+    "comment" : "组团编号",
+    "type" : null,
+    "shortType" : null,
+    "custom" : false,
+    "ext" : { }
+  }, {
+    "name" : "ptCommodityId",
+    "comment" : "商品id",
+    "type" : null,
+    "shortType" : null,
+    "custom" : false,
+    "ext" : { }
+  }, {
+    "name" : "ptPrice",
+    "comment" : "拼团价格",
+    "type" : "java.lang.Object",
+    "shortType" : null,
+    "custom" : false,
+    "ext" : { }
+  }, {
+    "name" : "ptOriginalPrice",
+    "comment" : "商品原价",
+    "type" : "java.lang.Object",
+    "shortType" : null,
+    "custom" : false,
+    "ext" : { }
+  }, {
+    "name" : "ptOrderMoney",
+    "comment" : "订单金额",
+    "type" : "java.lang.Object",
+    "shortType" : null,
+    "custom" : false,
+    "ext" : { }
+  }, {
+    "name" : "ptOrderState",
+    "comment" : "订单状态（0新订单，1已成交，-1已取消）",
+    "type" : null,
+    "shortType" : null,
+    "custom" : false,
+    "ext" : { }
+  }, {
+    "name" : "ptPayState",
+    "comment" : "支付状态。0已支付，1已退款",
+    "type" : null,
+    "shortType" : null,
+    "custom" : false,
+    "ext" : { }
+  }, {
+    "name" : "ptCreateTime",
+    "comment" : "创建时间",
+    "type" : "java.util.Date",
+    "shortType" : null,
+    "custom" : false,
+    "ext" : { }
+  }, {
+    "name" : "ptUpdateTime",
+    "comment" : "表更新时间",
+    "type" : "java.util.Date",
+    "shortType" : null,
+    "custom" : false,
+    "ext" : { }
+  }, {
+    "name" : "ptPayMoney",
+    "comment" : "支付金额",
+    "type" : "java.lang.String",
+    "shortType" : null,
+    "custom" : false,
+    "ext" : { }
+  }, {
+    "name" : "u1",
+    "comment" : null,
+    "type" : "java.lang.String",
+    "shortType" : null,
+    "custom" : false,
+    "ext" : { }
+  }, {
+    "name" : "u2",
+    "comment" : null,
+    "type" : "java.lang.String",
+    "shortType" : null,
+    "custom" : false,
+    "ext" : { }
+  }, {
+    "name" : "u3",
+    "comment" : null,
+    "type" : "java.lang.String",
+    "shortType" : null,
+    "custom" : false,
+    "ext" : { }
+  } ],
+  "pkColumn" : null,
+  "otherColumn" : null,
+  "savePackageName" : "com.meetall.commodity.crowdordering.commoditycrowdorderingprovider.service",
+  "savePath" : "./commoditycrowdorderingprovider/src/main/java/com/meetall/commodity/crowdordering/commoditycrowdorderingprovider/service",
+  "saveModelName" : "commoditydetailprovider"
+}

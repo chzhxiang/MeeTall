@@ -6,8 +6,29 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+<<<<<<< HEAD:meetallsyatem/meetallcommon/.idea/compiler.xml
         <module name="meetallcommon" />
       </profile>
     </annotationProcessing>
+=======
+        <module name="commoditycrowdorderingcomsumer" />
+        <module name="commoditycrowdorderingprovider" />
+        <module name="commoditydetailprovider" />
+        <module name="commoditydetailsconsumber" />
+        <module name="commoditysearchconsumber" />
+        <module name="meetallregistry" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="commoditycrowdorderingcomsumer" target="1.8" />
+      <module name="commoditycrowdorderingprovider" target="1.8" />
+      <module name="commoditydetailprovider" target="1.8" />
+      <module name="commoditydetails" target="1.8" />
+      <module name="commoditydetailsconsumber" target="1.8" />
+      <module name="commoditysearchconsumber" target="1.8" />
+      <module name="commoditysearchprovider" target="1.8" />
+      <module name="meetallregistry" target="1.8" />
+    </bytecodeTargetLevel>
+>>>>>>> remotes/origin/Sunkefan:.idea/compiler.xml
   </component>
 </project>
