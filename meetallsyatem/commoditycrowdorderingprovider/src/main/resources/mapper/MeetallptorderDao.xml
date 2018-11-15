@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.meetall.commodity.crowdordering.commoditycrowdorderingprovider.dao.MeetallptorderDao">
+
+    <resultMap type="com.meetall.commodity.crowdordering.commoditycrowdorderingprovider.pojo.Meetallptorder" id="MeetallptorderMap">
+        <result property="ptOrderNumber" column="pt_order_number" />
+        <result property="ptGroupNumber" column="pt_group_number" />
+        <result property="ptCommodityId" column="pt_commodity_id" />
+        <result property="ptPrice" column="pt_price" />
+        <result property="ptOriginalPrice" column="pt_original_price" />
+        <result property="ptOrderMoney" column="pt_order_money" />
+        <result property="ptOrderState" column="pt_order_state" />
+        <result property="ptPayState" column="pt_pay_state" />
+        <result property="ptCreateTime" column="pt_create_time" />
+        <result property="ptUpdateTime" column="pt_update_time"/>
+        <result property="ptPayMoney" column="pt_pay_money"/>
+        <result property="userId" column="pt_user_id"/>
+        <result property="ptDeliverymanner" column="pt_deliverymanner"/>
+    </resultMap>
+    <select id="GetAllOrderInfo" resultMap="MeetallptorderMap">
+        select pt_order_number,pt_group_number,pt_commodity_id,pt_price,pt_original_price,pt_order_money,pt_order_state,pt_pay_state,pt_create_time,pt_pay_money,pt_deliverymanner from MettAllcrowdorderingDB.MeetAllPtOrder where pt_group_number = #{ptGroupNumber} and pt_user_id = #{userId} ORDER BY pt_create_time DESC
+    </select>
+
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="ptOrderNumber" useGeneratedKeys="true">
+      insert into
+      MettAllcrowdorderingDB.MeetAllPtOrder(pt_order_number,pt_group_number, pt_commodity_id, pt_price, pt_original_price, pt_order_money, pt_order_state, pt_pay_state, pt_pay_money , pt_deliverymanner)
+      values (#{ptOrderNumber}, #{ptGroupNumber},#{ptCommodityId}, #{ptPrice}, #{ptOriginalPrice}, #{ptOrderMoney}, #{ptOrderState}, #{ptPayState}, #{ptPayMoney},#{ptDeliverymanner})
+    </insert>
+
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from MettAllcrowdorderingDB.MeetAllPtOrder where pt_order_number = #{ptOrderNumber}
+    </delete>
+
+    <update id="updateOrderExpired" parameterType="int">
+        update MettAllcrowdorderingDB.MeetAllPtOrder
+        set pt_order_state = -1,
+        where pt_group_number = #{ptGroupNumber}
+    </update>
+
+
+</mapper>

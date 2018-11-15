@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/commoditycrowdorderingcomsumer/pom.xml" />
+        <option value="$PROJECT_DIR$/commoditydetailprovider/pom.xml" />
+        <option value="$PROJECT_DIR$/commoditycrowdorderingprovider/pom.xml" />
+        <option value="$PROJECT_DIR$/commoditydetailsconsumber/pom.xml" />
+        <option value="$PROJECT_DIR$/meetall-feign/pom.xml" />
+        <option value="$PROJECT_DIR$/commoditysearchconsumber/pom.xml" />
+        <option value="$PROJECT_DIR$/meetall-seckill-producer/pom.xml" />
+        <option value="$PROJECT_DIR$/meetall-user-producer/pom.xml" />
+        <option value="$PROJECT_DIR$/meetallregistry/pom.xml" />
+        <option value="$PROJECT_DIR$/meetall-userinfo-producer/pom.xml" />
+        <option value="$PROJECT_DIR$/meetallcommon/pom.xml" />
+        <option value="$PROJECT_DIR$/meitehao-order-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/meitehao-order-provder/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="libraryTable">
+    <library name="jdk1.7">
+      <CLASSES />
+      <JAVADOC />
+      <SOURCES>
+        <root url="file://C:/Program Files/Java/jdk1.7.0_79" />
+      </SOURCES>
+      <jarDirectory url="file://C:/Program Files/Java/jdk1.7.0_79" recursive="false" type="SOURCES" />
+    </library>
+  </component>
+</project>
