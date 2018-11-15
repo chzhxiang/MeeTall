@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.meetall.commodity.detail.commoditydetailprovider.dao.CommodityAttributeNameDao">
+    <select id="getAttributeNumber" resultType="int">
+        select attribute_name_number from commodityAttributeName where attribute_name = #{attributeName}
+    </select>
+
+    <select id="getAttributeName" resultType="String">
+        select attribute_name from commodityAttributeName where attribute_name_number = #{attributeNameNumber}
+    </select>
+</mapper>
