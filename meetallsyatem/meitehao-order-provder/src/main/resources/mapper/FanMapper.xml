@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.dao.FanMapper">
+  <resultMap id="BaseResultMap" type="com.example.demo.pojo.Fan">
+    <id column="returnNumber" jdbcType="VARCHAR" property="returnnumber" />
+    <result column="orderNumber" jdbcType="VARCHAR" property="ordernumber" />
+    <result column="consumerAddress" jdbcType="VARCHAR" property="consumeraddress" />
+    <result column="consumerName" jdbcType="VARCHAR" property="consumername" />
+    <result column="sonsumerPhoto" jdbcType="VARCHAR" property="sonsumerphoto" />
+    <result column="returnType" jdbcType="INTEGER" property="returntype" />
+    <result column="returnDoller" jdbcType="DOUBLE" property="returndoller" />
+    <result column="returnApplyTime" jdbcType="TIMESTAMP" property="returnapplytime" />
+    <result column="renturnDealTime" jdbcType="TIMESTAMP" property="renturndealtime" />
+    <result column="returnReason" jdbcType="VARCHAR" property="returnreason" />
+    <result column="liuNumber" jdbcType="VARCHAR" property="liunumber" />
+    <result column="userId" jdbcType="INTEGER" property="userid" />
+    <result column="shopId" jdbcType="INTEGER" property="shopid" />
+    <result column="address" jdbcType="VARCHAR" property="address" />
+    <result column="redundant" jdbcType="VARCHAR" property="redundant" />
+    <result column="redundant1" jdbcType="VARCHAR" property="redundant1" />
+    <result column="renumber" jdbcType="INTEGER" property="renumber" />
+    <result column="returnzt" jdbcType="INTEGER" property="returnzt" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    returnNumber, orderNumber, consumerAddress, consumerName, sonsumerPhoto, returnType, 
+    returnDoller, returnApplyTime, renturnDealTime, returnReason, liuNumber, userId, 
+    shopId, address, redundant, redundant1, renumber, returnzt
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from fan
+    where returnNumber = #{returnnumber,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from fan
+    where returnNumber = #{returnnumber,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.example.demo.pojo.Fan">
+    insert into fan (returnNumber, orderNumber, consumerAddress, 
+      consumerName, sonsumerPhoto, returnType, 
+      returnDoller, returnApplyTime, renturnDealTime, 
+      returnReason, liuNumber, userId, 
+      shopId, address, redundant, 
+      redundant1, renumber, returnzt
+      )
+    values (#{returnnumber,jdbcType=VARCHAR}, #{ordernumber,jdbcType=VARCHAR}, #{consumeraddress,jdbcType=VARCHAR}, 
+      #{consumername,jdbcType=VARCHAR}, #{sonsumerphoto,jdbcType=VARCHAR}, #{returntype,jdbcType=INTEGER}, 
+      #{returndoller,jdbcType=DOUBLE}, #{returnapplytime,jdbcType=TIMESTAMP}, #{renturndealtime,jdbcType=TIMESTAMP}, 
+      #{returnreason,jdbcType=VARCHAR}, #{liunumber,jdbcType=VARCHAR}, #{userid,jdbcType=INTEGER}, 
+      #{shopid,jdbcType=INTEGER}, #{address,jdbcType=VARCHAR}, #{redundant,jdbcType=VARCHAR}, 
+      #{redundant1,jdbcType=VARCHAR}, #{renumber,jdbcType=INTEGER}, #{returnzt,jdbcType=INTEGER}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.example.demo.pojo.Fan">
+    insert into fan
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="returnnumber != null">
+        returnNumber,
+      </if>
+      <if test="ordernumber != null">
+        orderNumber,
+      </if>
+      <if test="consumeraddress != null">
+        consumerAddress,
+      </if>
+      <if test="consumername != null">
+        consumerName,
+      </if>
+      <if test="sonsumerphoto != null">
+        sonsumerPhoto,
+      </if>
+      <if test="returntype != null">
+        returnType,
+      </if>
+      <if test="returndoller != null">
+        returnDoller,
+      </if>
+      <if test="returnapplytime != null">
+        returnApplyTime,
+      </if>
+      <if test="renturndealtime != null">
+        renturnDealTime,
+      </if>
+      <if test="returnreason != null">
+        returnReason,
+      </if>
+      <if test="liunumber != null">
+        liuNumber,
+      </if>
+      <if test="userid != null">
+        userId,
+      </if>
+      <if test="shopid != null">
+        shopId,
+      </if>
+      <if test="address != null">
+        address,
+      </if>
+      <if test="redundant != null">
+        redundant,
+      </if>
+      <if test="redundant1 != null">
+        redundant1,
+      </if>
+      <if test="renumber != null">
+        renumber,
+      </if>
+      <if test="returnzt != null">
+        returnzt,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="returnnumber != null">
+        #{returnnumber,jdbcType=VARCHAR},
+      </if>
+      <if test="ordernumber != null">
+        #{ordernumber,jdbcType=VARCHAR},
+      </if>
+      <if test="consumeraddress != null">
+        #{consumeraddress,jdbcType=VARCHAR},
+      </if>
+      <if test="consumername != null">
+        #{consumername,jdbcType=VARCHAR},
+      </if>
+      <if test="sonsumerphoto != null">
+        #{sonsumerphoto,jdbcType=VARCHAR},
+      </if>
+      <if test="returntype != null">
+        #{returntype,jdbcType=INTEGER},
+      </if>
+      <if test="returndoller != null">
+        #{returndoller,jdbcType=DOUBLE},
+      </if>
+      <if test="returnapplytime != null">
+        #{returnapplytime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="renturndealtime != null">
+        #{renturndealtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="returnreason != null">
+        #{returnreason,jdbcType=VARCHAR},
+      </if>
+      <if test="liunumber != null">
+        #{liunumber,jdbcType=VARCHAR},
+      </if>
+      <if test="userid != null">
+        #{userid,jdbcType=INTEGER},
+      </if>
+      <if test="shopid != null">
+        #{shopid,jdbcType=INTEGER},
+      </if>
+      <if test="address != null">
+        #{address,jdbcType=VARCHAR},
+      </if>
+      <if test="redundant != null">
+        #{redundant,jdbcType=VARCHAR},
+      </if>
+      <if test="redundant1 != null">
+        #{redundant1,jdbcType=VARCHAR},
+      </if>
+      <if test="renumber != null">
+        #{renumber,jdbcType=INTEGER},
+      </if>
+      <if test="returnzt != null">
+        #{returnzt,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.example.demo.pojo.Fan">
+    update fan
+    <set>
+      <if test="ordernumber != null">
+        orderNumber = #{ordernumber,jdbcType=VARCHAR},
+      </if>
+      <if test="consumeraddress != null">
+        consumerAddress = #{consumeraddress,jdbcType=VARCHAR},
+      </if>
+      <if test="consumername != null">
+        consumerName = #{consumername,jdbcType=VARCHAR},
+      </if>
+      <if test="sonsumerphoto != null">
+        sonsumerPhoto = #{sonsumerphoto,jdbcType=VARCHAR},
+      </if>
+      <if test="returntype != null">
+        returnType = #{returntype,jdbcType=INTEGER},
+      </if>
+      <if test="returndoller != null">
+        returnDoller = #{returndoller,jdbcType=DOUBLE},
+      </if>
+      <if test="returnapplytime != null">
+        returnApplyTime = #{returnapplytime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="renturndealtime != null">
+        renturnDealTime = #{renturndealtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="returnreason != null">
+        returnReason = #{returnreason,jdbcType=VARCHAR},
+      </if>
+      <if test="liunumber != null">
+        liuNumber = #{liunumber,jdbcType=VARCHAR},
+      </if>
+      <if test="userid != null">
+        userId = #{userid,jdbcType=INTEGER},
+      </if>
+      <if test="shopid != null">
+        shopId = #{shopid,jdbcType=INTEGER},
+      </if>
+      <if test="address != null">
+        address = #{address,jdbcType=VARCHAR},
+      </if>
+      <if test="redundant != null">
+        redundant = #{redundant,jdbcType=VARCHAR},
+      </if>
+      <if test="redundant1 != null">
+        redundant1 = #{redundant1,jdbcType=VARCHAR},
+      </if>
+      <if test="renumber != null">
+        renumber = #{renumber,jdbcType=INTEGER},
+      </if>
+      <if test="returnzt != null">
+        returnzt = #{returnzt,jdbcType=INTEGER},
+      </if>
+    </set>
+    where returnNumber = #{returnnumber,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.example.demo.pojo.Fan">
+    update fan
+    set orderNumber = #{ordernumber,jdbcType=VARCHAR},
+      consumerAddress = #{consumeraddress,jdbcType=VARCHAR},
+      consumerName = #{consumername,jdbcType=VARCHAR},
+      sonsumerPhoto = #{sonsumerphoto,jdbcType=VARCHAR},
+      returnType = #{returntype,jdbcType=INTEGER},
+      returnDoller = #{returndoller,jdbcType=DOUBLE},
+      returnApplyTime = #{returnapplytime,jdbcType=TIMESTAMP},
+      renturnDealTime = #{renturndealtime,jdbcType=TIMESTAMP},
+      returnReason = #{returnreason,jdbcType=VARCHAR},
+      liuNumber = #{liunumber,jdbcType=VARCHAR},
+      userId = #{userid,jdbcType=INTEGER},
+      shopId = #{shopid,jdbcType=INTEGER},
+      address = #{address,jdbcType=VARCHAR},
+      redundant = #{redundant,jdbcType=VARCHAR},
+      redundant1 = #{redundant1,jdbcType=VARCHAR},
+      renumber = #{renumber,jdbcType=INTEGER},
+      returnzt = #{returnzt,jdbcType=INTEGER}
+    where returnNumber = #{returnnumber,jdbcType=VARCHAR}
+  </update>
+  <select id="getalltui" parameterType="int" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from `fan`
+    where userid = #{uid}
+  </select>
+</mapper>
