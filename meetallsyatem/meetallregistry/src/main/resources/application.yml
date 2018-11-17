@@ -5,4 +5,7 @@ eureka:
     register-with-eureka: false
     fetch-registry: false
     serviceUrl:
-      defaultZone: http://localhost:${server.port}/eureka/
+      defaultZone: http://39.105.7.229:${server.port}/eureka/
+spring:
+  application:
+    name: eureka

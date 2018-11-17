@@ -4,9 +4,12 @@ import com.alibaba.fastjson.JSON;
 import com.meetall.commodity.search.commoditysearchconsumber.pojo.CommodityModel;
 import com.meetall.commodity.search.commoditysearchconsumber.pojo.CommoditySearch;
 import com.meetall.commodity.search.commoditysearchconsumber.service.impl.SearchProductImpl;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -14,6 +17,8 @@ import java.util.List;
 
 
 @Controller
+@RequestMapping
+@Api(value = "全文搜索", description = "lalala")
 public class SearchProductController {
     @Autowired
     private SearchProductImpl searchProductImpl ;
@@ -36,9 +41,10 @@ public class SearchProductController {
         model.addAttribute("sort", productSearch.getSort());
         return "product_list";
     }
+    @ApiOperation(value= "全文搜索" , notes="全文搜索")
     @RequestMapping(value = "/abc")
     @ResponseBody
-    public String a(CommoditySearch productSearch) throws Exception {
+    public String a(@RequestBody CommoditySearch productSearch) throws Exception {
         List<CommodityModel> searchProducts = searchProductImpl.searchProduct(productSearch);
         return JSON.toJSONString(searchProducts);
     }

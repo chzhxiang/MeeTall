@@ -1,0 +1,9 @@
+server:
+   port: 6002
+eureka:
+   client:
+      service-url:
+         defaultZone: http://39.105.7.229:6001/eureka/
+zuul:
+  routes:
+    cloud-commodity-deatails-consumber: /zhanghu/**

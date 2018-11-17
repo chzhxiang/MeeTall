@@ -1,6 +1,7 @@
 package com.meetall.commodity.detail.commoditydetailprovider.dao;
 
 import com.meetall.commodity.detail.commoditydetailprovider.pojo.CommodityClassify;
+import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
 
@@ -13,5 +14,7 @@ public interface CommodityClassifyDao {
      *
      */
     List<CommodityClassify> getAll();
+
     Integer getCommodityClassifyNumber(String classifyName);
+
 }

@@ -15,7 +15,7 @@ import javax.annotation.Resource;
  */
 @RestController
 @RequestMapping("meetallptorder")
-@Api(value = "", description = "测试")
+@Api(value = "wqwq", description = "测试")
 public class MeetallptorderController {
     /**
      * 服务对象

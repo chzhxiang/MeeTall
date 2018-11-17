@@ -5,6 +5,7 @@ import com.meetall.commodity.detail.commoditydetailprovider.dao.*;
 import com.meetall.commodity.detail.commoditydetailprovider.pojo.CommodityDetails;
 import com.meetall.commodity.detail.commoditydetailprovider.pojo.CommoditySku;
 import com.meetall.commodity.detail.commoditydetailprovider.pojo.Commodityattributerelation;
+import com.meetall.commodity.detail.commoditydetailprovider.service.impl.CommodityClassServiceImpl;
 import com.meetall.commodity.detail.commoditydetailprovider.service.impl.CommodityattributerelationServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -34,6 +35,13 @@ public class test {
         return a;
     }
 
+    @Autowired
+    private CommodityClassServiceImpl commodityClassService;
+
+    @RequestMapping("/ooo")
+    public String aaaa(@RequestParam("name") String name){
+        return JSON.toJSONString(commodityClassService.commodityClassfy(name));
+    }
 
     /**
      * 查询商品全部信息  包括商品介绍名称，价格(最低价格)

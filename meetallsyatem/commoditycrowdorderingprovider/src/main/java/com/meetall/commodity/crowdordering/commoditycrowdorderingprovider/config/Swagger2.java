@@ -12,17 +12,15 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @Configuration
 public class Swagger2 {
-
     @Bean
     public Docket createRestApi() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.meetall.commodity.crowdordering.commoditycrowdorderingprovider.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.meetall.commodity.crowdordering"))
                 .paths(PathSelectors.any())
                 .build();
     }
-
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
                 .title("springboot利用swagger构建api文档")

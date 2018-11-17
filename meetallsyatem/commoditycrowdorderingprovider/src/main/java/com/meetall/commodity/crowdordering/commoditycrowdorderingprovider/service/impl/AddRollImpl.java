@@ -1,5 +1,6 @@
 package com.meetall.commodity.crowdordering.commoditycrowdorderingprovider.service.impl;
 
+import ajaxpojo.AjaxResult;
 import com.meetall.commodity.crowdordering.commoditycrowdorderingprovider.dao.MeetallptStateMapper;
 import com.meetall.commodity.crowdordering.commoditycrowdorderingprovider.dao.MeetallptorderDao;
 import com.meetall.commodity.crowdordering.commoditycrowdorderingprovider.dao.MeetalluserptMapper;
@@ -7,6 +8,7 @@ import com.meetall.commodity.crowdordering.commoditycrowdorderingprovider.pojo.M
 import com.meetall.commodity.crowdordering.commoditycrowdorderingprovider.pojo.Meetalluserpt;
 import com.meetall.commodity.crowdordering.commoditycrowdorderingprovider.service.AddRoll;
 import com.meetall.commodity.crowdordering.commoditycrowdorderingprovider.util.GenerateOrderNumber;
+import com.meetall.commodity.crowdordering.commoditycrowdorderingprovider.util.RedisUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -39,6 +41,9 @@ public class AddRollImpl implements AddRoll {
     @Autowired
     private MeetalluserptMapper meetalluserptMapper;
 
+
+    @Autowired
+    private RedisUtil redisUtil;
     /**
      *  加入别人的团
      * @param ptGroupNumber 拼团编号
@@ -49,9 +54,10 @@ public class AddRollImpl implements AddRoll {
         //随机生成的订单编号
         String orderNumber = GenerateOrderNumber.createOrder();
         Map<String,String> map  = new HashMap<>();
-        int ptstate = meetallptStateMapper.selectPtState(meetalluserpt.getPtNumber());
+        //int ptstate = meetallptStateMapper.selectPtState(meetalluserpt.getPtNumber());
         String a = null;
-        if (ptstate==0){
+        //ptstate==0
+        if (true){
             if (true){//判断支付结果 支付成功生成订单，不成功不生成订单
                 //生成订单
 /*                Meetallptorder meetallptorder = new Meetallptorder();
@@ -84,8 +90,10 @@ public class AddRollImpl implements AddRoll {
                 //更改拼团状态和人数
                 meetallptStateMapper.updatePtState(meetalluserpt.getPtNumber());
                 map.put("info","拼团成功");
+                AjaxResult.success();
             }else {//支付失败，将订单存入redis
-
+                redisUtil.set("qwwqwqwq","123312");
+                System.out.println(redisUtil.get("wqwq"));
             }
         } else {
             map.put("info","拼团失败");

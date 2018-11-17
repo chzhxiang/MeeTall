@@ -14,7 +14,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping
-@Api(value = "1231", description = "测试")
+@Api(value = "所有拼团信息", description = "测试")
 
 public class PtGoods {
     @Autowired

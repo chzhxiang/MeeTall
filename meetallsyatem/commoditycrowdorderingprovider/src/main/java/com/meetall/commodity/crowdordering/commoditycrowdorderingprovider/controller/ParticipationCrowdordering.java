@@ -26,8 +26,8 @@ public class ParticipationCrowdordering {
     /**
      * 加入别人团
      */
-    @ApiOperation(value="加入别人团",notes="加入别人团",httpMethod = "POST")
-    @RequestMapping(value = "/addRoll",method = RequestMethod.POST)
+    @ApiOperation(value="加入别人团",notes="加入别人团")
+    @RequestMapping(value = "/addRoll")
     public String AddRoll(@RequestBody Meetallptorder meetallptorder, @RequestBody Meetalluserpt meetalluserpt){
         addRoll.AddRoll(meetallptorder,meetalluserpt);
         return null;
@@ -39,4 +39,10 @@ public class ParticipationCrowdordering {
         addRoll.a();
         return null;
     }
+
+
+
+
+
+
 }

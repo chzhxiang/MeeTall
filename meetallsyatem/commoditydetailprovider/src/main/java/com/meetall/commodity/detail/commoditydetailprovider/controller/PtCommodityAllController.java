@@ -14,6 +14,10 @@ public class PtCommodityAllController {
     @Autowired
     private PtCommodityAll ptCommodityAll;
 
+    /**
+     * 获得所有拼图的商品
+     * @return
+     */
     @RequestMapping("/ptcomdity")
     public String ptCommodityAll(){
         return ptCommodityAll.CommodityAll();

@@ -18,7 +18,9 @@
         <module name="meetallcommon" />
         <module name="meetallregistry" />
         <module name="meetallsyatem" />
+        <module name="meetallzuul" />
         <module name="meitehao-order-consumer" />
+        <module name="swagger2" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

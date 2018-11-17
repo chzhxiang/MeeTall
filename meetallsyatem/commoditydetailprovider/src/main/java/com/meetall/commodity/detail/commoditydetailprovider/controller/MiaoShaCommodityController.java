@@ -13,7 +13,11 @@ public class MiaoShaCommodityController {
     @Autowired
     private MiaoshaCommodityAll miaoshaCommodityAll;
 
-    @RequestMapping("/miaoshacommodity")
+    /**
+     * 获得所有秒杀商品
+     * @return
+     */
+    @RequestMapping(value = "/miaoshacommodity")
     public String MiaoShaCommodity(){
         return miaoshaCommodityAll.CommodityAll();
     }

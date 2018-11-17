@@ -9,7 +9,6 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @SpringBootApplication
 @EnableEurekaClient
-@EnableWebMvc
 @EnableSwagger2
 @MapperScan("com.meetall.commodity.crowdordering.commoditycrowdorderingprovider.*")
 public class CommoditycrowdorderingproviderApplication {

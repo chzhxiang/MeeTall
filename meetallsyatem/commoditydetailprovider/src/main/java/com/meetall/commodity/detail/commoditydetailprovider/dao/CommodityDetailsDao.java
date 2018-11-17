@@ -49,4 +49,8 @@ public interface CommodityDetailsDao {
      */
     List<Integer> getAllMiaosha();
 
+    /**
+     * 查询对应分类的所有是商品编号
+     */
+    List<Integer> getAllClassfy(Integer commodityClassfy);
 }

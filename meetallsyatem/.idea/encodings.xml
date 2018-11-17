@@ -10,7 +10,9 @@
     <file url="file://$PROJECT_DIR$/meetall-seckill-producer" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/meetall-user-producer" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/meetallregistry" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/meetallzuul" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/meitehao-order-consumer" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/meitehao-order-provder" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/swagger2" charset="UTF-8" />
   </component>
 </project>

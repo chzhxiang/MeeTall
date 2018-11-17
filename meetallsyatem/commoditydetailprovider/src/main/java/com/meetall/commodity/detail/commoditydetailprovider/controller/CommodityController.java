@@ -88,7 +88,7 @@ public class CommodityController {
     @Autowired
     private CommodityattributerelationServiceImpl commodityattributerelationService;
     @ApiOperation(value="查询到商品所有的信息",notes="查询到商品所有的信息")
-    @RequestMapping(value = "/getcommodityall")
+    @RequestMapping(value = "/getcommodityall",method = RequestMethod.GET)
     public String getcommodityall(){
         return commodityattributerelationService.CommodityAll();
     }

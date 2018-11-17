@@ -16,7 +16,8 @@ public class Swagger2 {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.meetall.commodity.detail.commoditydetailprovider.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.meetall.commodity"))
+                //.apis(RequestHandlerSelectors.basePackage("com.meetall.commodity.crowdordering.commoditycrowdorderingprovider.controller"))
                 .paths(PathSelectors.any())
                 .build();
     }

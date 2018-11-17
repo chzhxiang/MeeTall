@@ -1,11 +1,13 @@
 server:
-  port: 8005
+  port: 8015
 spring:
   application:
     name: cloud-commodity-deatails-consumber
 eureka:
+  instance:
+    hostname: 39.105.152.84
+    prefer-ip-address: true
+    instance-id: 39.105.152.84
   client:
     service-url:
       defaultZone: http://39.105.7.229:6001/eureka/
-  instance:
-    prefer-ip-address: true

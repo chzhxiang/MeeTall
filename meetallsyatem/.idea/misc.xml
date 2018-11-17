@@ -19,6 +19,8 @@
         <option value="$PROJECT_DIR$/meitehao-order-consumer/pom.xml" />
         <option value="$PROJECT_DIR$/meitehao-order-provder/pom.xml" />
         <option value="$PROJECT_DIR$/meetall-seckill-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/meetallzuul/pom.xml" />
+        <option value="$PROJECT_DIR$/swagger2/pom.xml" />
       </list>
     </option>
   </component>

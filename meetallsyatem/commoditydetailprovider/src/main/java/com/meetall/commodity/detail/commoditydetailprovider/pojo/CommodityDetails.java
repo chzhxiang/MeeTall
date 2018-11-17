@@ -1,12 +1,6 @@
 package com.meetall.commodity.detail.commoditydetailprovider.pojo;
 
-import com.meetall.commodity.detail.commoditydetailprovider.dao.CommodityDetailsDao;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
-import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 
-import javax.annotation.Resource;
 import java.util.List;
 import java.util.Map;
 
@@ -83,11 +77,6 @@ public class CommodityDetails {
     public void setCommoditySkuNameVAlue(Map<String, List<String>> commoditySkuNameValue) {
         CommoditySkuNameValue = commoditySkuNameValue;
     }
-
-
-
-
-
 
     public Double getCommodityPrice() {
         return commodityPrice;

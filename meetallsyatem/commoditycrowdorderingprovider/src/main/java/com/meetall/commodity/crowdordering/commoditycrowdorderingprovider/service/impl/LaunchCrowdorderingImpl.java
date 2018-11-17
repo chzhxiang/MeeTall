@@ -91,12 +91,11 @@ public class LaunchCrowdorderingImpl implements LaunchCrowdordering {
                     }
                 }
             },1000*60*60*24);
-
-
-
             map.put("info","200");
         }else{
             map.put("info","支付失败");
+            //生成订单存入redis
+
         }
         return JSON.toJSONString(map);
     }

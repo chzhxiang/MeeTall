@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 @SuppressWarnings("ALL")
 @RestController
 @RequestMapping
-@Api(value = "", description = "测试")
+@Api(value = "qw", description = "测试")
 public class SelectMyPtInfo {
 
     @Autowired
