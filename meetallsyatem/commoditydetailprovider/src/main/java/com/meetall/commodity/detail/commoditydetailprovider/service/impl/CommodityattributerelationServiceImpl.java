@@ -149,23 +149,69 @@ public class CommodityattributerelationServiceImpl implements Commodityattribute
              * 查询商品的属性值集合
              */
             List<Integer> value1 = commodityattributerelationDao.getValue(shopid);
-
-            for (Integer attributename :name1){
-                List<Integer> values = commodityattributerelationDao.getValues(shopid,attributename);
-                List<String> CommodityAttributeValue = new ArrayList<>();
-                /**
-                 * 通过属性名id去查询属性名
-                 */
-                for (Integer attributevalue:values) {
-                    CommodityAttributeValue.add(commodityAttributeValueDao.getAttributeValue(attributevalue));
+            if (attributeNameValue!=null){
+                for (Integer attributename :name1){
+                    List<Integer> values = commodityattributerelationDao.getValues(shopid,attributename);
+                    List<String> CommodityAttributeValue = new ArrayList<>();
+                    /**
+                     * 通过属性名id去查询属性名
+                     */
+                    for (Integer attributevalue:values) {
+                        CommodityAttributeValue.add(commodityAttributeValueDao.getAttributeValue(attributevalue));
+                    }
+                    map.put(commodityAttributeNameDao.getAttributeName(attributename), CommodityAttributeValue);
                 }
-                map.put(commodityAttributeNameDao.getAttributeName(attributename), CommodityAttributeValue);
             }
+
             c.setCommoditySkuNameVAlue(map);
         }
         return JSON.toJSONString(a);
     }
 
+
+    /**
+     * 批量查询指定id的商品所有信息
+     */
+    public String batchQuery(List<Integer> integerList){
+        List<CommodityDetails> a = commodityDetailsDao.BatchQuery(integerList);
+        List<String> name = new ArrayList<>();
+        List<String> value = new ArrayList<>();
+        for (CommodityDetails c : a) {
+            /**
+             * 添加商品价格
+             */
+            Map<String,List<String>> map = new HashMap<>();
+
+            List<String> CommodityAttributeName = new ArrayList<>();
+            int shopid = c.getCommodityId();
+            c.setCommodityPrice(commodityDetailsDao.GetCommodityprice(shopid));
+            List<Commodityattributerelation> attributeNameValue = commodityattributerelationDao.getAttributeNameValue(shopid);
+            /**
+             * 查询商品的属性名集合
+             */
+            List<Integer> name1 = commodityattributerelationDao.getName(shopid);
+            /**-
+             * 查询商品的属性值集合
+             */
+            List<Integer> value1 = commodityattributerelationDao.getValue(shopid);
+            if (attributeNameValue!=null){
+                for (Integer attributename :name1){
+                    List<Integer> values = commodityattributerelationDao.getValues(shopid,attributename);
+                    List<String> CommodityAttributeValue = new ArrayList<>();
+                    /**
+                     * 通过属性名id去查询属性名
+                     */
+                    for (Integer attributevalue:values) {
+                        CommodityAttributeValue.add(commodityAttributeValueDao.getAttributeValue(attributevalue));
+                    }
+                    map.put(commodityAttributeNameDao.getAttributeName(attributename), CommodityAttributeValue);
+                }
+            }
+
+            c.setCommoditySkuNameVAlue(map);
+        }
+        return JSON.toJSONString(a);
+    }
 
     /**
      * 通过商品id查询商品的sku数组集合
@@ -181,7 +227,7 @@ public class CommodityattributerelationServiceImpl implements Commodityattribute
          * 查询商品的属性名集合
          */
         List<Integer> name1 = commodityattributerelationDao.getName(shopid);
-        /**-
+        /**
          * 查询商品的属性值集合
          */
         List<Integer> value1 = commodityattributerelationDao.getValue(shopid);

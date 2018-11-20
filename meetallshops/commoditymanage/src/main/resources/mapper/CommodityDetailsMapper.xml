@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.meetall.commodity.commoditymanage.dao.CommodityDetailsDao">
+    <select id="getAllId" resultMap="selectid" parameterType="int">
+        select commodity_id,image,product_name,commodity_classify,commodity_describe from commodityDetails where commodity_id = #{commodityId}
+    </select>
+    <select id="getAll" resultMap="selectid">
+        select commodity_id,image,product_name,commodity_classify,commodity_describe from commodityDetails
+    </select>
+    <resultMap id="selectid" type="com.meetall.commodity.commoditymanage.pojo.CommodityDetails">
+        <result column="commodity_id" property="commodityId"/>
+        <result column="image" property="image"/>
+        <result column="product_name" property="productName"/>
+        <result column="commodity_classify" property="commodityClassify"/>
+        <result column="commodity_describe" property="commodityDescribe"/>
+    </resultMap>
+    <select id="GetCommodityprice" parameterType="int" resultType="Double">
+        select MIN(commodity_price) as commodity_price from commoditySku where commodity_number=#{commodityId}
+    </select>
+    <select id="getCommodityIdSku" resultMap="select" parameterType="int">
+        select commodity_id,image,product_name,commodity_classify,commodity_describe from commodityDetails where commodity_id = #{commodityId}
+    </select>
+    <resultMap id="select" type="com.meetall.commodity.commoditymanage.pojo.CommodityDetails">
+        <result column="commodity_id" property="commodityId"/>
+        <result column="image" property="image"/>
+        <result column="product_name" property="productName"/>
+        <result column="commodity_classify" property="commodityClassify"/>
+        <result column="commodity_describe" property="commodityDescribe"/>
+    </resultMap>
+    <select id="getAllPtGoods" resultType="int">
+        select commodity_id from commodityDetails where if_pt = 1
+    </select>
+    <select id="getAllMiaosha" resultType="int">
+        select commodity_id from commodityDetails where if_miaosha = 1
+    </select>
+
+    <select id="selectpt" resultMap="select">
+        select commodity_id,image,product_name,commodity_classify,commodity_describe from commodityDetails where if_pt = 1
+    </select>
+    <select id="selectMiaosha" resultMap="select">
+        select commodity_id,image,product_name,commodity_classify,commodity_describe from commodityDetails where if_miaosha = 1
+    </select>
+
+    <select id="getAllClassfy" parameterType="int" resultType="int">
+        select commodity_id from commodityDetails where commodity_classify = #{commodityClassfy}
+    </select>
+
+    <select id="BatchQuery" parameterType="java.util.List" resultMap="selectid">
+        select commodity_id,image,product_name,commodity_classify,commodity_describe
+         from commodityDetails
+         where commodity_id in 
+         <foreach collection="list" item="CommodityID" open="(" close=")" separator=",">
+             #{CommodityID}
+         </foreach>
+    </select>
+</mapper>

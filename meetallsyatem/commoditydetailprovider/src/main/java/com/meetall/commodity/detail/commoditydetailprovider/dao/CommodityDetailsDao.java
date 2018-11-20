@@ -53,4 +53,9 @@ public interface CommodityDetailsDao {
      * 查询对应分类的所有是商品编号
      */
     List<Integer> getAllClassfy(Integer commodityClassfy);
+
+    /**
+     * 批量查询
+     */
+    List<CommodityDetails> BatchQuery(List<Integer> CommodityID);
 }

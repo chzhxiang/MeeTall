@@ -1,0 +1,15 @@
+server:
+  port: 8015
+spring:
+  application:
+    name: cloud-commodity-deatails-consumber
+eureka:
+  instance:
+    hostname: 192.168.50.248
+    instance-id: 192.168.50.248
+  client:
+    service-url:
+      defaultZone: http://192.168.50.248:6001/eureka/
+feign:
+  hystrix:
+    enabled: true

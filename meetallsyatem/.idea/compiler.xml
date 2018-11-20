@@ -16,6 +16,7 @@
         <module name="meetall-seckill-producer" />
         <module name="meetall-user-producer" />
         <module name="meetallcommon" />
+        <module name="meetallconfigserver" />
         <module name="meetallregistry" />
         <module name="meetallsyatem" />
         <module name="meetallzuul" />

@@ -128,4 +128,9 @@ public class CommodityController {
         return JSON.toJSONString(commodityDetailsDao.getAllMiaosha());
     }
 
+
+    /**
+     * 批量查询
+     */
+
 }

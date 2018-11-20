@@ -1,0 +1,20 @@
+server:
+  port: 8888
+eureka:
+  client:
+    service-url:
+      defaultZone: http://192.168.50.248:6001/eureka/
+spring:
+  application:
+    name: meetall-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/sun789798/login.git
+#          search-paths: dev
+#          username: 541789798@qq.com
+#          password: s541789798
+          search-paths: dev
+#          default-label: master
+#          force-pull: true

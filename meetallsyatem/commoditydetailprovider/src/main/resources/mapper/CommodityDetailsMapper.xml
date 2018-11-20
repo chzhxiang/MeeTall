@@ -45,4 +45,13 @@
     <select id="getAllClassfy" parameterType="int" resultType="int">
         select commodity_id from commodityDetails where commodity_classify = #{commodityClassfy}
     </select>
+
+    <select id="BatchQuery" parameterType="java.util.List" resultMap="selectid">
+        select commodity_id,image,product_name,commodity_classify,commodity_describe
+         from commodityDetails
+         where commodity_id in 
+         <foreach collection="list" item="CommodityID" open="(" close=")" separator=",">
+             #{CommodityID}
+         </foreach>
+    </select>
 </mapper>

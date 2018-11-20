@@ -21,6 +21,7 @@
         <option value="$PROJECT_DIR$/meetall-seckill-consumer/pom.xml" />
         <option value="$PROJECT_DIR$/meetallzuul/pom.xml" />
         <option value="$PROJECT_DIR$/swagger2/pom.xml" />
+        <option value="$PROJECT_DIR$/meetallconfigserver/pom.xml" />
       </list>
     </option>
   </component>

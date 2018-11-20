@@ -12,6 +12,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import java.util.ArrayList;
 import java.util.List;
 
 @SuppressWarnings("ALL")
@@ -31,8 +32,12 @@ public class test {
     private CommodityDetailsDao commodityDetailsDao;
     @RequestMapping("/re")
     public String a(){
-        String a = JSON.toJSONString(commodityDetailsDao.GetCommodityprice(10001));
-        return a;
+        List<Integer> list = new ArrayList<>();
+        list.add(10001);
+        list.add(10002);
+        list.add(10003);
+
+        return JSON.toJSONString(commodityDetailsDao.BatchQuery(list));
     }
 
     @Autowired
@@ -51,6 +56,7 @@ public class test {
 
     @RequestMapping("/qw")
     public String aa(@RequestBody CommodityDetails commodityDetails){
+
         System.out.println(commodityDetails.getCommodityDescribe());
         return "";
     }
